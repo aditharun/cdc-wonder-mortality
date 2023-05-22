@@ -1,0 +1,166 @@
+"Notes"	"Race"	"Race Code"	"Gender"	"Gender Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate	Crude Rate Lower 95% Confidence Interval	Crude Rate Upper 95% Confidence Interval	Crude Rate Standard Error	Age Adjusted Rate	Age Adjusted Rate Lower 95% Confidence Interval	Age Adjusted Rate Upper 95% Confidence Interval	Age Adjusted Rate Standard Error
+	"Black or African American"	"2054-5"	"Female"	"F"	"1999"	"1999"	5706	18236499	31.3	30.5	32.1	0.4	39.9	38.9	41.0	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2000"	"2000"	5878	18419074	31.9	31.1	32.7	0.4	40.5	39.5	41.6	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2001"	"2001"	5885	18692119	31.5	30.7	32.3	0.4	39.8	38.8	40.8	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2002"	"2002"	6255	18902852	33.1	32.3	33.9	0.4	41.8	40.7	42.8	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2003"	"2003"	6580	19101453	34.4	33.6	35.3	0.4	43.0	41.9	44.0	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2004"	"2004"	6619	19311650	34.3	33.4	35.1	0.4	42.6	41.6	43.6	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2005"	"2005"	6674	19524942	34.2	33.4	35.0	0.4	42.0	41.0	43.1	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2006"	"2006"	6429	19749975	32.6	31.8	33.3	0.4	39.4	38.4	40.3	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2007"	"2007"	6450	19986736	32.3	31.5	33.1	0.4	38.5	37.6	39.5	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2008"	"2008"	6931	20223930	34.3	33.5	35.1	0.4	40.2	39.3	41.2	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2009"	"2009"	6875	20455967	33.6	32.8	34.4	0.4	38.9	37.9	39.8	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2010"	"2010"	6837	20624873	33.1	32.4	33.9	0.4	37.8	36.9	38.8	0.5
+	"Black or African American"	"2054-5"	"Female"	"F"	"2011"	"2011"	6726	20870136	32.2	31.5	33.0	0.4	36.0	35.1	36.9	0.4
+	"Black or African American"	"2054-5"	"Female"	"F"	"2012"	"2012"	6989	21087405	33.1	32.4	33.9	0.4	36.4	35.5	37.2	0.4
+	"Black or African American"	"2054-5"	"Female"	"F"	"2013"	"2013"	7230	21291814	34.0	33.2	34.7	0.4	36.5	35.6	37.3	0.4
+	"Black or African American"	"2054-5"	"Female"	"F"	"2014"	"2014"	7276	21550453	33.8	33.0	34.5	0.4	35.6	34.8	36.5	0.4
+	"Black or African American"	"2054-5"	"Female"	"F"	"2015"	"2015"	7651	21781596	35.1	34.3	35.9	0.4	36.4	35.6	37.2	0.4
+	"Black or African American"	"2054-5"	"Female"	"F"	"2016"	"2016"	7897	21960417	36.0	35.2	36.8	0.4	36.7	35.9	37.5	0.4
+	"Black or African American"	"2054-5"	"Female"	"F"	"2017"	"2017"	8387	22208090	37.8	37.0	38.6	0.4	37.8	37.0	38.6	0.4
+	"Black or African American"	"2054-5"	"Female"	"F"	"2018"	"2018"	8546	22361868	38.2	37.4	39.0	0.4	37.5	36.7	38.3	0.4
+	"Black or African American"	"2054-5"	"Female"	"F"	"2019"	"2019"	8999	22519636	40.0	39.1	40.8	0.4	38.7	37.9	39.5	0.4
+	"Black or African American"	"2054-5"	"Female"	"F"	"2020 "	"2020"	11216	22715825	49.4	48.5	50.3	0.5	46.9	46.0	47.7	0.4
+	"Black or African American"	"2054-5"	"Male"	"M"	"1999"	"1999"	4547	16485737	27.6	26.8	28.4	0.4	48.0	46.5	49.5	0.8
+	"Black or African American"	"2054-5"	"Male"	"M"	"2000"	"2000"	4609	16672735	27.6	26.8	28.4	0.4	47.7	46.2	49.1	0.7
+	"Black or African American"	"2054-5"	"Male"	"M"	"2001"	"2001"	4828	16946270	28.5	27.7	29.3	0.4	48.5	47.1	50.0	0.7
+	"Black or African American"	"2054-5"	"Male"	"M"	"2002"	"2002"	5192	17147052	30.3	29.5	31.1	0.4	51.0	49.5	52.5	0.8
+	"Black or African American"	"2054-5"	"Male"	"M"	"2003"	"2003"	5534	17320752	32.0	31.1	32.8	0.4	52.8	51.3	54.3	0.8
+	"Black or African American"	"2054-5"	"Male"	"M"	"2004"	"2004"	5685	17537341	32.4	31.6	33.3	0.4	52.8	51.3	54.3	0.8
+	"Black or African American"	"2054-5"	"Male"	"M"	"2005"	"2005"	5936	17745794	33.5	32.6	34.3	0.4	54.4	52.9	55.9	0.8
+	"Black or African American"	"2054-5"	"Male"	"M"	"2006"	"2006"	6011	17969520	33.5	32.6	34.3	0.4	53.1	51.6	54.6	0.7
+	"Black or African American"	"2054-5"	"Male"	"M"	"2007"	"2007"	5990	18197963	32.9	32.1	33.7	0.4	50.9	49.5	52.3	0.7
+	"Black or African American"	"2054-5"	"Male"	"M"	"2008"	"2008"	6288	18427803	34.1	33.3	35.0	0.4	52.0	50.6	53.4	0.7
+	"Black or African American"	"2054-5"	"Male"	"M"	"2009"	"2009"	6491	18648848	34.8	34.0	35.7	0.4	51.4	50.0	52.7	0.7
+	"Black or African American"	"2054-5"	"Male"	"M"	"2010"	"2010"	6580	18812260	35.0	34.1	35.8	0.4	51.3	49.9	52.6	0.7
+	"Black or African American"	"2054-5"	"Male"	"M"	"2011"	"2011"	6525	19074760	34.2	33.4	35.0	0.4	48.4	47.1	49.6	0.6
+	"Black or African American"	"2054-5"	"Male"	"M"	"2012"	"2012"	7021	19303983	36.4	35.5	37.2	0.4	50.6	49.3	51.9	0.7
+	"Black or African American"	"2054-5"	"Male"	"M"	"2013"	"2013"	7344	19510272	37.6	36.8	38.5	0.4	51.6	50.4	52.9	0.6
+	"Black or African American"	"2054-5"	"Male"	"M"	"2014"	"2014"	7448	19766066	37.7	36.8	38.5	0.4	50.1	48.9	51.4	0.6
+	"Black or African American"	"2054-5"	"Male"	"M"	"2015"	"2015"	7835	19995887	39.2	38.3	40.1	0.4	51.8	50.5	53.0	0.6
+	"Black or African American"	"2054-5"	"Male"	"M"	"2016"	"2016"	8429	20181252	41.8	40.9	42.7	0.5	54.0	52.8	55.2	0.6
+	"Black or African American"	"2054-5"	"Male"	"M"	"2017"	"2017"	8690	20416272	42.6	41.7	43.5	0.5	54.1	52.9	55.3	0.6
+	"Black or African American"	"2054-5"	"Male"	"M"	"2018"	"2018"	9249	20572958	45.0	44.0	45.9	0.5	56.0	54.8	57.2	0.6
+	"Black or African American"	"2054-5"	"Male"	"M"	"2019"	"2019"	9604	20716167	46.4	45.4	47.3	0.5	56.7	55.5	57.9	0.6
+	"Black or African American"	"2054-5"	"Male"	"M"	"2020 "	"2020"	12033	20904808	57.6	56.5	58.6	0.5	69.0	67.7	70.3	0.7
+	"White"	"2106-3"	"Female"	"F"	"1999"	"1999"	18542	100698584	18.4	18.1	18.7	0.1	12.5	12.3	12.7	0.1
+	"White"	"2106-3"	"Female"	"F"	"2000"	"2000"	19238	100773935	19.1	18.8	19.4	0.1	12.8	12.7	13.0	0.1
+	"White"	"2106-3"	"Female"	"F"	"2001"	"2001"	20202	100952397	20.0	19.7	20.3	0.1	13.4	13.2	13.6	0.1
+	"White"	"2106-3"	"Female"	"F"	"2002"	"2002"	20998	101042357	20.8	20.5	21.1	0.1	13.8	13.6	14.0	0.1
+	"White"	"2106-3"	"Female"	"F"	"2003"	"2003"	22588	101129692	22.3	22.0	22.6	0.1	14.7	14.5	14.9	0.1
+	"White"	"2106-3"	"Female"	"F"	"2004"	"2004"	22781	101220900	22.5	22.2	22.8	0.1	14.7	14.5	14.9	0.1
+	"White"	"2106-3"	"Female"	"F"	"2005"	"2005"	24248	101304484	23.9	23.6	24.2	0.2	15.4	15.2	15.6	0.1
+	"White"	"2106-3"	"Female"	"F"	"2006"	"2006"	23360	101410496	23.0	22.7	23.3	0.2	14.6	14.5	14.8	0.1
+	"White"	"2106-3"	"Female"	"F"	"2007"	"2007"	23793	101520150	23.4	23.1	23.7	0.2	14.7	14.5	14.9	0.1
+	"White"	"2106-3"	"Female"	"F"	"2008"	"2008"	24637	101626674	24.2	23.9	24.5	0.2	15.0	14.8	15.2	0.1
+	"White"	"2106-3"	"Female"	"F"	"2009"	"2009"	24400	101700012	24.0	23.7	24.3	0.2	14.8	14.6	15.0	0.1
+	"White"	"2106-3"	"Female"	"F"	"2010"	"2010"	24822	101740930	24.4	24.1	24.7	0.2	14.9	14.7	15.1	0.1
+	"White"	"2106-3"	"Female"	"F"	"2011"	"2011"	25943	101843411	25.5	25.2	25.8	0.2	15.2	15.0	15.4	0.1
+	"White"	"2106-3"	"Female"	"F"	"2012"	"2012"	26670	101925742	26.2	25.9	26.5	0.2	15.4	15.2	15.6	0.1
+	"White"	"2106-3"	"Female"	"F"	"2013"	"2013"	27446	101981588	26.9	26.6	27.2	0.2	15.8	15.6	16.0	0.1
+	"White"	"2106-3"	"Female"	"F"	"2014"	"2014"	27618	102006574	27.1	26.8	27.4	0.2	15.8	15.6	16.0	0.1
+	"White"	"2106-3"	"Female"	"F"	"2015"	"2015"	29850	102059896	29.2	28.9	29.6	0.2	16.9	16.7	17.1	0.1
+	"White"	"2106-3"	"Female"	"F"	"2016"	"2016"	30638	102080754	30.0	29.7	30.3	0.2	17.3	17.1	17.5	0.1
+	"White"	"2106-3"	"Female"	"F"	"2017"	"2017"	33396	102009336	32.7	32.4	33.1	0.2	18.6	18.3	18.8	0.1
+	"White"	"2106-3"	"Female"	"F"	"2018"	"2018"	35763	101920022	35.1	34.7	35.5	0.2	19.6	19.4	19.8	0.1
+	"White"	"2106-3"	"Female"	"F"	"2019"	"2019"	37835	101826403	37.2	36.8	37.5	0.2	20.6	20.3	20.8	0.1
+	"White"	"2106-3"	"Female"	"F"	"2020 "	"2020"	43308	101632584	42.6	42.2	43.0	0.2	23.5	23.3	23.7	0.1
+	"White"	"2106-3"	"Male"	"M"	"1999"	"1999"	11251	96455534	11.7	11.4	11.9	0.1	12.7	12.5	13.0	0.1
+	"White"	"2106-3"	"Male"	"M"	"2000"	"2000"	11821	96550749	12.2	12.0	12.5	0.1	13.2	13.0	13.5	0.1
+	"White"	"2106-3"	"Male"	"M"	"2001"	"2001"	12385	96890274	12.8	12.6	13.0	0.1	13.6	13.3	13.8	0.1
+	"White"	"2106-3"	"Male"	"M"	"2002"	"2002"	13431	97059625	13.8	13.6	14.1	0.1	14.4	14.1	14.6	0.1
+	"White"	"2106-3"	"Male"	"M"	"2003"	"2003"	14518	97159794	14.9	14.7	15.2	0.1	15.2	15.0	15.5	0.1
+	"White"	"2106-3"	"Male"	"M"	"2004"	"2004"	15296	97399003	15.7	15.5	16.0	0.1	15.8	15.6	16.1	0.1
+	"White"	"2106-3"	"Male"	"M"	"2005"	"2005"	15909	97576500	16.3	16.1	16.6	0.1	16.1	15.8	16.4	0.1
+	"White"	"2106-3"	"Male"	"M"	"2006"	"2006"	16117	97789900	16.5	16.2	16.7	0.1	15.9	15.6	16.1	0.1
+	"White"	"2106-3"	"Male"	"M"	"2007"	"2007"	16541	97972271	16.9	16.6	17.1	0.1	15.9	15.7	16.2	0.1
+	"White"	"2106-3"	"Male"	"M"	"2008"	"2008"	17828	98157123	18.2	17.9	18.4	0.1	16.8	16.6	17.1	0.1
+	"White"	"2106-3"	"Male"	"M"	"2009"	"2009"	18350	98293067	18.7	18.4	18.9	0.1	16.9	16.7	17.2	0.1
+	"White"	"2106-3"	"Male"	"M"	"2010"	"2010"	18766	98386442	19.1	18.8	19.3	0.1	17.0	16.8	17.3	0.1
+	"White"	"2106-3"	"Male"	"M"	"2011"	"2011"	19760	98579832	20.0	19.8	20.3	0.1	17.5	17.3	17.7	0.1
+	"White"	"2106-3"	"Male"	"M"	"2012"	"2012"	20729	98773105	21.0	20.7	21.3	0.1	17.9	17.7	18.2	0.1
+	"White"	"2106-3"	"Male"	"M"	"2013"	"2013"	22392	98936925	22.6	22.3	22.9	0.2	18.9	18.7	19.2	0.1
+	"White"	"2106-3"	"Male"	"M"	"2014"	"2014"	23232	99042219	23.5	23.2	23.8	0.2	19.3	19.0	19.5	0.1
+	"White"	"2106-3"	"Male"	"M"	"2015"	"2015"	24801	99182385	25.0	24.7	25.3	0.2	20.2	20.0	20.5	0.1
+	"White"	"2106-3"	"Male"	"M"	"2016"	"2016"	26402	99244006	26.6	26.3	26.9	0.2	21.1	20.8	21.3	0.1
+	"White"	"2106-3"	"Male"	"M"	"2017"	"2017"	29086	99231457	29.3	29.0	29.6	0.2	23.0	22.7	23.3	0.1
+	"White"	"2106-3"	"Male"	"M"	"2018"	"2018"	31094	99148256	31.4	31.0	31.7	0.2	24.1	23.8	24.4	0.1
+	"White"	"2106-3"	"Male"	"M"	"2019"	"2019"	33788	99079071	34.1	33.7	34.5	0.2	25.7	25.4	26.0	0.1
+	"White"	"2106-3"	"Male"	"M"	"2020 "	"2020"	38801	98866799	39.2	38.9	39.6	0.2	29.1	28.8	29.4	0.2
+"---"
+"Dataset: Underlying Cause of Death, 1999-2020"
+"Query Parameters:"
+"Title: age_adjusted_deaths_race_gender_year_se_hypertension"
+"Gender: Female; Male"
+"Hispanic Origin: Not Hispanic or Latino"
+"ICD-10 Codes: I10-I15 (Hypertensive diseases)"
+"Race: Black or African American; White"
+"Group By: Race; Gender; Year"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 17, 2023 5:15:18 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 1999-2020 on CDC WONDER Online Database, released in 2021. Data are from the Multiple Cause of Death Files,"
+"1999-2020, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10.html on May 17, 2023 5:15:18 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2000 Standard Population."
+"6. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Age-Adjusted Rates."
+"7. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"8. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"9. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Racial Differences."
+"10. The method used to calculate 95% confidence intervals is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Confidence-Intervals."
+"11. The method used to calculate standard errors is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Standard-Errors."
+"12. The population figures for year 2020 are bridged-race estimates of the July 1 resident population, from the Vintage 2020"
+"postcensal series released by NCHS on September 22, 2021. The population figures for year 2019 are bridged-race estimates of the"
+"July 1 resident population, from the Vintage 2019 postcensal series released by NCHS on July 9, 2020. The population figures for"
+"year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018 postcensal series released by NCHS"
+"on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for year 2016 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS on June 26, 2017. The"
+"population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015 postcensal"
+"series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for year 2013 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS on June 26,"
+"2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the Vintage 2012"
+"postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012. Population figures for 2010"
+"are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates of the July 1 resident"
+"population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26, 2012. Population"
+"figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal series of July 1"
+"estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates and population"
+"figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population estimates which"
+"were available at the time of release."
+"13. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

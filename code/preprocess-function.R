@@ -1,5 +1,16 @@
 library(tidyverse)
 
+
+create_output_dir <- function(outputdir){
+
+	if (!dir.exists(outputdir)){
+
+		dir.create(outputdir, recursive=TRUE)
+
+	}
+	
+}
+
 #turn txt file output into dataframe we can analyze
 preprocess_cdc_wonder_file <- function(filepath){
 	filedata <- readLines(filepath)
