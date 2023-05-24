@@ -102,14 +102,45 @@ sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text
 
 panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.grid.minor=element_blank())
 
+adj_y <- function(data, var){
 
-excess_death_rate_age_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=0.5) + ylab("Excess deaths per 100K individuals") + scale_y_continuous(limits = c(-300, 1400), breaks=seq(-300, 1400, 100)) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Excess Mortality Rate Among the Black Population by Age") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) 
+	vals <- data %>% pull(var)
+
+	lim_max <- max(vals) * 1.15
+
+	if (max(vals) < 10){
+
+		lim_min <- 0.75
+
+		bkpoints <- seq(lim_min, lim_max, 0.5)
+
+	} else{
+
+		lim_min <- 0
+
+		bkpoints <- seq(lim_min, lim_max, 25)
+
+	}
+
+	lims <- c(lim_min, lim_max)
 
 
-mortality_rate_ratio_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=ratio_unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=.5) + ylab("Mortality Rate Ratio (Black / White)") + scale_y_continuous(limits = c(0.7, max(excess_deaths_age$ratio_unadj_excess_deaths_rate + 1)), breaks=seq(0.7, max(excess_deaths_age$ratio_unadj_excess_deaths_rate + 1), 0.5)) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Black-White Mortality Rate Ratio by Age") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5)
+	return(list(lims=lims, bk=bkpoints))
 
 
-excess_death_rate_age_year_fig <- age.data %>% ggplot(aes(x=age, y=unadj_excess_deaths_rate, group=Year)) + geom_line(aes(color=Year), size=0.5) + ylab("Excess deaths per 100K individuals") + scale_y_continuous(limits = c(-300, 1800), breaks=seq(-300, 1800, 100)) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(name="Year Range", values=cbb[1:6]) + ggtitle("Excess Mortality Rate Among Black Population by Age and Gender") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Year), size=2.5) + facet_wrap(~Gender) + theme(strip.text = element_text(size=11), strip.background=element_rect(fill="transparent", color="transparent"))
+}
+
+
+excess_death_rate_age_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=0.5) + ylab("Excess deaths per 100K individuals") + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Excess Mortality Rate Among the Black Population by Age") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + scale_y_continuous(limits = adj_y(excess_deaths_age, "unadj_excess_deaths_rate")$lims, breaks=adj_y(excess_deaths_age, "unadj_excess_deaths_rate")$bk)
+
+
+mortality_rate_ratio_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=ratio_unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=.5) + ylab("Mortality Rate Ratio (Black / White)") + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Black-White Mortality Rate Ratio by Age") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + scale_y_continuous(limits = adj_y(excess_deaths_age, "ratio_unadj_excess_deaths_rate")$lims, breaks=adj_y(excess_deaths_age, "ratio_unadj_excess_deaths_rate")$bk) 
+
+
+excess_death_rate_age_year_fig <- age.data %>% ggplot(aes(x=age, y=unadj_excess_deaths_rate, group=Year)) + geom_line(aes(color=Year), size=0.5) + ylab("Excess deaths per 100K individuals") + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(name="Year Range", values=cbb[1:6]) + ggtitle("Excess Mortality Rate Among Black Population by Age and Gender") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Year), size=2.5) + facet_wrap(~Gender) + theme(strip.text = element_text(size=11), strip.background=element_rect(fill="transparent", color="transparent")) + scale_y_continuous(limits = adj_y(age.data, "unadj_excess_deaths_rate")$lims, breaks=adj_y(age.data, "unadj_excess_deaths_rate")$bk)
+
+
+
 
 
 save_plot(excess_death_rate_age_fig, plotdir)

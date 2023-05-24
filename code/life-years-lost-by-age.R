@@ -3,7 +3,7 @@ library(haven)
 
 source("preprocess-function.R")
 
-project <- "hypertension"
+project <- "heart_disease"
 
 age_intervals <- c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85)
 
@@ -143,13 +143,13 @@ sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text
 
 panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.grid.minor=element_blank())
 
-excess_pll_fig <- excess_ypll %>% ggplot(aes(x=age, y=excess_yrs_lost, group=Gender)) + geom_line(size=0.5) + ylab("Excess YPLL per 100K individuals") + scale_y_continuous(limits = c(-15000, 60000), breaks=seq(-15000, 60000, 5000)) + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Excess Years of Potential Life Lost Rate Among the Black Population by Age") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + geom_hline(yintercept=1, linetype="dashed")
+excess_pll_fig <- excess_ypll %>% ggplot(aes(x=age, y=excess_yrs_lost, group=Gender)) + geom_line(size=0.5) + ylab("Excess YPLL per 100K individuals") + scale_y_continuous(limits = c(min(c(0, floor(min(excess_ypll$excess_yrs_lost)/1000)*1000)), max(excess_ypll$excess_yrs_lost)*1.15), breaks=seq(min(c(0, floor(min(excess_ypll$excess_yrs_lost)/1000)*1000)), max(excess_ypll$excess_yrs_lost)*1.15, 500)) + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Excess Years of Potential Life Lost Rate Among the Black Population by Age") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + geom_hline(yintercept=1, linetype="dashed")
 
 
-mortality_rate_ratio_fig <- excess_ypll %>% ggplot(aes(x=age, y=ratio_excess_yrs_lost, group=Gender)) + geom_line(size=.5) + ylab("YPLL Rate Ratio (Black / White)") + scale_y_continuous(limits = c(0.7, 2.5), breaks=seq(0.7, 2.5, 0.1)) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Black-White Years of Potential Life Lost Rate Ratio by Age") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5)
+mortality_rate_ratio_fig <- excess_ypll %>% ggplot(aes(x=age, y=ratio_excess_yrs_lost, group=Gender)) + geom_line(size=.5) + ylab("YPLL Rate Ratio (Black / White)") + scale_y_continuous(limits = c(0.75, max(excess_ypll$ratio_excess_yrs_lost + 0.5)), breaks=seq(0.75, max(excess_ypll$ratio_excess_yrs_lost + 0.5), 0.25)) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Black-White Years of Potential Life Lost Rate Ratio by Age") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5)
 
 
-excess_pll_year_fig <- age.data %>% ggplot(aes(x=age, y=excess_yrs_lost, group=Year)) + geom_line(aes(color=Year), size=0.5) + ylab("Excess YPLL per 100K individuals") + scale_y_continuous(limits = c(-15000, 70000), breaks=seq(-15000, 5000, 70000)) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(name="Year Range", values=cbb[1:6]) + ggtitle("Excess Years of Potential Life Lost Rate Among Black Population by Age and Gender") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Year), size=2.5) + facet_wrap(~Gender) + theme(strip.text = element_text(size=11), strip.background=element_rect(fill="transparent", color="transparent"))
+excess_pll_year_fig <- age.data %>% ggplot(aes(x=age, y=excess_yrs_lost, group=Year)) + geom_line(aes(color=Year), size=0.5) + ylab("Excess YPLL per 100K individuals") + scale_y_continuous(limits = c(min(c(0, floor(min(age.data$excess_yrs_lost)/10)*10)), max(age.data$excess_yrs_lost)*1.15), breaks=seq(min(c(0, floor(min(age.data$excess_yrs_lost)/10)*10)), max(age.data$excess_yrs_lost)*1.15, 500)) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(name="Year Range", values=cbb[1:6]) + ggtitle("Excess Years of Potential Life Lost Rate Among Black Population by Age and Gender") + panel_theme + scale_x_continuous(limits=c(0,80), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Year), size=2.5) + facet_wrap(~Gender) + theme(strip.text = element_text(size=11), strip.background=element_rect(fill="transparent", color="transparent"))
 
 
 
