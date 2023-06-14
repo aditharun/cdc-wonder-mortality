@@ -2,14 +2,14 @@ library(tidyverse)
 library(haven)
 library(splines)
 
+args = commandArgs(trailingOnly=TRUE)
+
 source("preprocess-function.R")
 
+project <- args[1]
 
-project <- "hypertension"
-
-#input file
-inputfile <- file.path(file.path("../data", project), "export_age_adjusted_deaths_race_gender_year_se.txt")
-inputfile2 <- file.path(file.path("../data", project), "export_deaths_race_gender_age_year.txt")
+inputfile <- file.path(file.path("../data", project), "export_age_adjusted_deaths_race_gender_year_se.tsv")
+inputfile2 <- file.path(file.path("../data", project), "export_deaths_race_gender_age_year.tsv")
 
 #output directory and file
 outputdir <- file.path("../results", project)
@@ -26,7 +26,8 @@ cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
 
 
 ######## CODE ######
-data <- preprocess_cdc_wonder_file(inputfile)
+#data <- preprocess_cdc_wonder_file(inputfile)
+data <- preprocess_cdc_wonder(inputfile)
 
 cols.to.rename <- c("Crude Rate Lower 95% Confidence Interval", "Crude Rate Upper 95% Confidence Interval", "Crude Rate Standard Error", "Age Adjusted Rate Lower 95% Confidence Interval", "Age Adjusted Rate Upper 95% Confidence Interval", "Age Adjusted Rate Standard Error")
 
@@ -34,7 +35,8 @@ new.col.names <- c("cruderate_ci_lb", "cruderate_ci_ub", "cruderate_se", "ageadj
 
 data <- rename_columns(data, cols.to.rename, new.col.names)
 
-data <- data %>% filter(Notes == "") %>% select(-Notes)
+#data <- data %>% filter(Notes == "") %>% select(-Notes)
+data <- data %>% filter(is.na(Notes)) %>% select(-Notes)
 
 data <- data %>% select(-ends_with("code"))
 
@@ -55,9 +57,9 @@ men.excess.age.adj.deaths <- gender_arima_age_adjusted_death(data, excess_deaths
 
 excess_deaths_year %>% group_by(Gender) %>% summarize(diff_black=mean(diff_black)); data %>% group_by(Race, Gender) %>% summarize(age_adj_rate=mean(`Age Adjusted Rate`)) %>% ungroup()
 
-data2 <- preprocess_cdc_wonder_file(inputfile2)
-colnames(data2)[which(colnames(data2)=="Ten-Year Age Groups")] <- "agegroup"
-data2 <- data2 %>% filter(agegroup!="Not Stated") %>% filter(Population!="Not Applicable") %>% filter(Notes == "") %>% select(-Notes) %>% select(-ends_with("code")) %>% type.convert(as.is=TRUE)
+data2 <- preprocess_cdc_wonder(inputfile2)
+colnames(data2)[which(colnames(data2)=="Ten-Year Ages")] <- "agegroup"
+data2 <- data2 %>% filter(agegroup!="Not Stated") %>% filter(Population!="Not Applicable") %>% filter(is.na(Notes)) %>% select(-Notes) %>% select(-ends_with("code")) %>% type.convert(as.is=TRUE)
 data2 <- data2 %>% mutate(age=as.integer(factor(agegroup))-1)
 
 data2 <- data2 %>% filter(is.finite(as.numeric(Population))) %>% filter(is.finite(as.numeric(Deaths))) %>% filter(is.finite(as.numeric(`Crude Rate`))) %>% type.convert(as.is=TRUE)
@@ -82,6 +84,9 @@ sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text
 year_label <- scale_x_continuous(breaks=seq(1999, 2020, 1), labels= function(x) ifelse(x %% 2 == 1, x, ""))
 
 panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.grid.minor=element_blank())
+
+
+indiv_ageadj_rate_fig <- ageadj_mortality_rate %>% select(Gender, Year, ageadjrate_black, ageadjrate_white) %>% ungroup() %>% pivot_longer(-c(Gender, Year)) %>% ggplot(aes(x=Year, y=value, color=name)) + geom_line(size = 0.5) + ylab("Age Adjusted Mortality Rate") + scale_color_manual(values = c("ageadjrate_black"="maroon", "ageadjrate_white"="navy"), labels = c("ageadjrate_black" = "Black", "ageadjrate_white" = "White")) + panel_theme + facet_wrap(~Gender, nrow=1) + xlab("Year") + geom_point(size = 2.5) + year_label + theme(legend.title = element_blank())
 
 
 excess_death_rate_fig <- ggplot() + geom_line(data=ageadj_mortality_rate, aes(x=Year, y=pred_diff_black, color=Gender), size=1) + geom_line(data=ageadj_mortality_rate %>% filter(Year>=2019) %>% mutate(diff_black=ifelse(Year==2019, pred_diff_black, diff_black)), aes(x=Year, y=diff_black, color=Gender), linetype="dashed", size=1) + geom_hline(yintercept=0, linetype="dotted")  + ylab("Excess Deaths per 100000 Individuals") + xlab("Year") + year_label + panel_theme + geom_point(data = ageadj_mortality_rate %>% filter(Year %in% c(2015) & Gender == "Female" | Year %in% c(2007, 2011) & Gender == "Male"), aes(x=Year, y=pred_diff_black, color=Gender, shape=Gender), size=3.75) + scale_color_manual(values=c("maroon", "navy")) + sizing_theme  + ggtitle("Estimated Excess Adjusted Mortality Rate Among the Black Population") + scale_y_continuous(limits = c(0, max(ageadj_mortality_rate$pred_diff_black, na.rm=TRUE)*1.15), breaks=seq(0, max(ageadj_mortality_rate$pred_diff_black, na.rm=TRUE)*1.15, 10)) 
@@ -135,7 +140,7 @@ save_plot(mortality_rate_ratio_fig, plotdir)
 save_plot(age_adj_deaths_race_sex_fig, plotdir)
 save_plot(mortality_excess_numbers_fig, plotdir)
 save_plot(cumulative_excess_deaths_fig, plotdir)
-
+save_plot(indiv_ageadj_rate_fig, plotdir)
 
 
 

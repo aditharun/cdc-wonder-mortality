@@ -11,6 +11,19 @@ create_output_dir <- function(outputdir){
 	
 }
 
+#turns tsv file output into dataframe we can analyze
+preprocess_cdc_wonder <- function(filepath){
+
+	data <- read_tsv(filepath)
+
+	data <- data %>% 
+		mutate(gender_lbl = Gender, gender = case_when(Gender == "Female" ~ 1, Gender == "Male" ~ 3)) %>% 
+		mutate(Race = case_when(Race == "Black" ~ 1, Race == "White" ~ 3), race_lbl = case_when(Race == 1 ~ "Black", Race == 3 ~ "White"))
+
+	return(data)
+
+}
+
 #turn txt file output into dataframe we can analyze
 preprocess_cdc_wonder_file <- function(filepath){
 	filedata <- readLines(filepath)
