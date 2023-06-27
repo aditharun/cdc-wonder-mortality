@@ -11,7 +11,11 @@ opt = parse_args(opt_parser)
 
 project <- opt$project
 
-system(paste0("Rscript excess-mortality-by-age.R ", project))
-system(paste0("Rscript life-years-lost-by-age.R ", project))
-system(paste0("Rscript excess-mortality-by-year.R ", project))
-system(paste0("Rscript life-years-lost-by-year.R ", project))
+#system(paste0("Rscript excess-mortality-by-age.R ", project))
+#system(paste0("Rscript life-years-lost-by-age.R ", project))
+#system(paste0("Rscript excess-mortality-by-year.R ", project))
+#system(paste0("Rscript life-years-lost-by-year.R ", project))
+
+system(paste0("Rscript icd-ageadjusted.R ", project))
+system(paste0("Rscript icd-life-years-lost.R ", project))
+system(paste0("Rscript icd-combined.R ", project))

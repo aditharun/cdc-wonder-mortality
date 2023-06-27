@@ -91,7 +91,6 @@ data <- data %>% filter(is.finite(as.numeric(Population))) %>% filter(is.finite(
 data_agg <- data %>% group_by(age_cat, age, Gender, Race, Year) %>% summarize(deaths=sum(Deaths), population=sum(Population),cruderate=mean(`Crude Rate`) ) %>% ungroup() 
 
 
-#need to account for 10 year grouping already done for me
 
 data_combined <- data_agg %>% left_join(life_exp, by=c("age"="age_cat", "Year"="year", "Gender"="Gender"))
 

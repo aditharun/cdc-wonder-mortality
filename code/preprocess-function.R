@@ -154,12 +154,30 @@ save_plot <- function(plt, folder, height.in=(10/1.5), width.in=10){
 		dir.create(folder, recursive=TRUE)
 	}
 
+	if (width.in != 10){
+
+		height.in <- width.in / 1.5
+
+	}
+
 	file <- paste0(deparse(substitute(plt)), ".pdf")
 
 	ggsave(filename=file.path(folder, file), plot=plt, device=cairo_pdf, height=height.in, width=width.in, units="in")
 
 }
 
+save_plot_custom <- function(plt, folder, height.in=8, width.in=10){
+
+	if (!dir.exists(folder)){
+		dir.create(folder, recursive=TRUE)
+	}
+
+
+	file <- paste0(deparse(substitute(plt)), ".pdf")
+
+	ggsave(filename=file.path(folder, file), plot=plt, device=cairo_pdf, height=height.in, width=width.in, units="in")
+
+}
 
 
 
