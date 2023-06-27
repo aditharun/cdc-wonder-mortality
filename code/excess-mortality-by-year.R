@@ -8,6 +8,8 @@ source("preprocess-function.R")
 
 project <- args[1]
 
+years <- seq(1999, 2021, 1)
+
 inputfile <- file.path(file.path("../data", project), "export_age_adjusted_deaths_race_gender_year_se.tsv")
 inputfile2 <- file.path(file.path("../data", project), "export_deaths_race_gender_age_year.tsv")
 
@@ -24,7 +26,6 @@ plotdir <- file.path("../plots", project, "excess-mortality-by-year")
 cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
 
 
-
 ######## CODE ######
 #data <- preprocess_cdc_wonder_file(inputfile)
 data <- preprocess_cdc_wonder(inputfile)
@@ -34,9 +35,6 @@ cols.to.rename <- c("Crude Rate Lower 95% Confidence Interval", "Crude Rate Uppe
 new.col.names <- c("cruderate_ci_lb", "cruderate_ci_ub", "cruderate_se", "ageadjustedrate_ci_lb", "ageadjustedrate_ci_ub", "ageadjustedrate_se")
 
 data <- rename_columns(data, cols.to.rename, new.col.names)
-
-#data <- data %>% filter(Notes == "") %>% select(-Notes)
-data <- data %>% filter(is.na(Notes)) %>% select(-Notes)
 
 data <- data %>% select(-ends_with("code"))
 
@@ -58,8 +56,8 @@ men.excess.age.adj.deaths <- gender_arima_age_adjusted_death(data, excess_deaths
 excess_deaths_year %>% group_by(Gender) %>% summarize(diff_black=mean(diff_black)); data %>% group_by(Race, Gender) %>% summarize(age_adj_rate=mean(`Age Adjusted Rate`)) %>% ungroup()
 
 data2 <- preprocess_cdc_wonder(inputfile2)
-colnames(data2)[which(colnames(data2)=="Ten-Year Ages")] <- "agegroup"
-data2 <- data2 %>% filter(agegroup!="Not Stated") %>% filter(Population!="Not Applicable") %>% filter(is.na(Notes)) %>% select(-Notes) %>% select(-ends_with("code")) %>% type.convert(as.is=TRUE)
+colnames(data2)[which(colnames(data2)=="Five-Year Ages")] <- "agegroup"
+data2 <- data2 %>% filter(agegroup!="Not Stated") %>% filter(Population!="Not Applicable") %>% select(-ends_with("code")) %>% type.convert(as.is=TRUE)
 data2 <- data2 %>% mutate(age=as.integer(factor(agegroup))-1)
 
 data2 <- data2 %>% filter(is.finite(as.numeric(Population))) %>% filter(is.finite(as.numeric(Deaths))) %>% filter(is.finite(as.numeric(`Crude Rate`))) %>% type.convert(as.is=TRUE)
@@ -81,7 +79,7 @@ saveRDS(object=list(excess_deaths_year = excess_deaths_year, excess_deaths = exc
 
 sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=12), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5)) 
 
-year_label <- scale_x_continuous(breaks=seq(1999, 2020, 1), labels= function(x) ifelse(x %% 2 == 1, x, ""))
+year_label <- scale_x_continuous(breaks=years, labels= function(x) ifelse(x %% 2 == 1, x, ""))
 
 panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.grid.minor=element_blank())
 
@@ -118,6 +116,8 @@ cumulative_excess_net_fig <- cum_excess %>% ggplot(aes(x=Year, y=edb)) + geom_po
 
 
 agevector <- excess_deaths %>% select(agegroup, age) %>% distinct()
+
+#agevector <- agevector %>% mutate(age = str_extract(agegroup, "\\d+") %>% as.numeric())
 
 gender_deaths <- excess_deaths %>% group_by(Gender) %>% summarize(totaldeath = sum(excess_deaths_black)) %>% ungroup()
 

@@ -8,6 +8,8 @@ source("preprocess-function.R")
 
 project <- args[1]
 
+years <- seq(1999, 2021, 1)
+
 inputfile <- file.path(file.path("../data", project), "export_age_deaths_race_gender_year_se.tsv")
 
 lifeexp_file <- "../data/file_life_expectancy_1999_to_2020.dta"
@@ -18,7 +20,7 @@ outputfile <- "life-years-lost-by-year.rds"
 create_output_dir(outputdir)
 
 #create age categorical buckets
-age_intervals <- c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85)
+age_intervals <- c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, Inf)
 
 #plot path
 plotdir <- file.path("../plots", project, "life-years-lost-by-year")
@@ -30,17 +32,6 @@ cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
 ##### CODE ######
 
 data <- preprocess_cdc_wonder(inputfile)
-
-if (any(grepl(tolower(data$Notes), pattern = "black"))){
-
-	race <- data$Race
-	notes <- data$Notes
-
-	data$Race <- notes
-	data$Notes <- race
-}
-
-data <- data %>% filter(is.na(Notes)) %>% select(-Notes)
 
 agecodes <- data$`Single-Year Ages Code`
 
@@ -54,23 +45,25 @@ data <- rename_columns(data, cols.to.rename, new.col.names)
 
 data$age <- agecodes
 
-data <- data %>% mutate(age=ifelse(age=="NS", NA, age))
+data <- data %>% mutate(age=ifelse(age==999, NA, age))
 
 data <- data %>% type.convert()
 
-data <- data %>% filter(age <= 84)
-
 data <- data %>% mutate(age_cat = cut(age, breaks=age_intervals, right=FALSE)) %>% mutate(age_cat=as.character(age_cat))
+
+data <- data %>% mutate(age_cat = ifelse(age == 85, "85+", age_cat))
 
 data <- data %>% type.convert(as.is=TRUE)
 
-data_by_age_gender_race <- data %>% group_by(age_cat, Gender, Race, Year) %>% summarize(deaths=sum(Deaths), population=sum(Population),cruderate=mean(`Crude Rate`) ) %>% ungroup()
+data <- data %>% filter(!is.na(Population))
+
+data_by_age_gender_race <- data %>% group_by(age_cat, Gender, Race, Year) %>% summarize(deaths=sum(Deaths), population=sum(Population),cruderate=mean(`Crude Rate`) ) %>% ungroup() 
 
 #combine with life expectancy table
 life_exp <- read_dta(lifeexp_file) %>% mutate(Gender=factor(gender)) %>% mutate(Gender=ifelse(Gender=="1", "Female", "Male")) %>% select(-gender) %>% mutate(Gender = as.character(Gender))
 
 
-data_combined <- data_by_age_gender_race %>% mutate(age_bkt_lb = as.numeric(sub("\\[(\\d+),.*", "\\1", age_cat))) %>% left_join(life_exp, by=c("age_bkt_lb"="age_cat", "Year"="year", "Gender"="Gender")) %>% filter(age_bkt_lb < 84)
+data_combined <- data_by_age_gender_race %>% mutate(age_bkt_lb = as.numeric(sub("\\[(\\d+),.*", "\\1", age_cat))) %>% left_join(life_exp, by=c("age_bkt_lb"="age_cat", "Year"="year", "Gender"="Gender")) %>% filter(!is.na(life_expectancy))
 
 #variable life expectancy is the average remaining years people would have lived if didn't die:
 
@@ -108,13 +101,13 @@ saveRDS(object=list(excess_pll_w_pred = excess_pll_w_pred), file=file.path(outpu
 
 sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=14), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5)) 
 
-year_label <- scale_x_continuous(breaks=seq(1999, 2020, 1), labels= function(x) ifelse(x %% 2 == 1, x, ""))
+year_label <- scale_x_continuous(breaks=years, labels= function(x) ifelse(x %% 2 == 1, x, ""))
 
 panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.grid.minor=element_blank())
 
 indiv_ypll_fig <- excess_pll_w_pred %>% select(Gender, Year, yrs_lost_black, yrs_lost_white) %>% ungroup() %>% pivot_longer(-c(Gender, Year)) %>% ggplot(aes(x=Year, y=value, color=name)) + geom_line(size = 0.5) + ylab("YPLL per 100K Individuals") + scale_color_manual(values = c("yrs_lost_black"="maroon", "yrs_lost_white"="navy"), labels = c("yrs_lost_black" = "Black", "yrs_lost_white" = "White")) + panel_theme + facet_wrap(~Gender, nrow=1) + xlab("Year") + geom_point(size = 2.5) + year_label + theme(legend.title = element_blank())
 
-excess_pll_rate_fig <- ggplot() + geom_line(data=excess_pll_w_pred, aes(x=Year, y=pred_excess_yrs_lost, color=Gender), size=1) + geom_line(data=excess_pll_w_pred %>% filter(Year>=2019) %>% mutate(diff=ifelse(Year==2019, pred_excess_yrs_lost, excess_yrs_lost)), aes(x=Year, y=diff, color=Gender), linetype="dashed", size=1) + geom_hline(yintercept=0, linetype="dotted")  + scale_y_continuous(limits = c(min(c(0, floor(min(excess_pll_w_pred$pred_excess_yrs_lost/1000, na.rm=TRUE)*1000))), max(excess_pll_w_pred$pred_excess_yrs_lost, na.rm=TRUE)*1.1), breaks=seq(min(c(0, floor(min(excess_pll_w_pred$pred_excess_yrs_lost/1000, na.rm=TRUE)*1000))), max(excess_pll_w_pred$pred_excess_yrs_lost, na.rm=TRUE)*1.1, 500)) + ylab("Excess YPLL per 100K individuals") + xlab("Year") + year_label + panel_theme 
+excess_pll_rate_fig <- ggplot() + geom_line(data=excess_pll_w_pred, aes(x=Year, y=pred_excess_yrs_lost, color=Gender), size=1) + geom_line(data=excess_pll_w_pred %>% filter(Year>=2019) %>% mutate(diff=ifelse(Year==2019, pred_excess_yrs_lost, excess_yrs_lost)), aes(x=Year, y=diff, color=Gender), linetype="dashed", size=1) + geom_hline(yintercept=0, linetype="dotted")  + scale_y_continuous(limits = c(min(c(0, floor(min(excess_pll_w_pred$pred_excess_yrs_lost/1000, na.rm=TRUE)*1000))), max(excess_pll_w_pred$pred_excess_yrs_lost, na.rm=TRUE)*1.1), breaks=seq(min(c(0, floor(min(excess_pll_w_pred$pred_excess_yrs_lost/1000, na.rm=TRUE)*1000))), max(excess_pll_w_pred$pred_excess_yrs_lost, na.rm=TRUE)*1.1, 250)) + ylab("Excess YPLL per 100K individuals") + xlab("Year") + year_label + panel_theme 
 
 excess_pll_rate_fig <- excess_pll_rate_fig + geom_point(data = excess_pll_w_pred %>% filter(Year %in% c(2012) & Gender == "Female" | Year %in% c(2007, 2011) & Gender == "Male"), aes(x=Year, y=pred_excess_yrs_lost, color=Gender, shape=Gender), size=3.75) + scale_color_manual(values=c("maroon", "navy")) + sizing_theme  + ggtitle("Estimated Excess Years of Potential Life Lost Rate Among the Black Population") 
 
