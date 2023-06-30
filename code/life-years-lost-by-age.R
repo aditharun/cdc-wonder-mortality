@@ -18,13 +18,11 @@ agefiles <- list.files(file.path("../data", project), "^deaths_crude_race_gender
 agefiles <- agefiles[grepl("year", agefiles)]
 
 #output file name and directory
-outputdir <- file.path("../results", project)
-outputpath <- file.path(outputdir, "life-years-lost-by-age.rds")
+outputdir <- file.path("../results", project, "life-years-lost-by-age")
 
-create_output_dir(outputdir)
 
 #plot path
-plotdir <- file.path("../plots", project, "life-years-lost-by-age")
+plotdir <- file.path("../../cdc-wonder-output", project, "life-years-lost-by-age")
 
 #palette of colors
 cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
@@ -128,10 +126,6 @@ excess_ypll <- data %>% process_df_tsv(age_intervals) %>% compute_statistics(lif
 age.data <- do.call(rbind, lapply(agefiles, function(x) wrapper_pll_by_age(x, life_exp, age_intervals)))
 
 
-saveRDS(object = list(age.data=age.data, excess_deaths_age=excess_ypll), file=outputpath)
-
-
-
 #Graphical Component
 agevector <- excess_ypll %>% select(age_cat, age) %>% distinct() %>% arrange(age)
 
@@ -142,7 +136,7 @@ panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.gr
 indiv_yrs_lost_fig <- excess_ypll %>% select(age_cat, age, Gender, black_years_lost, white_years_lost) %>% ungroup() %>% pivot_longer(-c(age_cat, age, Gender)) %>% ggplot(aes(x=age, y=value, color=name)) + geom_line(size = 0.5) + ylab("YPLL per 100K Individuals") + scale_color_manual(values = c("black_years_lost"="maroon", "white_years_lost"="navy"), labels = c("black_years_lost" = "Black", "white_years_lost" = "White")) + panel_theme + facet_wrap(~Gender, nrow=1) + xlab("Age group (years)") + geom_point(size = 2.5) + theme(axis.text.x = element_text(angle=45, hjust=1)) + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(legend.title = element_blank())
 
 
-excess_pll_fig <- excess_ypll %>% ggplot(aes(x=age, y=excess_yrs_lost, group=Gender)) + geom_line(size=0.5) + ylab("Excess YPLL per 100K individuals") + scale_y_continuous(limits = c(min(c(0, floor(min(excess_ypll$excess_yrs_lost)/1000)*1000)), max(excess_ypll$excess_yrs_lost)*1.15), breaks=seq(min(c(0, floor(min(excess_ypll$excess_yrs_lost)/1000)*1000)), max(excess_ypll$excess_yrs_lost)*1.15, 500)) + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Excess Years of Potential Life Lost Rate Among the Black Population by Age") + panel_theme + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + geom_hline(yintercept=1, linetype="dashed")
+excess_pll_fig <- excess_ypll %>% ggplot(aes(x=age, y=excess_yrs_lost, group=Gender)) + geom_line(size=0.5) + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + panel_theme + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + geom_hline(yintercept=1, linetype="dashed") + ylab("Excess YPLL per 100K individuals") + ggtitle("Excess Years of Potential Life Lost") 
 
 
 mortality_rate_ratio_fig <- excess_ypll %>% ggplot(aes(x=age, y=ratio_excess_yrs_lost, group=Gender)) + geom_line(size=.5) + ylab("YPLL Rate Ratio (Black / White)") + scale_y_continuous(limits = c(0.75, max(excess_ypll$ratio_excess_yrs_lost + 0.5)), breaks=seq(0.75, max(excess_ypll$ratio_excess_yrs_lost + 0.5), 0.25)) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Black-White Years of Potential Life Lost Rate Ratio by Age") + panel_theme + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5)
@@ -158,6 +152,10 @@ save_plot(excess_pll_year_fig, plotdir)
 save_plot(indiv_yrs_lost_fig, plotdir)
 
 
+save_rds(excess_pll_fig, outputdir)
+save_rds(mortality_rate_ratio_fig, outputdir)
+save_rds(excess_pll_year_fig, outputdir)
+save_rds(indiv_yrs_lost_fig, outputdir)
 
 
 

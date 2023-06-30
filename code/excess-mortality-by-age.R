@@ -21,16 +21,13 @@ agefiles <- agefiles[!grepl("year", agefiles)]
 inputfile <- file.path(file.path("../data", project), "export_deaths_crude_race_gender_age.tsv")
 
 #output file name and directory
-outputdir <- file.path("../results", project)
-outputpath <- file.path(outputdir, "excess-mortality-by-age.rds")
-
-create_output_dir(outputdir)
+outputdir <- file.path("../results", project, "excess-mortality-by-age")
 
 #palette of colors
 cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
 
 #plot path
-plotdir <- file.path("../plots", project, "excess-mortality-by-age")
+plotdir <- file.path("../../cdc-wonder-output", project, "excess-mortality-by-age")
 
 ######### CODE ####################
 
@@ -93,8 +90,6 @@ excess_deaths_age <- data %>% process_df_tsv(age_intervals) %>% compute_statisti
 
 age.data <- do.call(rbind, lapply(agefiles, function(x) wrapper_age_excess_deaths(x, age_intervals)))
 
-saveRDS(object = list(age.data=age.data, excess_deaths_age=excess_deaths_age), file=outputpath)
-
 
 #Graphical Component
 agevector <- excess_deaths_age %>% select(age_cat, age) %>% distinct() %>% arrange(age)
@@ -134,7 +129,7 @@ adj_y <- function(data, var){
 indiv_death_rate_fig <- excess_deaths_age %>% select(age_cat, age, Gender, white_death_rate, black_death_rate) %>% ungroup() %>% pivot_longer(-c(age_cat, age, Gender)) %>% ggplot(aes(x=age, y=value, color=name)) + geom_line(size = 0.5) + ylab("Deaths per 100K individuals") + scale_color_manual(values = c("black_death_rate"="maroon", "white_death_rate"="navy"), labels = c("black_death_rate" = "Black", "white_death_rate" = "White")) + panel_theme + facet_wrap(~Gender, nrow=1) + xlab("Age group (years)") + geom_point(size = 2.5) + theme(axis.text.x = element_text(angle=45, hjust=1)) + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(legend.title = element_blank())
 
 
-excess_death_rate_age_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=0.5) + ylab("Excess deaths per 100K individuals") + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Excess Mortality Rate Among the Black Population by Age") + panel_theme + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + scale_y_continuous(limits = adj_y(excess_deaths_age, "unadj_excess_deaths_rate")$lims, breaks=adj_y(excess_deaths_age, "unadj_excess_deaths_rate")$bk)
+excess_death_rate_age_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=0.5) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + panel_theme + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) +  theme(plot.title = element_text(hjust = 0.5)) + ylab("Excess deaths per 100K Individuals") + ggtitle("Excess Mortality Rate By Age")
 
 
 mortality_rate_ratio_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=ratio_unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=.5) + ylab("Mortality Rate Ratio (Black / White)") + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Black-White Mortality Rate Ratio by Age") + panel_theme + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + scale_y_continuous(limits = adj_y(excess_deaths_age, "ratio_unadj_excess_deaths_rate")$lims, breaks=adj_y(excess_deaths_age, "ratio_unadj_excess_deaths_rate")$bk) 
@@ -151,7 +146,10 @@ save_plot(mortality_rate_ratio_fig, plotdir)
 save_plot(excess_death_rate_age_year_fig, plotdir)
 save_plot(indiv_death_rate_fig, plotdir)
 
-
+save_rds(excess_death_rate_age_fig, outputdir)
+save_rds(mortality_rate_ratio_fig, outputdir)
+save_rds(excess_death_rate_age_year_fig, outputdir)
+save_rds(indiv_death_rate_fig, outputdir)
 
 
 

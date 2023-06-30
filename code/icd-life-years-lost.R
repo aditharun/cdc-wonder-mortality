@@ -10,12 +10,11 @@ years <- seq(1999, 2020, 1)
 
 project <- args[1]
 
-plotdir <- file.path("../plots", project, "icd")
+plotdir <- file.path("../../cdc-wonder-output", project, "icd")
 
 lifeexp_file <- "../data/file_life_expectancy_1999_to_2020.dta"
 
-outputdir <- file.path("../results", project)
-outputpath <- file.path(outputdir, "icd-pll.rds")
+outputdir <- file.path("../results", project, "icd")
 
 age_intervals <- c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, Inf)
 
@@ -74,7 +73,7 @@ panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.gr
 
 yrs_lost_icd_fig <- excess %>% ggplot(aes(x=Year, y=excess, color=icd, shape=icd)) + geom_line(size = 1) + geom_point(size = 3.75) + year_label + panel_theme + ylab("Excess Years of Potential Life Lost") + facet_wrap(~Gender, nrow = 1) + sizing_theme + scale_y_continuous(limits = c(0, max(excess$excess, na.rm=TRUE)*1.15), breaks=seq(0, max(excess$excess, na.rm=TRUE)*1.15, 50)) + scale_color_manual(name = "", values = cbb[1:icdlength], labels = icdnames) + scale_shape_manual(name = "", values = shapechoices[1:icdlength], labels = icdnames)
 
-saveRDS(object = yrs_lost_icd_fig, file=outputpath)
+save_rds(plt = yrs_lost_icd_fig, folder = outputdir)
 
 
 save_plot(plt = yrs_lost_icd_fig, folder = plotdir, width.in = 14)

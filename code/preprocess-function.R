@@ -181,6 +181,18 @@ save_plot_custom <- function(plt, folder, height.in=8, width.in=10){
 
 
 
+save_rds <- function(plt, folder){
+
+	if (!dir.exists(folder)){
+		dir.create(folder, recursive=TRUE)
+	}
+
+
+	filename <- paste0(deparse(substitute(plt)), ".rds")
+
+	saveRDS(object = plt, file = file.path(folder, filename))
+}
+
 
 
 

@@ -14,16 +14,13 @@ inputfile <- file.path(file.path("../data", project), "export_age_deaths_race_ge
 
 lifeexp_file <- "../data/file_life_expectancy_1999_to_2020.dta"
 
-outputdir <- file.path("../results", project)
-outputfile <- "life-years-lost-by-year.rds"
-
-create_output_dir(outputdir)
+outputdir <- file.path("../results", project, "life-years-lost-by-year")
 
 #create age categorical buckets
 age_intervals <- c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, Inf)
 
 #plot path
-plotdir <- file.path("../plots", project, "life-years-lost-by-year")
+plotdir <- file.path("../../cdc-wonder-output", project, "life-years-lost-by-year")
 
 #palette of colors
 cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
@@ -95,8 +92,6 @@ excess_pll %>% group_by(Year) %>% summarize(exc_ypll_number = sum(exc_ypll_numbe
 
 excess_pll_w_pred <- excess_pll %>% left_join(women.pll$arima %>% select(-excess_yrs_lost), by=c("Gender"="Gender", "Year"="Year")) %>% left_join(., men.pll$arima %>% select(-excess_yrs_lost), by=c("Gender"="Gender", "Year"="Year")) %>% mutate(pred_excess_yrs_lost = ifelse(is.na(pred_excess_yrs_lost.x), pred_excess_yrs_lost.y, pred_excess_yrs_lost.x)) %>% select(-c(pred_excess_yrs_lost.y, pred_excess_yrs_lost.x))
 
-saveRDS(object=list(excess_pll_w_pred = excess_pll_w_pred), file=file.path(outputdir, outputfile))
-
 #GRAPHICAL COMPONENT
 
 sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=14), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5)) 
@@ -113,12 +108,12 @@ excess_pll_rate_fig <- excess_pll_rate_fig + geom_point(data = excess_pll_w_pred
 
 mortality_rate_ratio_fig <- excess_pll_w_pred %>% ggplot(aes(x=Year, y=ratio_excess_yrs_lost, color=Gender)) + geom_line(size=1.25) + ylab("YPLL Rate Ratio (Black / White)") + scale_y_continuous(limits = c(0.75, max(excess_pll_w_pred$ratio_excess_yrs_lost + 0.5, na.rm=TRUE)), breaks=seq(0.75, max(excess_pll_w_pred$ratio_excess_yrs_lost + 0.5, na.rm=TRUE), 0.2)) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Black-White YPLL rate ratio") + year_label + panel_theme
 
-excess_pll_fig <- excess_pll_w_pred %>% ggplot(aes(x=Year, y=exc_ypll_number, color=Gender)) + geom_line(size=1.25) + ylab("YPLL") + scale_y_continuous(limits = c(0,max(excess_pll_w_pred$exc_ypll_number, na.rm=TRUE)*1.1), breaks=seq(0, max(excess_pll_w_pred$exc_ypll_number, na.rm=TRUE)*1.1, 25000)) + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Estimated Excess Years of Potential Life Lost Among the Black Population") + year_label + panel_theme
+excess_pll_fig <- excess_pll_w_pred %>% ggplot(aes(x=Year, y=exc_ypll_number, color=Gender)) + geom_line(size=1.25)+ sizing_theme + year_label + panel_theme  + theme(plot.title = element_text(hjust = 0.5)) + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + scale_color_manual(values=c("maroon", "navy")) + ylab("Years of Potential Life Lost") + ggtitle("Excess Years of Potential Life Lost") + theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=14), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5)) 
 
 
 cum_sex <- excess_pll_w_pred %>% group_by(Gender) %>% arrange(Year) %>% summarize(pll = cumsum(exc_ypll_number), Year=Year) %>% ungroup() %>% mutate(pll=pll/1000000)
 
-cumulative_sex_pll_fig <- cum_sex %>% ggplot(aes(x=Year, y=pll, color=Gender)) + geom_point() + geom_line() + year_label + panel_theme + sizing_theme + ggtitle("Estimated Cumulative Excess Years of Potential Life\nLost Among the Black Population") + ylab("Excess Years of Potential Life Lost (Millions)") + scale_y_continuous(limits=c(0,max(cum_sex$pll, na.rm=TRUE)*1.1), breaks=seq(0,max(cum_sex$pll, na.rm=TRUE)*1.1, 1)) + scale_color_manual(name="", values=c("maroon", "navy"))
+cumulative_sex_pll_fig <- cum_sex %>% ggplot(aes(x=Year, y=pll, color=Gender)) + geom_point() + geom_line() + year_label + panel_theme + sizing_theme + ggtitle("Cumulative Excess Years of Potential Life") + ylab("Excess Years of Potential Life Lost (Millions)") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + scale_color_manual(name="", values=c("maroon", "navy"))
 
 
 combpll <- excess_pll_w_pred %>% group_by(Year) %>% summarize(pll = sum(exc_ypll_number)) %>% ungroup() 
@@ -134,7 +129,7 @@ cumulative_combined_pll_fig <- cumcomb %>% ggplot(aes(x=Year, y=pll_cum)) + geom
 
 yrslost <- excess_pll_w_pred %>% select(Gender, yrs_lost_white, yrs_lost_black, Year) %>% pivot_longer(-c(Gender, Year)) %>% mutate(Race=gsub(".*_", "", name) %>% str_to_title(.)) %>% select(-name) 
 
-yrs_lost_race_sex_fig <- yrslost %>% ggplot(aes(x=Year, y=value, color=Race, shape=Gender, linetype=Gender)) + geom_line(size=0.5) + geom_point(size=2) + panel_theme + sizing_theme + year_label + scale_y_continuous(limits=c(0, max(yrslost$value, na.rm=TRUE)*1.1), breaks=seq(0, max(yrslost$value, na.rm=TRUE)*1.1, 1000)) + ylab("YPLL per 100K individuals") + ggtitle("Estimated Years of Potential Life Lost") + scale_color_manual(values=cbb[1:2])
+yrs_lost_race_sex_fig <- yrslost %>% ggplot(aes(x=Year, y=value, color=Race, shape=Gender, linetype=Gender)) + geom_line(size=0.5) + geom_point(size=2) + panel_theme + sizing_theme + year_label + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Years Lost per 100K Individuals") + ggtitle("Years of Potential Life Lost") + scale_color_manual(values=cbb[1:2])
 
 
 
@@ -149,7 +144,14 @@ save_plot(yrs_lost_race_sex_fig, plotdir)
 save_plot(indiv_ypll_fig, plotdir)
 
 
-
+save_rds(excess_pll_rate_fig, outputdir)
+save_rds(mortality_rate_ratio_fig, outputdir)
+save_rds(excess_pll_fig, outputdir)
+save_rds(cumulative_sex_pll_fig, outputdir)
+save_rds(combined_pll_fig, outputdir)
+save_rds(cumulative_combined_pll_fig, outputdir)
+save_rds(yrs_lost_race_sex_fig, outputdir)
+save_rds(indiv_ypll_fig, outputdir)
 
 
 
