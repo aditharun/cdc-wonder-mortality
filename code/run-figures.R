@@ -20,3 +20,4 @@ system(paste0("Rscript icd-ageadjusted.R ", project))
 system(paste0("Rscript icd-life-years-lost.R ", project))
 
 system(paste0("Rscript figure-stitch.R ", project))
+system(paste0("Rscript county-mortality.R ", project))
