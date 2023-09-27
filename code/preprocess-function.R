@@ -18,7 +18,7 @@ preprocess_cdc_wonder <- function(filepath){
 
 	data <- data %>% 
 		mutate(gender_lbl = Gender, gender = case_when(Gender == "Female" ~ 1, Gender == "Male" ~ 3)) %>% 
-		mutate(Race = case_when(Race == "Black" ~ 1, Race == "White" ~ 3), race_lbl = case_when(Race == 1 ~ "Black", Race == 3 ~ "White"))
+		mutate(Race = case_when(Race == "Black or African American" ~ 1, Race == "White" ~ 3), race_lbl = case_when(Race == 1 ~ "Black", Race == 3 ~ "White"))
 
 	return(data)
 

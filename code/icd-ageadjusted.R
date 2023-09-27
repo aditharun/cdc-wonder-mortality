@@ -18,20 +18,26 @@ outputdir <- file.path("../results", project, "icd")
 
 if (project == "HTN"){
 
-	icdnames <- c("I10" = "Essential HTN", "I11" = "HTN Heart Disease", "I12" = "HTN CKD", "I13" = "HTN Heart + CKD")
+	icdnames <- c("I110" = "HTN w/ HF", "I120" = "HTN CKD w/ ESRD", "I119" = "HTN w/o HF", "I129" = "HTN w/o ESRD", "I131" = "HTN w/o HF", "I132" = "HTN w/ Heart Disease +\nHF + ESRD")
 
 } 
 
 if (project == "IHD"){
 
-	icdnames <- c("I20" = "UA", "I21" = "MI", "I25" = "Chronic IHD", "I46" = "Cardiac Arrest", "I24" = "Other Acute IHD")
+ 	icdnames <- c("I209" = "Angina Pectoris", "I214" = "NSTEMI", "I219" = "AMI unspec.", "I248" = "Other Acute IHD", "I249" = "Acute IHD unspec.", "I250" = "Atherscl HD w/o\nAngina Pectoris", "I251" = "Atherosclerotic HD w/ Angina Pectoris", "I253" = "Heart Aneurysm", "I255" = "Ischemic Cardiomyopathy", "I258" = "Atherscl of CABG/\nTransplanted Heart", "I259" = "Chronic IHD", "I461" = "Cardiac Arrest due\nto underlying cause", "I469" = "Cardia Arrest\ncause unspec.")
+}
 
+if (project == "HF"){
+	icdnames <- c("I110" = "HTN w/ HF" , "I132" = "HTN w/ Heart Disease +\nHF + ESRD", "I500" = "CHF", "I501" = "LV Failure", "I509" = "HF unspec.")
 }
 
 icdlength <- length(icdnames)
 
-cbb <- c("#E69F00", "#56B4E9", "#009E73", "maroon", "#D55E00", "#CC79A7")
-shapechoices <- c(15, 16, 17, 18, 3, 2)
+cbb <- c("#E69F00", "#56B4E9", "#009E73", "maroon", "#D55E00", "#CC79A7", 
+         "#0072B2", "#F0E442", "#8DD3C7", "#FFD700", "#A9A9A9", 
+         "#9467BD", "#F28E2B", "#1F77B4", "#7F7F7F")
+
+shapechoices <- c(15, 16, 17, 18, 3, 2, 19, 20, 21, 22, 23, 24, 25)
 
 #
 
@@ -39,7 +45,7 @@ ageadj_file <- file.path(file.path("../data", project), "export_icd_age_adjusted
 
 ageadj <- read_tsv(ageadj_file) %>% select(`Cause of death Code`, Race, Gender, Year, `Age Adjusted Rate`, Deaths, Population) 
 
-ageadj <- ageadj %>% group_by(Gender, Year, `Cause of death Code`) %>% summarize(excess = `Age Adjusted Rate`[Race == "Black"] - `Age Adjusted Rate`[Race == "White"], ratio = `Age Adjusted Rate`[Race == "Black"] / `Age Adjusted Rate`[Race == "White"] )
+ageadj <- ageadj %>% group_by(Gender, Year, `Cause of death Code`) %>% summarize(excess = `Age Adjusted Rate`[Race == "Black or African American"] - `Age Adjusted Rate`[Race == "White"], ratio = `Age Adjusted Rate`[Race == "Black or African American"] / `Age Adjusted Rate`[Race == "White"] )
 
 ageadj <- ageadj %>% mutate(icd = sub("\\..*", "", `Cause of death Code`)) %>% select(icd, Year, excess, Gender, ratio) %>% group_by(icd, Year, Gender) %>% summarize(excess = mean(excess), rate = mean(ratio))
 

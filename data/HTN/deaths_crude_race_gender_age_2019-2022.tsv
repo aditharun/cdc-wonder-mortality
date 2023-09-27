@@ -1,0 +1,57 @@
+Race	Gender	Gender Code	Single-Year Ages	Single-Year Ages Code	Deaths	Population	Crude Rate
+Black or African American	Female	F	20 years	20	26	6329325	0.410786300276886
+Black or African American	Female	F	25 years	25	120	6952799	1.72592361723674
+Black or African American	Female	F	30 years	30	335	6660020	5.03001492488011
+Black or African American	Female	F	35 years	35	519	6009036	8.63699268901035
+Black or African American	Female	F	40 years	40	868	5667558	15.315238061966
+Black or African American	Female	F	45 years	45	1216	5438221	22.360253472597
+Black or African American	Female	F	50 years	50	1779	5488979	32.410399092436
+Black or African American	Female	F	55 years	55	2416	5660341	42.6829408334233
+Black or African American	Female	F	60 years	60	3225	5296077	60.8941297492465
+Black or African American	Female	F	65 years	65	3584	4314731	83.0642744588249
+Black or African American	Female	F	70 years	70	3629	3249083	111.693053086055
+Black or African American	Female	F	75 years	75	3491	2067926	168.816485696297
+Black or African American	Female	F	80 years	80	3773	1373158	274.768089324025
+Black or African American	Female	F	85 years	85	9849	1402761	702.115328270461
+Black or African American	Male	M	20 years	20	69	6481251	1.06460928607764
+Black or African American	Male	M	25 years	25	253	7058870	3.58414307105812
+Black or African American	Male	M	30 years	30	532	6452222	8.2452215686317
+Black or African American	Male	M	35 years	35	996	5581235	17.8455126867082
+Black or African American	Male	M	40 years	40	1609	5115540	31.4531799184446
+Black or African American	Male	M	45 years	45	2198	4826437	45.5408409971994
+Black or African American	Male	M	50 years	50	3063	4868646	62.9127687656897
+Black or African American	Male	M	55 years	55	4324	4920148	87.8835352107294
+Black or African American	Male	M	60 years	60	5466	4451966	122.77721797516
+Black or African American	Male	M	65 years	65	5392	3362848	160.340282998221
+Black or African American	Male	M	70 years	70	4534	2376350	190.796810234183
+Black or African American	Male	M	75 years	75	3419	1381577	247.470825006496
+Black or African American	Male	M	80 years	80	2848	813726	349.99496144894
+Black or African American	Male	M	85 years	85	4310	621750	693.204664254121
+White	Female	F	20 years	20	16	22849450	0.0700235673068717
+White	Female	F	25 years	25	80	24402632	0.327833489436713
+White	Female	F	30 years	30	188	25267145	0.74404923864568
+White	Female	F	35 years	35	475	24840720	1.91218289969051
+White	Female	F	40 years	40	830	23381290	3.54984690750596
+White	Female	F	45 years	45	1388	23390537	5.93402366093604
+White	Female	F	50 years	50	2316	26071782	8.8831672495574
+White	Female	F	55 years	55	3932	29485286	13.3354650180432
+White	Female	F	60 years	60	5838	30359446	19.229599907719
+White	Female	F	65 years	65	7644	27549841	27.7460766470485
+White	Female	F	70 years	70	10299	23775133	43.3183696595935
+White	Female	F	75 years	75	13356	16547260	80.7142693110521
+White	Female	F	80 years	80	18022	11099730	162.36430976249
+White	Female	F	85 years	85	80439	12483666	644.353990246134
+White	Male	M	20 years	20	84	23995711	0.350062559096499
+White	Male	M	25 years	25	205	25464132	0.805053948039541
+White	Male	M	30 years	30	553	25863398	2.13815678821476
+White	Male	M	35 years	35	1145	25327637	4.52075335729109
+White	Male	M	40 years	40	1973	23805961	8.28784017582823
+White	Male	M	45 years	45	3080	23680927	13.0062476017092
+White	Male	M	50 years	50	5379	26198621	20.5316150037057
+White	Male	M	55 years	55	8676	28852047	30.0706566851219
+White	Male	M	60 years	60	12196	29049580	41.9833952848888
+White	Male	M	65 years	65	13235	25457118	51.9893885867206
+White	Male	M	70 years	70	14385	21328476	67.4450438934315
+White	Male	M	75 years	75	14612	13975529	104.554181813082
+White	Male	M	80 years	80	16079	8501686	189.127191947574
+White	Male	M	85 years	85	41557	7237749	574.170228892989
