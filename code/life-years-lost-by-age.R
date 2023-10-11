@@ -20,9 +20,14 @@ agefiles <- agefiles[grepl("year", agefiles)]
 #output file name and directory
 outputdir <- file.path("../results", project, "life-years-lost-by-age")
 
+#table dir
 
 #plot path
 plotdir <- file.path("../../cdc-wonder-output", project, "life-years-lost-by-age")
+
+
+tabledir <- file.path(dirname(plotdir), "tables")
+create_output_dir(tabledir)
 
 #palette of colors
 cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
@@ -95,11 +100,14 @@ data_combined <- data_agg %>% left_join(life_exp, by=c("age"="age_cat", "Year"="
 data_combined <- data_combined %>% mutate(yrs_lost=life_expectancy*((deaths/population)*100000) )
 
 
-excess_ypll <- data_combined %>% filter(!is.na(life_expectancy)) %>% group_by(Race, Gender, age_cat, age) %>% summarize(yrs_lost = mean(yrs_lost)) %>% ungroup() %>% group_by(Gender, age_cat, age) %>% summarize(excess_yrs_lost = yrs_lost[Race==1] - yrs_lost[Race==3], ratio_excess_yrs_lost = yrs_lost[Race==1] / yrs_lost[Race==3], black_years_lost = yrs_lost[Race==1], white_years_lost = yrs_lost[Race==3]) %>% ungroup()
+
+excess_ypll <- data_combined %>% filter(!is.na(life_expectancy)) %>% group_by(Race, Gender, age_cat, age) %>% summarize(yrs_lost = mean(yrs_lost), pop = sum(population)) %>% ungroup() %>% group_by(Gender, age_cat, age) %>% summarize(excess_yrs_lost = yrs_lost[Race==1] - yrs_lost[Race==3], ratio_excess_yrs_lost = yrs_lost[Race==1] / yrs_lost[Race==3], black_years_lost = yrs_lost[Race==1], white_years_lost = yrs_lost[Race==3], exc_pll_number = excess_yrs_lost * pop[Race==1] * (1/100000) ) %>% ungroup()
 
 return(excess_ypll)
 
 }
+
+
 
 
 wrapper_pll_by_age <- function(relfilepath, life_exp, age_intervals){
@@ -125,6 +133,18 @@ excess_ypll <- data %>% process_df_tsv(age_intervals) %>% compute_statistics(lif
 
 age.data <- do.call(rbind, lapply(agefiles, function(x) wrapper_pll_by_age(x, life_exp, age_intervals)))
 
+#Tables
+
+excess_pll_age_table <- excess_ypll %>% select(age_cat, Gender, excess_yrs_lost, exc_pll_number) %>% magrittr::set_colnames(c("Age", "Gender", "excess_ypll_rate", "excess_ypll_number")) %>%
+    pivot_longer(cols = starts_with("excess"), 
+                 names_to = "AgeType", 
+                 values_to = "Value") %>%
+    pivot_wider(names_from = c(AgeType, Gender), 
+                values_from = Value) %>%
+    rename_with(~ str_replace_all(.x, "exc_", ""), 
+                starts_with("exc")) 
+
+write_csv(excess_pll_age_table, file = file.path(tabledir, "ypll_sex_year.csv"))
 
 #Graphical Component
 agevector <- excess_ypll %>% select(age_cat, age) %>% distinct() %>% arrange(age)

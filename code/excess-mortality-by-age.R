@@ -23,12 +23,17 @@ inputfile <- file.path(file.path("../data", project), "export_deaths_crude_race_
 #output file name and directory
 outputdir <- file.path("../results", project, "excess-mortality-by-age")
 
+#table directory
+
 #palette of colors
 cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
 
 #plot path
 plotdir <- file.path("../../cdc-wonder-output", project, "excess-mortality-by-age")
 
+
+tabledir <- file.path(dirname(plotdir), "tables")
+create_output_dir(tabledir)
 ######### CODE ####################
 
 process_df_tsv <- function(data, age_intervals){
@@ -89,6 +94,29 @@ data <- preprocess_cdc_wonder(inputfile)
 excess_deaths_age <- data %>% process_df_tsv(age_intervals) %>% compute_statistics() %>% purrr::pluck("excess_deaths_age")
 
 age.data <- do.call(rbind, lapply(agefiles, function(x) wrapper_age_excess_deaths(x, age_intervals)))
+
+
+
+#Table component
+
+aadr_indiv_table <- excess_deaths_age %>% select(age_cat, age, Gender, white_death_rate, black_death_rate) %>% ungroup() %>% select(age_cat, Gender, white_death_rate, black_death_rate) %>% pivot_longer(cols = ends_with("_death_rate"), names_to = "AgeType", values_to = "Value") %>%
+    pivot_wider(names_from = c(AgeType, Gender), 
+                values_from = Value) %>%
+    rename_with(~ str_replace_all(.x, "_death_rate", ""), 
+              ends_with("_death_rate"))
+
+
+excess_aamr_table <- excess_deaths_age %>% select(age_cat, Gender, unadj_excess_deaths_number, unadj_excess_deaths_rate) %>% ungroup() %>% 
+  pivot_longer(cols = starts_with("unadj"), 
+               names_to = "Metric", 
+               values_to = "Value") %>%
+  pivot_wider(names_from = c(Gender, Metric), 
+              values_from = Value) %>%
+  select(age_cat, starts_with("Female"), starts_with("Male"))
+
+
+write_csv(aadr_indiv_table, file = file.path(tabledir, "aadr_race_sex_age.csv"))
+write_csv(excess_aamr_table, file = file.path(tabledir, "excess_aadr_age.csv"))
 
 
 #Graphical Component
