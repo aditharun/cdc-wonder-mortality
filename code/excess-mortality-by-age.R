@@ -13,12 +13,14 @@ age_intervals <- c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 
 #files with age related data
 #starts with deaths_crude_race_gender_age but does not contain year in the file name
 
-agefiles <- list.files(file.path("../data", project), "^deaths_crude_race_gender_age_", full.names=TRUE)
+datadir <- "../../../pk-output"
+
+agefiles <- list.files(file.path(datadir, project), "^deaths_crude_race_gender_age_", full.names=TRUE)
 agefiles <- agefiles[!grepl("year", agefiles)]
 
 #CDC Wonder input filea
 # "export_deaths_crude_race_gender_age.txt"
-inputfile <- file.path(file.path("../data", project), "export_deaths_crude_race_gender_age.tsv")
+inputfile <- file.path(file.path(datadir, project), "export_deaths_crude_race_gender_age.tsv")
 
 #output file name and directory
 outputdir <- file.path("../results", project, "excess-mortality-by-age")
@@ -56,6 +58,7 @@ process_df_tsv <- function(data, age_intervals){
 	data <- data %>% mutate(age_lb = as.numeric(sub("\\[(\\d+),.*", "\\1", age_cat)), age_ub = as.numeric(sub(".*,(\\d+)\\)", "\\1", age_cat)), age_cat = paste0(age_lb, "-", age_ub-1), age_cat=ifelse(age_cat=="0-0", "< 1", age_cat)) %>% mutate(age=age_lb) %>% select(-c(age_lb, age_ub))
 
 	data <- data %>% mutate(age_cat = ifelse(age == 85, "85+", age_cat))
+
 
 	return(data)
 
@@ -122,6 +125,11 @@ write_csv(excess_aamr_table, file = file.path(tabledir, "excess_aadr_age.csv"))
 #Graphical Component
 agevector <- excess_deaths_age %>% select(age_cat, age) %>% distinct() %>% arrange(age)
 
+#remove 85+ 
+agevector <- agevector %>% filter(age < 85)
+excess_deaths_age <- excess_deaths_age %>% filter(age < 85)
+age.data <- age.data %>% filter(age < 85)
+
 sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=14), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5)) 
 
 panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.grid.minor=element_blank())
@@ -157,7 +165,7 @@ adj_y <- function(data, var){
 indiv_death_rate_fig <- excess_deaths_age %>% select(age_cat, age, Gender, white_death_rate, black_death_rate) %>% ungroup() %>% pivot_longer(-c(age_cat, age, Gender)) %>% ggplot(aes(x=age, y=value, color=name)) + geom_line(size = 0.5) + ylab("Deaths per 100K individuals") + scale_color_manual(values = c("black_death_rate"="maroon", "white_death_rate"="navy"), labels = c("black_death_rate" = "Black", "white_death_rate" = "White")) + panel_theme + facet_wrap(~Gender, nrow=1) + xlab("Age group (years)") + geom_point(size = 2.5) + theme(axis.text.x = element_text(angle=45, hjust=1)) + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(legend.title = element_blank())
 
 
-excess_death_rate_age_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=0.5) + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + panel_theme + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) +  theme(plot.title = element_text(hjust = 0.5)) + ylab("Excess deaths per 100K Individuals") + ggtitle("Excess Mortality Rate By Age")
+excess_death_rate_age_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=0.5) + geom_hline(yintercept=0, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + panel_theme + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) +  theme(plot.title = element_text(hjust = 0.5)) + ylab("Excess deaths per 100K Individuals") + ggtitle("Excess Mortality Rate By Age")
 
 
 mortality_rate_ratio_fig <- excess_deaths_age %>% ggplot(aes(x=age, y=ratio_unadj_excess_deaths_rate, group=Gender, color=Gender)) + geom_line(size=.5) + ylab("Mortality Rate Ratio (Black / White)") + geom_hline(yintercept=1, linetype="dashed") + sizing_theme + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Black-White Mortality Rate Ratio by Age") + panel_theme + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(axis.text.x = element_text(angle=45, hjust=1)) + xlab("Age group (years)") + geom_point(aes(color=Gender), size=2.5) + scale_y_continuous(limits = adj_y(excess_deaths_age, "ratio_unadj_excess_deaths_rate")$lims, breaks=adj_y(excess_deaths_age, "ratio_unadj_excess_deaths_rate")$bk) 

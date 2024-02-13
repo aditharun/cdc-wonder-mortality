@@ -10,8 +10,10 @@ project <- args[1]
 
 years <- seq(1999, 2021, 1)
 
-inputfile <- file.path(file.path("../data", project), "export_age_adjusted_deaths_race_gender_year_se.tsv")
-inputfile2 <- file.path(file.path("../data", project), "export_deaths_race_gender_age_year.tsv")
+datadir <- "../../../pk-output"
+
+inputfile <- file.path(file.path(datadir, project), "export_age_adjusted_deaths_race_gender_year_se.tsv")
+inputfile2 <- file.path(file.path(datadir, project), "export_deaths_race_gender_age_year.tsv")
 
 #output directory and file
 outputdir <- file.path("../results", project, "excess-mortality-by-year")
@@ -63,7 +65,9 @@ data2 <- data2 %>% mutate(age=as.integer(factor(agegroup))-1)
 
 data2 <- data2 %>% filter(is.finite(as.numeric(Population))) %>% filter(is.finite(as.numeric(Deaths))) %>% filter(is.finite(as.numeric(`Crude Rate`))) %>% type.convert(as.is=TRUE)
 
-excess_deaths <- data2 %>% group_by(Gender, agegroup, age, Year) %>% summarize(expected_deaths_black = Population[Race==1]*(Deaths[Race==3]/Population[Race==3]), age_specific_rate_ratio=`Crude Rate`[Race==1]/`Crude Rate`[Race==3], observed_rate_black=(Deaths[Race==1]/Population[Race==1])*100000, observed_rate_white=(Deaths[Race==3]/Population[Race==3])*100000, expected_rate_black=(expected_deaths_black/Population[Race==1])*100000, excess_rate_black = observed_rate_black - expected_rate_black, excess_deaths_black = (excess_rate_black * Population[Race==1])/100000, observed_vs_expected_rate_ratio = observed_rate_black / expected_rate_black) %>% ungroup()
+#To estimate the excess number of deaths, we estimated the annual age-specific mortality rate using actual age by race and then multiplied the White population age-specific mortality rate by the Black population size for that calendar year. Then, the hypothetical number of deaths among the Black population was divided by the Black population size to arrive at a hypothetical annual Black population mortality rate (expected_rate_black). We subtracted this hypothetical rate from the observed Black population mortality rate to arrive at the estimated excess age-specific Black population mortality rate (observed_rate_black), which we multiplied by the observed Black population size to obtain the total annual and 22-year cumulative number of excess deaths among the Black population. 
+
+excess_deaths <- data2 %>% group_by(Gender, agegroup, age, Year) %>% summarize(expected_deaths_black = Population[Race==1]*(Deaths[Race==3]/Population[Race==3]), age_specific_rate_ratio=`Crude Rate`[Race==1]/`Crude Rate`[Race==3], observed_rate_black=(Deaths[Race==1]/Population[Race==1])*100000, observed_rate_white=(Deaths[Race==3]/Population[Race==3])*100000, expected_rate_black=(expected_deaths_black/Population[Race==1])*100000, excess_rate_black = observed_rate_black - expected_rate_black, excess_deaths_black = (excess_rate_black * Population[Race==1])/100000, observed_vs_expected_rate_ratio = observed_rate_black / expected_rate_black, hypothetical_excess = ((observed_rate_black - expected_rate_black)*Population[Race==1])/100000 ) %>% ungroup()
 
 excess_deaths %>% group_by(Gender) %>% summarize(excess_deaths_black=sum(excess_deaths_black))
 
@@ -71,6 +75,14 @@ ageadj_mortality_rate <- left_join(excess_deaths_year, women.excess.age.adj.deat
 
 
 #Create Tables
+
+hyp_excess <- excess_deaths %>% select(Gender, agegroup, Year, expected_deaths_black, hypothetical_excess, expected_rate_black)
+
+write_csv(hyp_excess, file = file.path(tabledir, "hypothetical_excess_gender_year_age.csv"))
+
+hyp_excess_year <- excess_deaths %>% select(Gender, agegroup, Year, hypothetical_excess) %>% group_by(Year, Gender) %>% summarize(hyp = sum(hypothetical_excess)) %>% magrittr::set_colnames(c("Year", "Gender", "Hypothetical_Excess_Deaths"))
+
+write_csv(hyp_excess_year, file = file.path(tabledir, "hypothetical_excess_gender_year.csv"))
 
 aadr_indiv_table <- ageadj_mortality_rate %>% select(Gender, Year, ageadjrate_black, ageadjrate_white) %>%
   pivot_longer(cols = starts_with("age"), 

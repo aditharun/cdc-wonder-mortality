@@ -9,12 +9,16 @@ project <- args[1]
 
 age_intervals <- c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, Inf)
 
+
+datadir <- "../../../pk-output"
+
 #CDC Wonder input file
-inputfile <- file.path(file.path("../data", project), "export_deaths_crude_race_gender_age_year.tsv")
+inputfile <- file.path(file.path(datadir, project), "export_deaths_crude_race_gender_age_year.tsv")
+
 lifeexp_file <- "../data/file_life_expectancy_1999_to_2020.dta"
 
 #agefiles input
-agefiles <- list.files(file.path("../data", project), "^deaths_crude_race_gender_age_", full.names=TRUE)
+agefiles <- list.files(file.path(datadir, project), "^deaths_crude_race_gender_age_", full.names=TRUE)
 agefiles <- agefiles[grepl("year", agefiles)]
 
 #output file name and directory
@@ -34,6 +38,9 @@ cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
 
 
 life_exp <- read_dta(lifeexp_file) %>% mutate(Gender=factor(gender)) %>% mutate(Gender=ifelse(Gender=="1", "Female", "Male")) %>% select(-gender) %>% mutate(Gender = as.character(Gender))
+
+#remove age > 85
+life_exp <- life_exp %>% filter(age_cat < 85)
 
 ############ CODE ###############
 
@@ -144,14 +151,25 @@ excess_pll_age_table <- excess_ypll %>% select(age_cat, Gender, excess_yrs_lost,
     rename_with(~ str_replace_all(.x, "exc_", ""), 
                 starts_with("exc")) 
 
-write_csv(excess_pll_age_table, file = file.path(tabledir, "ypll_sex_year.csv"))
+write_csv(excess_pll_age_table, file = file.path(tabledir, "ypll_sex_age.csv"))
+
+ypll_table_age <- excess_ypll %>% select(Gender, age_cat, black_years_lost, white_years_lost) 
+
+write_csv(ypll_table_age, file = file.path(tabledir, "ypll_race_age.csv"))
+
 
 #Graphical Component
 agevector <- excess_ypll %>% select(age_cat, age) %>% distinct() %>% arrange(age)
 
+#remove 85+ 
+agevector <- agevector %>% filter(age < 85)
+excess_ypll <- excess_ypll %>% filter(age < 85)
+age.data <- age.data %>% filter(age < 85)
+
 sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=12), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5)) 
 
 panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.grid.minor=element_blank())
+
 
 indiv_yrs_lost_fig <- excess_ypll %>% select(age_cat, age, Gender, black_years_lost, white_years_lost) %>% ungroup() %>% pivot_longer(-c(age_cat, age, Gender)) %>% ggplot(aes(x=age, y=value, color=name)) + geom_line(size = 0.5) + ylab("YPLL per 100K Individuals") + scale_color_manual(values = c("black_years_lost"="maroon", "white_years_lost"="navy"), labels = c("black_years_lost" = "Black", "white_years_lost" = "White")) + panel_theme + facet_wrap(~Gender, nrow=1) + xlab("Age group (years)") + geom_point(size = 2.5) + theme(axis.text.x = element_text(angle=45, hjust=1)) + scale_x_continuous(limits=c(min(agevector$age),max(agevector$age)), breaks=agevector$age, labels=agevector$age_cat) + theme(legend.title = element_blank())
 

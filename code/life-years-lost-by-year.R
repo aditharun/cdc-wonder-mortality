@@ -10,7 +10,9 @@ project <- args[1]
 
 years <- seq(1999, 2021, 1)
 
-inputfile <- file.path(file.path("../data", project), "export_age_deaths_race_gender_year_se.tsv")
+datadir <- "../../../pk-output"
+
+inputfile <- file.path(file.path(datadir, project), "export_age_deaths_race_gender_year_se.tsv")
 
 lifeexp_file <- "../data/file_life_expectancy_1999_to_2020.dta"
 
@@ -63,6 +65,7 @@ data_by_age_gender_race <- data %>% group_by(age_cat, Gender, Race, Year) %>% su
 #combine with life expectancy table
 life_exp <- read_dta(lifeexp_file) %>% mutate(Gender=factor(gender)) %>% mutate(Gender=ifelse(Gender=="1", "Female", "Male")) %>% select(-gender) %>% mutate(Gender = as.character(Gender))
 
+life_exp <- life_exp %>% filter(age_cat < 85)
 
 data_combined <- data_by_age_gender_race %>% mutate(age_bkt_lb = as.numeric(sub("\\[(\\d+),.*", "\\1", age_cat))) %>% left_join(life_exp, by=c("age_bkt_lb"="age_cat", "Year"="year", "Gender"="Gender")) %>% filter(!is.na(life_expectancy))
 
@@ -153,6 +156,10 @@ pll_indiv_table <- excess_pll_w_pred %>% select(Gender, Year, excess_yrs_lost, e
                 starts_with("exc")) %>% relocate(1,2,4,3,5)
 
 write_csv(pll_indiv_table, file = file.path(tabledir, "ypll_sex_year.csv"))
+
+lly_table <- lly %>% select(Gender, Race, Year, yrs_lost) %>% mutate(Race = ifelse(Race == 1, "Black", "White")) 
+
+write_csv(lly_table,file = file.path(tabledir, "ypll_race_year.csv"))
 
 
 #write out plots
