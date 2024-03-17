@@ -17,7 +17,7 @@ preprocess_cdc_wonder <- function(filepath){
 	data <- read_tsv(filepath)
 
 	data <- data %>% 
-		mutate(gender_lbl = Gender, gender = case_when(Gender == "Female" ~ 1, Gender == "Male" ~ 3)) %>% 
+		mutate(gender_lbl = Gender, gender = case_when(Gender == "F" ~ 1, Gender == "M" ~ 3)) %>% 
 		mutate(Race = case_when(Race == "Black or African American" ~ 1, Race == "White" ~ 3), race_lbl = case_when(Race == 1 ~ "Black", Race == 3 ~ "White"))
 
 	return(data)

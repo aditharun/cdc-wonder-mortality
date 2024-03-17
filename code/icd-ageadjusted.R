@@ -6,7 +6,7 @@ source("preprocess-function.R")
 
 args = commandArgs(trailingOnly=TRUE)
 
-years <- seq(1999, 2021, 1)
+years <- seq(1999, 2022, 1)
 
 project <- args[1]
 
@@ -27,9 +27,6 @@ if (project == "IHD"){
  	icdnames <- c("I209" = "Angina Pectoris", "I214" = "NSTEMI", "I219" = "AMI unspec.", "I248" = "Other Acute IHD", "I249" = "Acute IHD unspec.", "I250" = "Atherscl HD w/o\nAngina Pectoris", "I251" = "Atherosclerotic HD w/ Angina Pectoris", "I253" = "Heart Aneurysm", "I255" = "Ischemic Cardiomyopathy", "I258" = "Atherscl of CABG/\nTransplanted Heart", "I259" = "Chronic IHD", "I461" = "Cardiac Arrest due\nto underlying cause", "I469" = "Cardia Arrest\ncause unspec.")
 }
 
-if (project == "HF"){
-	icdnames <- c("I110" = "HTN w/ HF" , "I132" = "HTN w/ Heart Disease +\nHF + ESRD", "I500" = "CHF", "I501" = "LV Failure", "I509" = "HF unspec.")
-}
 
 icdlength <- length(icdnames)
 
@@ -41,18 +38,22 @@ shapechoices <- c(15, 16, 17, 18, 3, 2, 19, 20, 21, 22, 23, 24, 25)
 
 #
 
-ageadj_file <- file.path(file.path("../data", project), "export_icd_age_adjusted_deaths_race_gender_year_se.tsv")
+ageadj_file <- file.path("../processed-data-files", project, "export_icd_age_adjusted_deaths_race_gender_year_se.tsv")
 
-ageadj <- read_tsv(ageadj_file) %>% select(`Cause of death Code`, Race, Gender, Year, `Age Adjusted Rate`, Deaths, Population) 
+ageadj <- read_tsv(ageadj_file) %>% select(`Cause of death Code`, Race, Gender, Year, AA_rate, Deaths, Population) 
+
+colnames(ageadj)[colnames(ageadj) == "AA_rate"] <- "Age Adjusted Rate"
 
 ageadj <- ageadj %>% group_by(Gender, Year, `Cause of death Code`) %>% summarize(excess = `Age Adjusted Rate`[Race == "Black or African American"] - `Age Adjusted Rate`[Race == "White"], ratio = `Age Adjusted Rate`[Race == "Black or African American"] / `Age Adjusted Rate`[Race == "White"] )
 
 ageadj <- ageadj %>% mutate(icd = sub("\\..*", "", `Cause of death Code`)) %>% select(icd, Year, excess, Gender, ratio) %>% group_by(icd, Year, Gender) %>% summarize(excess = mean(excess), rate = mean(ratio))
 
-#take icd10 codes with complete data
-validicd <- ageadj %>% group_by(icd, Gender) %>% summarize(n = n()) %>% mutate(diff = n - length(years)) %>% filter(diff == 0) %>% pull(icd)
+ageadj <- ageadj %>% mutate(Gender = ifelse(Gender == "F", "Female", "Male"))
 
-ageadj <- ageadj %>% filter(icd %in% validicd)
+#take icd10 codes with complete data
+#validicd <- ageadj %>% group_by(icd, Gender) %>% summarize(n = n()) %>% mutate(diff = n - length(years)) %>% filter(diff == 0) %>% pull(icd)
+
+#ageadj <- ageadj %>% filter(icd %in% validicd)
 
 sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=12), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5), strip.background = element_rect(color="black", fill = "transparent"), strip.text = element_text(size = 16)) 
 

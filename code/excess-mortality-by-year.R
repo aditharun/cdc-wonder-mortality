@@ -8,9 +8,9 @@ source("preprocess-function.R")
 
 project <- args[1]
 
-years <- seq(1999, 2021, 1)
+years <- seq(1999, 2022, 1)
 
-datadir <- "../../../pk-output"
+datadir <- "../processed-data-files"
 
 inputfile <- file.path(file.path(datadir, project), "export_age_adjusted_deaths_race_gender_year_se.tsv")
 inputfile2 <- file.path(file.path(datadir, project), "export_deaths_race_gender_age_year.tsv")
@@ -33,11 +33,11 @@ create_output_dir(tabledir)
 #data <- preprocess_cdc_wonder_file(inputfile)
 data <- preprocess_cdc_wonder(inputfile)
 
-cols.to.rename <- c("Crude Rate Lower 95% Confidence Interval", "Crude Rate Upper 95% Confidence Interval", "Crude Rate Standard Error", "Age Adjusted Rate Lower 95% Confidence Interval", "Age Adjusted Rate Upper 95% Confidence Interval", "Age Adjusted Rate Standard Error")
+#cols.to.rename <- c("Crude Rate Lower 95% Confidence Interval", "Crude Rate Upper 95% Confidence Interval", "Crude Rate Standard Error", "Age Adjusted Rate Lower 95% Confidence Interval", "Age Adjusted Rate Upper 95% Confidence Interval", "Age Adjusted Rate Standard Error")
 
-new.col.names <- c("cruderate_ci_lb", "cruderate_ci_ub", "cruderate_se", "ageadjustedrate_ci_lb", "ageadjustedrate_ci_ub", "ageadjustedrate_se")
+#new.col.names <- c("cruderate_ci_lb", "cruderate_ci_ub", "cruderate_se", "ageadjustedrate_ci_lb", "ageadjustedrate_ci_ub", "ageadjustedrate_se")
 
-data <- rename_columns(data, cols.to.rename, new.col.names)
+#data <- rename_columns(data, cols.to.rename, new.col.names)
 
 data <- data %>% select(-ends_with("code"))
 
@@ -46,20 +46,23 @@ data <- data %>% type.convert()
 #significance level of 0.05
 zcrit <- qnorm(0.975)
 
-data <- data %>% filter(is.finite(as.numeric(ageadjustedrate_se))) %>% filter(is.finite(as.numeric(`Age Adjusted Rate`))) 
+#%>% filter(is.finite(as.numeric(ageadjustedrate_se)))
+data <- data  %>% filter(is.finite(as.numeric(AA_rate))) 
 
-excess_deaths_year <- data %>% group_by(gender, Gender, Year) %>% summarize(diff_black=`Age Adjusted Rate`[Race==1] - `Age Adjusted Rate`[Race==3], diff_black_SE = sqrt(ageadjustedrate_se[Race==1]^2 + ageadjustedrate_se[Race==3]^2), diff_black_lb = diff_black - (diff_black_SE * zcrit), diff_black_ub = diff_black + (diff_black_SE * zcrit), adj_excess_deaths_rate = diff_black, ratio_adj_excess_deaths_rate = `Age Adjusted Rate`[Race==1]/`Age Adjusted Rate`[Race==3], ageadjrate_black=`Age Adjusted Rate`[Race==1], ageadjrate_white = `Age Adjusted Rate`[Race==3]) %>% ungroup() 
+colnames(data)[colnames(data) == "AA_rate"] <- "Age Adjusted Rate"
+
+#diff_black_SE = sqrt(ageadjustedrate_se[Race==1]^2 + ageadjustedrate_se[Race==3]^2), diff_black_lb = diff_black - (diff_black_SE * zcrit), diff_black_ub = diff_black + (diff_black_SE * zcrit),
+excess_deaths_year <- data %>% group_by(gender, Gender, Year) %>% summarize(diff_black=`Age Adjusted Rate`[Race==1] - `Age Adjusted Rate`[Race==3], adj_excess_deaths_rate = diff_black, ratio_adj_excess_deaths_rate = `Age Adjusted Rate`[Race==1]/`Age Adjusted Rate`[Race==3], ageadjrate_black=`Age Adjusted Rate`[Race==1], ageadjrate_white = `Age Adjusted Rate`[Race==3]) %>% ungroup() 
 
 
 #men and women trends
-women.excess.age.adj.deaths <- gender_arima_age_adjusted_death(data, excess_deaths_year, "Female", 2015, zcrit)
-
-men.excess.age.adj.deaths <- gender_arima_age_adjusted_death(data, excess_deaths_year, "Male", c(2007, 2011), zcrit)
+#women.excess.age.adj.deaths <- gender_arima_age_adjusted_death(data, excess_deaths_year, "Female", 2015, zcrit)
+#men.excess.age.adj.deaths <- gender_arima_age_adjusted_death(data, excess_deaths_year, "Male", c(2007, 2011), zcrit)
 
 excess_deaths_year %>% group_by(Gender) %>% summarize(diff_black=mean(diff_black)); data %>% group_by(Race, Gender) %>% summarize(age_adj_rate=mean(`Age Adjusted Rate`)) %>% ungroup()
 
 data2 <- preprocess_cdc_wonder(inputfile2)
-colnames(data2)[which(colnames(data2)=="Five-Year Ages")] <- "agegroup"
+colnames(data2)[which(colnames(data2)=="Age_groups")] <- "agegroup"
 data2 <- data2 %>% filter(agegroup!="Not Stated") %>% filter(Population!="Not Applicable") %>% select(-ends_with("code")) %>% type.convert(as.is=TRUE)
 data2 <- data2 %>% mutate(age=as.integer(factor(agegroup))-1)
 
@@ -67,11 +70,15 @@ data2 <- data2 %>% filter(is.finite(as.numeric(Population))) %>% filter(is.finit
 
 #To estimate the excess number of deaths, we estimated the annual age-specific mortality rate using actual age by race and then multiplied the White population age-specific mortality rate by the Black population size for that calendar year. Then, the hypothetical number of deaths among the Black population was divided by the Black population size to arrive at a hypothetical annual Black population mortality rate (expected_rate_black). We subtracted this hypothetical rate from the observed Black population mortality rate to arrive at the estimated excess age-specific Black population mortality rate (observed_rate_black), which we multiplied by the observed Black population size to obtain the total annual and 22-year cumulative number of excess deaths among the Black population. 
 
-excess_deaths <- data2 %>% group_by(Gender, agegroup, age, Year) %>% summarize(expected_deaths_black = Population[Race==1]*(Deaths[Race==3]/Population[Race==3]), age_specific_rate_ratio=`Crude Rate`[Race==1]/`Crude Rate`[Race==3], observed_rate_black=(Deaths[Race==1]/Population[Race==1])*100000, observed_rate_white=(Deaths[Race==3]/Population[Race==3])*100000, expected_rate_black=(expected_deaths_black/Population[Race==1])*100000, excess_rate_black = observed_rate_black - expected_rate_black, excess_deaths_black = (excess_rate_black * Population[Race==1])/100000, observed_vs_expected_rate_ratio = observed_rate_black / expected_rate_black, hypothetical_excess = ((observed_rate_black - expected_rate_black)*Population[Race==1])/100000 ) %>% ungroup()
+excess_deaths <- data2 %>% group_by(Gender, agegroup, Year) %>% summarize(expected_deaths_black = Population[Race==1]*(Deaths[Race==3]/Population[Race==3]), age_specific_rate_ratio=`Crude Rate`[Race==1]/`Crude Rate`[Race==3], observed_rate_black=(Deaths[Race==1]/Population[Race==1])*100000, observed_rate_white=(Deaths[Race==3]/Population[Race==3])*100000, expected_rate_black=(expected_deaths_black/Population[Race==1])*100000, excess_rate_black = observed_rate_black - expected_rate_black, excess_deaths_black = (excess_rate_black * Population[Race==1])/100000, observed_vs_expected_rate_ratio = observed_rate_black / expected_rate_black, hypothetical_excess = ((observed_rate_black - expected_rate_black)*Population[Race==1])/100000 ) %>% ungroup()
 
 excess_deaths %>% group_by(Gender) %>% summarize(excess_deaths_black=sum(excess_deaths_black))
 
-ageadj_mortality_rate <- left_join(excess_deaths_year, women.excess.age.adj.deaths$gender_adj_rate_arima %>% select(-diff_black), by=c("gender"="gender", "Year"="Year", "Gender"="Gender")) %>% left_join(., men.excess.age.adj.deaths$gender_adj_rate_arima %>% select(-diff_black), by=c("gender"="gender", "Year"="Year", "Gender"="Gender")) %>% mutate(pred_diff_black = ifelse(is.na(pred_diff_black.x), pred_diff_black.y, pred_diff_black.x)) %>% select(-c(pred_diff_black.y, pred_diff_black.x))
+#ageadj_mortality_rate <- left_join(excess_deaths_year, women.excess.age.adj.deaths$gender_adj_rate_arima %>% select(-diff_black), by=c("gender"="gender", "Year"="Year", "Gender"="Gender")) %>% left_join(., men.excess.age.adj.deaths$gender_adj_rate_arima %>% select(-diff_black), by=c("gender"="gender", "Year"="Year", "Gender"="Gender")) %>% mutate(pred_diff_black = ifelse(is.na(pred_diff_black.x), pred_diff_black.y, pred_diff_black.x)) %>% select(-c(pred_diff_black.y, pred_diff_black.x))
+
+excess_deaths_year <- excess_deaths_year %>% mutate(Gender = ifelse(Gender == "F", "Female", "Male"))
+
+ageadj_mortality_rate <- excess_deaths_year
 
 
 #Create Tables
@@ -121,10 +128,10 @@ indiv_ageadj_rate_fig <- ageadj_mortality_rate %>% select(Gender, Year, ageadjra
 
 #PRED ARIMA
 #Don't write this out for now
-excess_death_rate_arima_fig <- ggplot() + geom_line(data=ageadj_mortality_rate, aes(x=Year, y=pred_diff_black, color=Gender), size=1) + geom_line(data=ageadj_mortality_rate %>% filter(Year>=2019) %>% mutate(diff_black=ifelse(Year==2019, pred_diff_black, diff_black)), aes(x=Year, y=diff_black, color=Gender), linetype="dashed", size=1) + geom_hline(yintercept=0, linetype="dotted") + year_label + panel_theme + geom_point(data = ageadj_mortality_rate %>% filter(Year %in% c(2015) & Gender == "Female" | Year %in% c(2007, 2011) & Gender == "Male"), aes(x=Year, y=pred_diff_black, color=Gender, shape=Gender), size=3.75) + scale_color_manual(values=c("maroon", "navy")) + sizing_theme  + ggtitle("Excess Age Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Excess Deaths per 100K Individuals") + xlab("Year") 
+#excess_death_rate_arima_fig <- ggplot() + geom_line(data=ageadj_mortality_rate, aes(x=Year, y=pred_diff_black, color=Gender), size=1) + geom_line(data=ageadj_mortality_rate %>% filter(Year>=2019) %>% mutate(diff_black=ifelse(Year==2019, pred_diff_black, diff_black)), aes(x=Year, y=diff_black, color=Gender), linetype="dashed", size=1) + geom_hline(yintercept=0, linetype="dotted") + year_label + panel_theme + geom_point(data = ageadj_mortality_rate %>% filter(Year %in% c(2015) & Gender == "Female" | Year %in% c(2007, 2011) & Gender == "Male"), aes(x=Year, y=pred_diff_black, color=Gender, shape=Gender), size=3.75) + scale_color_manual(values=c("maroon", "navy")) + sizing_theme  + ggtitle("Excess Age Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Excess Deaths per 100K Individuals") + xlab("Year") 
 
 #NO PRED ARIMA, just empirical data
-excess_death_rate_fig <- ggplot(data=ageadj_mortality_rate, aes(x=Year, y=diff_black, color=Gender)) + geom_line(size=1) + geom_point(size = 3) + geom_hline(yintercept=0, linetype="dotted") + year_label + panel_theme  + scale_color_manual(values=c("maroon", "navy")) + sizing_theme  + ggtitle("Excess Age Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Excess Deaths per 100K Individuals") + xlab("Year") 
+excess_death_rate_fig <- ggplot(data=ageadj_mortality_rate, aes(x=Year, y=diff_black, color=Gender)) + geom_line(size=1) + geom_point(size = 3) + geom_hline(yintercept=0, linetype="dotted") + year_label + panel_theme  + scale_color_manual(values=c("maroon", "navy")) + sizing_theme  + ggtitle("Excess Age Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Age Adjusted Mortality Rate\nper 100,000 Individuals") + xlab("Year") 
 
 mortality_rate_ratio_fig <- excess_deaths_year %>% ggplot(aes(x=Year, y=ratio_adj_excess_deaths_rate, color=Gender)) + geom_line(size=1.25) + panel_theme + sizing_theme + year_label + ylab("Mortality Rate Ratio (Black / White)") + scale_y_continuous(breaks = scales::pretty_breaks(n=8)) + geom_hline(yintercept=1, linetype="dashed") + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Age Adjusted Mortality Rate Ratio") 
 
@@ -151,6 +158,9 @@ cum_excess <- excess_deaths %>% group_by(Year, Gender) %>% summarize(excess_deat
 cumulative_excess_net_fig <- cum_excess %>% ggplot(aes(x=Year, y=edb)) + geom_point() + geom_line() + year_label + panel_theme + sizing_theme + ggtitle("Cumulative Excess Deaths") + ylab("Excess Number of Deaths (Thousands)") + scale_y_continuous(breaks=scales::pretty_breaks(n = 8)) + scale_color_manual(name="", values=c("black"))
 
 
+excess_deaths <- excess_deaths %>% mutate(age = sub("-(.*)", "", agegroup) %>% as.numeric())
+
+
 agevector <- excess_deaths %>% select(agegroup, age) %>% distinct()
 
 #agevector <- agevector %>% mutate(age = str_extract(agegroup, "\\d+") %>% as.numeric())
@@ -159,12 +169,12 @@ gender_deaths <- excess_deaths %>% group_by(Gender) %>% summarize(totaldeath = s
 
 edb_gender <- excess_deaths %>% group_by(age,agegroup, Gender) %>% summarize(excess_deaths_black = sum(excess_deaths_black)) %>% ungroup() 
 
-excess_deaths_age_gender_fig <- edb_gender %>% ggplot(aes(x=age, y=excess_deaths_black, color=Gender, fill=Gender)) + geom_col(position="dodge", alpha=0.5) + panel_theme + sizing_theme + scale_color_manual(name="", values=c("maroon", "navy")) + scale_fill_manual(name="", values=c("maroon", "navy")) + ylab("Excess Deaths") + xlab("") + scale_y_continuous(limits=c(floor(min(edb_gender$excess_deaths_black, na.rm=TRUE)/1000)*1000,max(edb_gender$excess_deaths_black, na.rm=TRUE)*1.15), breaks=seq(floor(min(edb_gender$excess_deaths_black, na.rm=TRUE)/1000)*1000, max(edb_gender$excess_deaths_black, na.rm=TRUE)*1.15, 5000)) + scale_x_continuous(breaks=agevector$age, labels=agevector$agegroup) + theme(axis.text.x = element_text(angle=45, hjust=1))
+excess_deaths_age_gender_fig <- edb_gender %>% ggplot(aes(x=age, y=excess_deaths_black, color=Gender, fill=Gender)) + geom_col(position="dodge", alpha=0.5) + panel_theme + sizing_theme + scale_color_manual(name="", values=c("maroon", "navy")) + scale_fill_manual(name="", values=c("maroon", "navy")) + ylab("Excess Deaths") + xlab("") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + scale_x_continuous(breaks=agevector$age, labels=agevector$agegroup) + theme(axis.text.x = element_text(angle=45, hjust=1))
 
 
 edb_percent <- excess_deaths %>% group_by(age,agegroup, Gender) %>% summarize(excess_deaths_black = sum(excess_deaths_black)) %>% ungroup() %>% left_join(gender_deaths, by=c("Gender"="Gender")) %>% mutate(percent=(excess_deaths_black / totaldeath)*100)
 
-percent_total_excess_deaths_age_gender_fig <- edb_percent %>% ggplot(aes(x=age, y=percent, color=Gender, fill=Gender)) + geom_col(position="dodge", alpha=0.5) + panel_theme + sizing_theme + scale_color_manual(name="", values=c("maroon", "navy")) + scale_fill_manual(name="", values=c("maroon", "navy")) + ylab("Percent of Total Excess Deaths") + xlab("") + scale_y_continuous(limits=c(floor(min(edb_percent$percent)/10)*10, max(edb_percent$percent)*1.1), breaks=seq(floor(min(edb_percent$percent)/10)*10, max(edb_percent$percent)*1.1, 5)) + scale_x_continuous(breaks=agevector$age, labels=agevector$agegroup) + theme(axis.text.x = element_text(angle=45, hjust=1))
+percent_total_excess_deaths_age_gender_fig <- edb_percent %>% ggplot(aes(x=age, y=percent, color=Gender, fill=Gender)) + geom_col(position="dodge", alpha=0.5) + panel_theme + sizing_theme + scale_color_manual(name="", values=c("maroon", "navy")) + scale_fill_manual(name="", values=c("maroon", "navy")) + ylab("Percent of Total Excess Deaths") + xlab("") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + scale_x_continuous(breaks=agevector$age, labels=agevector$agegroup) + theme(axis.text.x = element_text(angle=45, hjust=1))
 
 
 save_plot(excess_deaths_age_gender_fig, plotdir)

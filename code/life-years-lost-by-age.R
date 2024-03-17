@@ -1,5 +1,7 @@
 library(tidyverse)
 library(haven)
+library(readxl)
+
 
 args = commandArgs(trailingOnly=TRUE)
 
@@ -10,12 +12,14 @@ project <- args[1]
 age_intervals <- c(0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, Inf)
 
 
-datadir <- "../../../pk-output"
+datadir <- "../processed-data-files"
 
 #CDC Wonder input file
 inputfile <- file.path(file.path(datadir, project), "export_deaths_crude_race_gender_age_year.tsv")
 
 lifeexp_file <- "../data/file_life_expectancy_1999_to_2020.dta"
+lifeexp_file2 <- "../data/file_life_expectancy_2021.xlsx" 
+
 
 #agefiles input
 agefiles <- list.files(file.path(datadir, project), "^deaths_crude_race_gender_age_", full.names=TRUE)
@@ -39,27 +43,47 @@ cbb <- c("#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7")
 
 life_exp <- read_dta(lifeexp_file) %>% mutate(Gender=factor(gender)) %>% mutate(Gender=ifelse(Gender=="1", "Female", "Male")) %>% select(-gender) %>% mutate(Gender = as.character(Gender))
 
+life_exp <- read_dta(lifeexp_file) %>% mutate(Gender=factor(gender)) %>% mutate(Gender=ifelse(Gender=="1", "Female", "Male")) %>% select(-gender) %>% mutate(Gender = as.character(Gender))
+
+life_exp <- rbind(lifeexp_file2 %>% read_excel(), lifeexp_file2 %>% read_excel() %>% mutate(year = 2022), life_exp) %>% as_tibble()
+
 #remove age > 85
 life_exp <- life_exp %>% filter(age_cat < 85)
 
 ############ CODE ###############
 
+process_df_five_year <- function(data){
+
+	agecodes <- data$`Five-Year Age Groups`
+
+	data <- data %>% select(-ends_with("code"))
+
+	data$age_cat <- agecodes
+
+	data <- data %>% mutate(Gender = ifelse(Gender == "F", "Female", "Male"))
+
+	data <- data %>% type.convert(as.is = TRUE)
+
+
+	return(data)
+
+}
 
 
 process_df_ten_year_groups_tsv <- function(data){
 
 
-data$age_cat <- data$`Ten-Year Age Groups`
+	data$age_cat <- data$`Ten-Year Age Groups`
 
-data$age <- data$`Ten-Year Age Groups Code`
+	data$age <- data$`Ten-Year Age Groups Code`
 
-data <- data %>% mutate(age = ifelse(age==999, NA, age)) %>% type.convert() %>% mutate(age=str_extract(age, "\\d+"))
+	data <- data %>% mutate(age = ifelse(age==999, NA, age)) %>% type.convert() %>% mutate(age=str_extract(age, "\\d+"))
 
-data <- data %>% select(-ends_with("code"))
+	data <- data %>% select(-ends_with("code"))
 
-data <- data %>% type.convert()
+	data <- data %>% type.convert()
 
-return(data)
+	return(data)
 
 }
 
@@ -96,34 +120,34 @@ process_df_tsv <- function(data, age_intervals){
 
 compute_statistics <- function(data, life_exp){
 
-data <- data %>% filter(is.finite(as.numeric(Population))) %>% filter(is.finite(as.numeric(Deaths))) %>% filter(is.finite(as.numeric(`Crude Rate`))) %>% type.convert(as.is=TRUE)
-
-data_agg <- data %>% group_by(age_cat, age, Gender, Race, Year) %>% summarize(deaths=sum(Deaths), population=sum(Population),cruderate=mean(`Crude Rate`) ) %>% ungroup() 
+	data <- data %>% filter(is.finite(as.numeric(Population))) %>% filter(is.finite(as.numeric(Deaths))) %>% filter(is.finite(as.numeric(`Crude Rate`))) %>% type.convert(as.is=TRUE)
 
 
+	data <- data %>% mutate(age = sub("-(.*)", "", age_cat) %>% as.numeric())
 
-data_combined <- data_agg %>% left_join(life_exp, by=c("age"="age_cat", "Year"="year", "Gender"="Gender"))
-
-data_combined <- data_combined %>% mutate(yrs_lost=life_expectancy*((deaths/population)*100000) )
-
+	data_agg <- data %>% group_by(age_cat, age, Gender, Race, Year) %>% summarize(deaths=sum(Deaths), population=sum(Population),cruderate=mean(`Crude Rate`) ) %>% ungroup() 
 
 
-excess_ypll <- data_combined %>% filter(!is.na(life_expectancy)) %>% group_by(Race, Gender, age_cat, age) %>% summarize(yrs_lost = mean(yrs_lost), pop = sum(population)) %>% ungroup() %>% group_by(Gender, age_cat, age) %>% summarize(excess_yrs_lost = yrs_lost[Race==1] - yrs_lost[Race==3], ratio_excess_yrs_lost = yrs_lost[Race==1] / yrs_lost[Race==3], black_years_lost = yrs_lost[Race==1], white_years_lost = yrs_lost[Race==3], exc_pll_number = excess_yrs_lost * pop[Race==1] * (1/100000) ) %>% ungroup()
+	data_combined <- data_agg %>% left_join(life_exp, by=c("age"="age_cat", "Year"="year", "Gender"="Gender"))
 
-return(excess_ypll)
+	data_combined <- data_combined %>% mutate(yrs_lost=life_expectancy*((deaths/population)*100000) )
+
+
+
+	excess_ypll <- data_combined %>% filter(!is.na(life_expectancy)) %>% group_by(Race, Gender, age_cat, age) %>% summarize(yrs_lost = mean(yrs_lost), pop = sum(population)) %>% ungroup() %>% group_by(Gender, age_cat, age) %>% summarize(excess_yrs_lost = yrs_lost[Race==1] - yrs_lost[Race==3], ratio_excess_yrs_lost = yrs_lost[Race==1] / yrs_lost[Race==3], black_years_lost = yrs_lost[Race==1], white_years_lost = yrs_lost[Race==3], exc_pll_number = excess_yrs_lost * pop[Race==1] * (1/100000) ) %>% ungroup()
+
+	return(excess_ypll)
 
 }
 
 
-
-
-wrapper_pll_by_age <- function(relfilepath, life_exp, age_intervals){
+wrapper_pll_by_age <- function(relfilepath, life_exp){
 
 	data <- preprocess_cdc_wonder(relfilepath)
 
 	relfilepath <- basename(relfilepath)
 
-	data <- process_df_tsv(data, age_intervals)
+	data <- process_df_five_year(data)
 
 	excess_ypll <- compute_statistics(data, life_exp)
 
@@ -135,10 +159,10 @@ wrapper_pll_by_age <- function(relfilepath, life_exp, age_intervals){
 
 data <- preprocess_cdc_wonder(inputfile)
 
-excess_ypll <- data %>% process_df_tsv(age_intervals) %>% compute_statistics(life_exp)
+excess_ypll <- data %>% process_df_five_year() %>% compute_statistics(life_exp)
 
 
-age.data <- do.call(rbind, lapply(agefiles, function(x) wrapper_pll_by_age(x, life_exp, age_intervals)))
+age.data <- do.call(rbind, lapply(agefiles, function(x) wrapper_pll_by_age(x, life_exp)))
 
 #Tables
 
