@@ -22,6 +22,13 @@ if (project == "HTN"){
 
 } 
 
+
+if (project == "MCD_HTN"){
+
+    icdnames <- c("I110" = "HTN w/ HF", "I120" = "HTN CKD w/ ESRD", "I119" = "HTN w/o HF", "I129" = "HTN w/o ESRD", "I131" = "HTN w/o HF", "I132" = "HTN w/ Heart Disease +\nHF + ESRD")
+
+} 
+
 if (project == "IHD"){
 
  	icdnames <- c("I209" = "Angina Pectoris", "I214" = "NSTEMI", "I219" = "AMI unspec.", "I248" = "Other Acute IHD", "I249" = "Acute IHD unspec.", "I250" = "Atherscl HD w/o\nAngina Pectoris", "I251" = "Atherosclerotic HD w/ Angina Pectoris", "I253" = "Heart Aneurysm", "I255" = "Ischemic Cardiomyopathy", "I258" = "Atherscl of CABG/\nTransplanted Heart", "I259" = "Chronic IHD", "I461" = "Cardiac Arrest due\nto underlying cause", "I469" = "Cardia Arrest\ncause unspec.")

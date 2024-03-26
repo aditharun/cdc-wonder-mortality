@@ -29,6 +29,12 @@ if (project == "HTN"){
 
 } 
 
+if (project == "MCD_HTN"){
+
+    icdnames <- c("I110" = "HTN Heart Disease", "I120" = "HTN CKD w/ ESRD", "I119" = "HTN w/o HF", "I129" = "HTN w/o ESRD", "I131" = "HTN w/o HF", "I132" = "HTN w/ Heart Disease +\nHF + ESRD")
+
+} 
+
 if (project == "IHD"){
 
  	icdnames <- c("I209" = "Angina Pectoris", "I214" = "NSTEMI", "I219" = "AMI unspec.", "I248" = "Other Acute IHD", "I249" = "Acute IHD unspec.", "I250" = "Atherscl HD w/o\nAngina Pectoris", "I251" = "Atherosclerotic HD w/ Angina Pectoris", "I253" = "Heart Aneurysm", "I255" = "Ischemic Cardiomyopathy", "I258" = "Atherscl of CABG/\nTransplanted Heart", "I259" = "Chronic IHD", "I461" = "Cardiac Arrest due\nto underlying cause", "I469" = "Cardia Arrest\ncause unspec.")
@@ -81,7 +87,7 @@ year_label <- scale_x_continuous(breaks=years, labels= function(x) ifelse(x %% 2
 
 panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.grid.minor=element_blank())
 
-yrs_lost_icd_fig <- excess %>% ggplot(aes(x=Year, y=excess, color=icd, shape=icd)) + geom_line(size = 1) + geom_point(size = 3.75) + year_label + panel_theme + ylab("Excess Years of Potential Life Lost") + facet_wrap(~Gender, nrow = 1) + sizing_theme + scale_y_continuous(limits = c(0, max(excess$excess, na.rm=TRUE)*1.15), breaks=seq(0, max(excess$excess, na.rm=TRUE)*1.15, 50)) + scale_color_manual(name = "", values = cbb[1:icdlength], labels = icdnames) + scale_shape_manual(name = "", values = shapechoices[1:icdlength], labels = icdnames)
+yrs_lost_icd_fig <- excess %>% ggplot(aes(x=Year, y=excess, color=icd, shape=icd)) + geom_line(size = 1) + geom_point(size = 3.75) + year_label + panel_theme + ylab("Excess Years of Potential Life Lost") + facet_wrap(~Gender, nrow = 1) + sizing_theme + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + scale_color_manual(name = "", values = cbb[1:icdlength], labels = icdnames) + scale_shape_manual(name = "", values = shapechoices[1:icdlength], labels = icdnames)
 
 save_rds(plt = yrs_lost_icd_fig, folder = outputdir)
 
