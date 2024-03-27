@@ -6,9 +6,12 @@ source("preprocess-function.R")
 
 args = commandArgs(trailingOnly=TRUE)
 
-years <- seq(1999, 2022, 1)
 
 project <- args[1]
+
+first_year <- args[2]
+
+years <- seq(first_year, 2022, 1)
 
 plotdir <- file.path("../../cdc-wonder-output", project, "icd")
 

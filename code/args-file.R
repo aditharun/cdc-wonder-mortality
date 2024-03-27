@@ -9,6 +9,7 @@ if (proj == "IHD"){
 	icdcodes <- c("I20", "I21", "I22", "I24", "I25", "I46")
 	age_first <- 35
 	project <- "IHD"
+	first_year <- 1999
 
 } else{
 
@@ -16,6 +17,7 @@ if (proj == "IHD"){
 	icdcodes <- c("I10", "I11", "I12", "I13", "I15")
 	age_first <- 20
 	project <- "HTN"
+	first_year <- 2000
 }
 
 popfilepath <- "../raw-data/master-population.csv"

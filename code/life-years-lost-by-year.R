@@ -9,7 +9,9 @@ source("preprocess-function.R")
 
 project <- args[1]
 
-years <- seq(1999, 2022, 1)
+first_year <- args[2]
+
+years <- seq(first_year, 2022, 1)
 
 datadir <- "../processed-data-files"
 

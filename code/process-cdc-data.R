@@ -30,10 +30,10 @@ if (!dir.exists(workdir)){
 	dir.create(workdir)
 }
 
-start_years <- c(2020, 2013, 2006, 1999)
+start_years <- c(2020, 2013, 2006, first_year)
 end_years <- c(2022, 2019, 2012, 2005)
 
-start_year <- 1999
+start_year <- first_year
 end_year <- 2022
 
 race1 <- "White"

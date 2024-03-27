@@ -224,7 +224,7 @@ htn_new <- htn_new %>% filter(Deaths > 0) %>% select(-Population)
 
 #read in 1999-2020 data 
 
-htn_1999_2020 <- lapply(paste0("../raw-data/", seq(1999, 2020, 1), "-ihd-htn-deaths.txt"), function(x) readTextFile(x) %>% select(Race, `Hispanic Origin`, `Five-Year Age Groups`, `Cause of death Code`, Gender, Deaths) %>% filter(grepl(parse_icdcode(htn_icdcodes), `Cause of death Code`)) %>% filter(Deaths > 0) %>% mutate(Year = str_sub(basename(x), 1, 4) %>% as.numeric()) )
+htn_1999_2020 <- lapply(paste0("../raw-data/", seq(2000, 2020, 1), "-ihd-htn-deaths.txt"), function(x) readTextFile(x) %>% select(Race, `Hispanic Origin`, `Five-Year Age Groups`, `Cause of death Code`, Gender, Deaths) %>% filter(grepl(parse_icdcode(htn_icdcodes), `Cause of death Code`)) %>% filter(Deaths > 0) %>% mutate(Year = str_sub(basename(x), 1, 4) %>% as.numeric()) )
 
 
 ihd_1999_2020 <- lapply(paste0("../raw-data/", seq(1999, 2020, 1), "-ihd-htn-deaths.txt"), function(x) readTextFile(x) %>% select(Race, `Hispanic Origin`, `Five-Year Age Groups`, `Cause of death Code`, Gender, Deaths) %>% filter(grepl(parse_icdcode(ihd_icdcodes), `Cause of death Code`)) %>% filter(Deaths > 0) %>% mutate(Year = str_sub(basename(x), 1, 4) %>% as.numeric()) )

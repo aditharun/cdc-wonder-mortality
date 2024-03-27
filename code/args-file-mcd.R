@@ -8,6 +8,7 @@ df <- "../raw-data/mcd/htn-deaths.csv" %>% read_csv()
 icdcodes <- c("I10", "I11", "I12", "I13", "I15")
 age_first <- 20
 project <- "MCD_HTN"
+first_year <- 2000
 
 popfilepath <- "../raw-data/mcd/master-population.csv"
 outdir <- "../processed-data-files"
