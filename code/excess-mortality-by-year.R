@@ -123,8 +123,11 @@ year_label <- scale_x_continuous(breaks=years, labels= function(x) ifelse(x %% 2
 
 panel_theme <- theme_bw() + theme(panel.grid.major.x = element_blank(), panel.grid.minor=element_blank())
 
+indiv_df <- ageadj_mortality_rate %>% select(Gender, Year, ageadjrate_black, ageadjrate_white) %>% ungroup() %>% pivot_longer(-c(Gender, Year))
 
-indiv_ageadj_rate_fig <- ageadj_mortality_rate %>% select(Gender, Year, ageadjrate_black, ageadjrate_white) %>% ungroup() %>% pivot_longer(-c(Gender, Year)) %>% ggplot(aes(x=Year, y=value, color=name)) + geom_line(size = 0.5) + ylab("Age Adjusted Mortality Rate") + scale_color_manual(values = c("ageadjrate_black"="maroon", "ageadjrate_white"="navy"), labels = c("ageadjrate_black" = "Black", "ageadjrate_white" = "White")) + panel_theme + facet_wrap(~Gender, nrow=1) + xlab("Year") + geom_point(size = 2.5) + year_label + theme(legend.title = element_blank())
+ylims_indiv <- c(0, ceiling(indiv_df$value/100)*100)
+
+indiv_ageadj_rate_fig <- indiv_df %>% ggplot(aes(x=Year, y=value, color=name)) + geom_line(size = 0.5) + ylab("Age Adjusted Mortality Rate") + scale_color_manual(values = c("ageadjrate_black"="maroon", "ageadjrate_white"="navy"), labels = c("ageadjrate_black" = "Black", "ageadjrate_white" = "White")) + panel_theme + facet_wrap(~Gender, nrow=1) + xlab("Year") + geom_point(size = 2.5) + year_label + theme(legend.title = element_blank()) + scale_y_continuous(limits = ylims_indiv, n.breaks = 8)
 
 
 #PRED ARIMA
@@ -134,7 +137,9 @@ indiv_ageadj_rate_fig <- ageadj_mortality_rate %>% select(Gender, Year, ageadjra
 #NO PRED ARIMA, just empirical data
 excess_death_rate_fig <- ggplot(data=ageadj_mortality_rate, aes(x=Year, y=diff_black, color=Gender)) + geom_line(size=1) + geom_point(size = 3) + geom_hline(yintercept=0, linetype="dotted") + year_label + panel_theme  + scale_color_manual(values=c("maroon", "navy")) + sizing_theme  + ggtitle("Excess Age Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Age Adjusted Mortality Rate\nper 100,000 Individuals") + xlab("Year") 
 
-mortality_rate_ratio_fig <- excess_deaths_year %>% ggplot(aes(x=Year, y=ratio_adj_excess_deaths_rate, color=Gender)) + geom_line(size=1.25) + panel_theme + sizing_theme + year_label + ylab("Mortality Rate Ratio (Black / White)") + scale_y_continuous(breaks = scales::pretty_breaks(n=8)) + geom_hline(yintercept=1, linetype="dashed") + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Age Adjusted Mortality Rate Ratio") 
+#+ geom_hline(yintercept=1, linetype="dashed")
+
+mortality_rate_ratio_fig <- excess_deaths_year %>% ggplot(aes(x=Year, y=ratio_adj_excess_deaths_rate, color=Gender)) + geom_line(size=1.25) + panel_theme + sizing_theme + year_label + ylab("Mortality Rate Ratio (Black / White)") + scale_y_continuous(breaks = scales::pretty_breaks(n=8)) + scale_color_manual(values=c("maroon", "navy")) + ggtitle("Age Adjusted Mortality Rate Ratio") 
 
 
 edy <- excess_deaths_year %>% select(Gender, ageadjrate_white, ageadjrate_black, Year) %>% pivot_longer(-c(Gender, Year)) %>% mutate(Race=gsub(".*_", "", name) %>% str_to_title(.)) %>% select(-name)

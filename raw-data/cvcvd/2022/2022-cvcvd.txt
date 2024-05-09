@@ -1,0 +1,888 @@
+"Notes"	"Five-Year Age Groups"	"Five-Year Age Groups Code"	"Gender"	"Gender Code"	"Hispanic Origin"	"Hispanic Origin Code"	"Single Race 6"	"Single Race 6 Code"	Deaths	Population	Crude Rate
+	"< 1 year"	"1"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	20662	Unreliable
+	"< 1 year"	"1"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	7483	Unreliable
+	"< 1 year"	"1"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	36658	Unreliable
+	"< 1 year"	"1"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	2676	Unreliable
+	"< 1 year"	"1"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	Suppressed	397615	Suppressed
+	"< 1 year"	"1"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	24925	Suppressed
+	"< 1 year"	"1"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	12332	Suppressed
+	"< 1 year"	"1"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	0	98655	Unreliable
+	"< 1 year"	"1"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	14	267808	Unreliable
+	"< 1 year"	"1"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	3888	Unreliable
+	"< 1 year"	"1"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	11	831312	Unreliable
+	"< 1 year"	"1"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	96232	Suppressed
+	"< 1 year"	"1"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	21412	Unreliable
+	"< 1 year"	"1"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	7738	Unreliable
+	"< 1 year"	"1"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	37907	Suppressed
+	"< 1 year"	"1"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	2858	Unreliable
+	"< 1 year"	"1"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	12	412300	Unreliable
+	"< 1 year"	"1"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	25818	Unreliable
+	"< 1 year"	"1"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	12864	Suppressed
+	"< 1 year"	"1"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	0	105289	Unreliable
+	"< 1 year"	"1"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	12	275945	Unreliable
+	"< 1 year"	"1"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	4200	Unreliable
+	"< 1 year"	"1"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	25	876488	2.9
+	"< 1 year"	"1"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	0	100048	Unreliable
+	"< 1 year"	"1"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"< 1 year"	"1"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	81647	Unreliable
+	"1-4 years"	"1-4"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	29359	Unreliable
+	"1-4 years"	"1-4"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	137967	Unreliable
+	"1-4 years"	"1-4"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	10512	Unreliable
+	"1-4 years"	"1-4"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	Suppressed	1564861	Suppressed
+	"1-4 years"	"1-4"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	96729	Unreliable
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	52356	Unreliable
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	0	411243	Unreliable
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	Suppressed	1042839	Suppressed
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	16380	Unreliable
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	Suppressed	3439621	Suppressed
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	379498	Suppressed
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	85749	Unreliable
+	"1-4 years"	"1-4"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	30706	Unreliable
+	"1-4 years"	"1-4"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	142538	Unreliable
+	"1-4 years"	"1-4"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	11049	Unreliable
+	"1-4 years"	"1-4"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	Suppressed	1622453	Suppressed
+	"1-4 years"	"1-4"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	100839	Unreliable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	54375	Unreliable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	0	437706	Unreliable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	12	1070946	Unreliable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	17524	Suppressed
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	17	3622083	Unreliable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	396260	Suppressed
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"1-4 years"	"1-4"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	92450	Unreliable
+	"5-9 years"	"5-9"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	34954	Unreliable
+	"5-9 years"	"5-9"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	164692	Suppressed
+	"5-9 years"	"5-9"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	12493	Unreliable
+	"5-9 years"	"5-9"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	Suppressed	2093500	Suppressed
+	"5-9 years"	"5-9"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	122081	Unreliable
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	76568	Unreliable
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	569456	Suppressed
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	Suppressed	1357529	Suppressed
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	22269	Unreliable
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	Suppressed	4745056	Suppressed
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	486201	Suppressed
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	94869	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	36650	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	170289	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	12865	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	Suppressed	2175972	Suppressed
+	"5-9 years"	"5-9"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	127218	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	79942	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	0	605005	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	Suppressed	1391158	Suppressed
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	23316	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	13	5005982	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	0	508680	Unreliable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"5-9 years"	"5-9"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	83117	Unreliable
+	"10-14 years"	"10-14"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	30548	Unreliable
+	"10-14 years"	"10-14"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	154164	Unreliable
+	"10-14 years"	"10-14"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	10900	Unreliable
+	"10-14 years"	"10-14"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	Suppressed	2253191	Suppressed
+	"10-14 years"	"10-14"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	121086	Unreliable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	83575	Unreliable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	545844	Suppressed
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	Suppressed	1419896	Suppressed
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	21250	Unreliable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	14	4996425	Unreliable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	0	467990	Unreliable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	86839	Unreliable
+	"10-14 years"	"10-14"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	32230	Suppressed
+	"10-14 years"	"10-14"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	159458	Unreliable
+	"10-14 years"	"10-14"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	11047	Unreliable
+	"10-14 years"	"10-14"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	Suppressed	2356397	Suppressed
+	"10-14 years"	"10-14"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	126335	Unreliable
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	86677	Unreliable
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	573927	Suppressed
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	Suppressed	1467625	Suppressed
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	22065	Unreliable
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	13	5289325	Unreliable
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	489928	Suppressed
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"10-14 years"	"10-14"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	78589	Unreliable
+	"15-19 years"	"15-19"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	27416	Unreliable
+	"15-19 years"	"15-19"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	139640	Unreliable
+	"15-19 years"	"15-19"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	9644	Unreliable
+	"15-19 years"	"15-19"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	Suppressed	2298184	Suppressed
+	"15-19 years"	"15-19"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	105554	Unreliable
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	86801	Unreliable
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	572475	Suppressed
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	Suppressed	1445513	Suppressed
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	21697	Unreliable
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	Suppressed	5350956	Suppressed
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	0	417280	Unreliable
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	83223	Unreliable
+	"15-19 years"	"15-19"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	29330	Unreliable
+	"15-19 years"	"15-19"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	146057	Unreliable
+	"15-19 years"	"15-19"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	9907	Unreliable
+	"15-19 years"	"15-19"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	12	2411429	Unreliable
+	"15-19 years"	"15-19"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	109305	Unreliable
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	89741	Unreliable
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	586389	Suppressed
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	Suppressed	1484723	Suppressed
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	22497	Unreliable
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	Suppressed	5676512	Suppressed
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	432930	Suppressed
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"15-19 years"	"15-19"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	75796	Unreliable
+	"20-24 years"	"20-24"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	25816	Unreliable
+	"20-24 years"	"20-24"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	132186	Unreliable
+	"20-24 years"	"20-24"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	8892	Unreliable
+	"20-24 years"	"20-24"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	Suppressed	2277187	Suppressed
+	"20-24 years"	"20-24"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	92601	Unreliable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	91686	Suppressed
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	649335	Suppressed
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	13	1567742	Unreliable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	21801	Unreliable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	10	5784081	Unreliable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	0	376668	Unreliable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	79873	Unreliable
+	"20-24 years"	"20-24"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	27218	Unreliable
+	"20-24 years"	"20-24"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	139228	Unreliable
+	"20-24 years"	"20-24"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	9049	Unreliable
+	"20-24 years"	"20-24"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	24	2384870	1.0
+	"20-24 years"	"20-24"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	96126	Unreliable
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	94788	Suppressed
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	659228	Suppressed
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	18	1592836	Unreliable
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	23187	Unreliable
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	22	6108424	0.4
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	387161	Suppressed
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"20-24 years"	"20-24"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	69700	Suppressed
+	"25-29 years"	"25-29"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	24023	Unreliable
+	"25-29 years"	"25-29"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	118706	Unreliable
+	"25-29 years"	"25-29"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	8406	Unreliable
+	"25-29 years"	"25-29"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	14	2074998	Unreliable
+	"25-29 years"	"25-29"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	79497	Unreliable
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	89013	Unreliable
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	740051	Suppressed
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	26	1581056	1.6
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	22709	Suppressed
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	33	5716342	0.6
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	315921	Suppressed
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	73595	Unreliable
+	"25-29 years"	"25-29"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	24636	Unreliable
+	"25-29 years"	"25-29"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	126168	Suppressed
+	"25-29 years"	"25-29"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	8851	Unreliable
+	"25-29 years"	"25-29"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	26	2198963	1.2
+	"25-29 years"	"25-29"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	82977	Suppressed
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	92462	Suppressed
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	740389	Suppressed
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	26	1610536	1.6
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	23768	Suppressed
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	39	6048016	0.6
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	322381	Suppressed
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"25-29 years"	"25-29"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	67090	Unreliable
+	"30-34 years"	"30-34"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	25400	Unreliable
+	"30-34 years"	"30-34"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	128072	Unreliable
+	"30-34 years"	"30-34"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	8722	Unreliable
+	"30-34 years"	"30-34"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	32	2004404	1.6
+	"30-34 years"	"30-34"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	71496	Suppressed
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	92764	Suppressed
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	882248	Suppressed
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	56	1695629	3.3
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	25937	Suppressed
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	73	6200661	1.2
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	268893	Suppressed
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	78475	Unreliable
+	"30-34 years"	"30-34"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	25252	Unreliable
+	"30-34 years"	"30-34"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	130546	Suppressed
+	"30-34 years"	"30-34"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	10504	Unreliable
+	"30-34 years"	"30-34"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	51	2193814	2.3
+	"30-34 years"	"30-34"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	73355	Unreliable
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	96188	Suppressed
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	Suppressed	848290	Suppressed
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	55	1673804	3.3
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	27604	Unreliable
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	112	6421573	1.7
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	257415	Suppressed
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"30-34 years"	"30-34"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	63453	Unreliable
+	"35-39 years"	"35-39"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	22503	Suppressed
+	"35-39 years"	"35-39"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	118843	Unreliable
+	"35-39 years"	"35-39"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	8441	Unreliable
+	"35-39 years"	"35-39"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	53	1903482	2.8
+	"35-39 years"	"35-39"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	62966	Suppressed
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	81298	Suppressed
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	16	885702	Unreliable
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	96	1480584	6.5
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	25284	Suppressed
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	140	6098437	2.3
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	214656	Suppressed
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	77491	Suppressed
+	"35-39 years"	"35-39"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	23855	Unreliable
+	"35-39 years"	"35-39"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	115803	Suppressed
+	"35-39 years"	"35-39"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	10699	Unreliable
+	"35-39 years"	"35-39"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	105	2137179	4.9
+	"35-39 years"	"35-39"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	63162	Unreliable
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	82110	Suppressed
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	24	833341	2.9
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	118	1407022	8.4
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	26845	Suppressed
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	190	6328580	3.0
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	196213	Suppressed
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"35-39 years"	"35-39"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	61647	Unreliable
+	"40-44 years"	"40-44"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	22046	Suppressed
+	"40-44 years"	"40-44"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	114173	Suppressed
+	"40-44 years"	"40-44"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	8015	Unreliable
+	"40-44 years"	"40-44"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	75	1869926	4.0
+	"40-44 years"	"40-44"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	58574	Suppressed
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	13	74929	Unreliable
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	35	831367	4.2
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	181	1427680	12.7
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	22810	Suppressed
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	272	5930788	4.6
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	187572	Suppressed
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	73697	Suppressed
+	"40-44 years"	"40-44"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	22390	Unreliable
+	"40-44 years"	"40-44"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	106710	Suppressed
+	"40-44 years"	"40-44"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	9914	Unreliable
+	"40-44 years"	"40-44"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	182	2053668	8.9
+	"40-44 years"	"40-44"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	58263	Suppressed
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	74984	Suppressed
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	32	751154	4.3
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	203	1315879	15.4
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	24243	Suppressed
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	323	6157793	5.2
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	169194	Suppressed
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"40-44 years"	"40-44"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	54721	Suppressed
+	"45-49 years"	"45-49"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	19642	Unreliable
+	"45-49 years"	"45-49"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	97189	Suppressed
+	"45-49 years"	"45-49"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	6738	Unreliable
+	"45-49 years"	"45-49"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	133	1742498	7.6
+	"45-49 years"	"45-49"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	47214	Unreliable
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	12	68632	Unreliable
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	43	774955	5.5
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	273	1300373	21.0
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	19178	Suppressed
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	437	5495960	8.0
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	152009	Suppressed
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	64004	Suppressed
+	"45-49 years"	"45-49"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	19354	Suppressed
+	"45-49 years"	"45-49"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	86411	Suppressed
+	"45-49 years"	"45-49"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	7550	Unreliable
+	"45-49 years"	"45-49"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	264	1842218	14.3
+	"45-49 years"	"45-49"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	45848	Suppressed
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	15	67726	Unreliable
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	76	696931	10.9
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	306	1171411	26.1
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	10	20122	Unreliable
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	510	5687353	9.0
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	15	136061	Unreliable
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"45-49 years"	"45-49"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	49469	Suppressed
+	"50-54 years"	"50-54"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	17115	Unreliable
+	"50-54 years"	"50-54"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	83422	Suppressed
+	"50-54 years"	"50-54"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	5946	Unreliable
+	"50-54 years"	"50-54"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	174	1586791	11.0
+	"50-54 years"	"50-54"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	38601	Suppressed
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	17	71121	Unreliable
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	85	723366	11.8
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	376	1351040	27.8
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	18374	Suppressed
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	763	6288504	12.1
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	15	139157	Unreliable
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	57065	Suppressed
+	"50-54 years"	"50-54"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	16990	Suppressed
+	"50-54 years"	"50-54"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	74666	Suppressed
+	"50-54 years"	"50-54"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	6293	Unreliable
+	"50-54 years"	"50-54"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	336	1666862	20.2
+	"50-54 years"	"50-54"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	36990	Suppressed
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	22	69755	31.5
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	94	649955	14.5
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	487	1217767	40.0
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	18798	Suppressed
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	1004	6493318	15.5
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	14	126182	Unreliable
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"50-54 years"	"50-54"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	42194	Suppressed
+	"55-59 years"	"55-59"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	14410	Unreliable
+	"55-59 years"	"55-59"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	72590	Suppressed
+	"55-59 years"	"55-59"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	4996	Suppressed
+	"55-59 years"	"55-59"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	211	1380896	15.3
+	"55-59 years"	"55-59"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	32585	Suppressed
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	29	75526	38.4
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	80	628581	12.7
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	597	1359140	43.9
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	13	17870	Unreliable
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	1260	6840926	18.4
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	15	123377	Unreliable
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	Suppressed	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	47160	Suppressed
+	"55-59 years"	"55-59"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	13837	Suppressed
+	"55-59 years"	"55-59"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	64770	Suppressed
+	"55-59 years"	"55-59"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	5086	Unreliable
+	"55-59 years"	"55-59"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	426	1412651	30.2
+	"55-59 years"	"55-59"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	30000	Suppressed
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	22	70993	31.0
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	145	555946	26.1
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	833	1197900	69.5
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	13	17501	Unreliable
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	1818	6847295	26.6
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	24	110784	21.7
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	11	Not Applicable	Not Applicable
+	"55-59 years"	"55-59"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	35145	Suppressed
+	"60-64 years "	"60-64"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	11998	Suppressed
+	"60-64 years "	"60-64"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	58915	Suppressed
+	"60-64 years "	"60-64"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	3897	Suppressed
+	"60-64 years "	"60-64"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	318	1150189	27.6
+	"60-64 years "	"60-64"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	27161	Suppressed
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	29	77092	37.6
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	123	573965	21.4
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	851	1316470	64.6
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	12	16389	Unreliable
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2225	7432281	29.9
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	29	116941	24.8
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	13	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	37045	Suppressed
+	"60-64 years "	"60-64"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	11030	Suppressed
+	"60-64 years "	"60-64"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	11	51775	Unreliable
+	"60-64 years "	"60-64"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	3831	Suppressed
+	"60-64 years "	"60-64"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	560	1121805	49.9
+	"60-64 years "	"60-64"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	24138	Suppressed
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	36	69235	52.0
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	174	490376	35.5
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1186	1124054	105.5
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	17	16103	Unreliable
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2975	7242868	41.1
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	29	105720	27.4
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	23	Not Applicable	Not Applicable
+	"60-64 years "	"60-64"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	25464	Suppressed
+	"65-69 years"	"65-69"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	9038	Suppressed
+	"65-69 years"	"65-69"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	11	44956	Unreliable
+	"65-69 years"	"65-69"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	2788	Suppressed
+	"65-69 years"	"65-69"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	460	902509	51.0
+	"65-69 years"	"65-69"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	20390	Suppressed
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	44	65571	67.1
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	187	517043	36.2
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1113	1112762	100.0
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	25	13400	186.6
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	3329	6947753	47.9
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	42	95847	43.8
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	26138	Suppressed
+	"65-69 years"	"65-69"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	7866	Suppressed
+	"65-69 years"	"65-69"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	13	38053	Unreliable
+	"65-69 years"	"65-69"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	2511	Unreliable
+	"65-69 years"	"65-69"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	604	811756	74.4
+	"65-69 years"	"65-69"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	17006	Suppressed
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	35	56425	62.0
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	235	419966	56.0
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1442	882604	163.4
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	20	12474	160.3
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	4363	6513923	67.0
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	46	85179	54.0
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	22	Not Applicable	Not Applicable
+	"65-69 years"	"65-69"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	17161	Suppressed
+	"70-74 years"	"70-74"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	6480	Unreliable
+	"70-74 years"	"70-74"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	16	32232	Unreliable
+	"70-74 years"	"70-74"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	1840	Unreliable
+	"70-74 years"	"70-74"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	598	669888	89.3
+	"70-74 years"	"70-74"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	13740	Suppressed
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	44	49759	88.4
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	294	425470	69.1
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1520	855439	177.7
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	15	10319	Unreliable
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	5322	5966425	89.2
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	33	71493	46.2
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	12	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	15846	Suppressed
+	"70-74 years"	"70-74"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	5185	Suppressed
+	"70-74 years"	"70-74"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	13	25368	Unreliable
+	"70-74 years"	"70-74"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	1609	Suppressed
+	"70-74 years"	"70-74"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	705	560330	125.8
+	"70-74 years"	"70-74"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	10916	Suppressed
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	44	42606	103.3
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	334	330334	101.1
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1525	619103	246.3
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	15	9316	Unreliable
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	5776	5354091	107.9
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	29	62067	46.7
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	25	Not Applicable	Not Applicable
+	"70-74 years"	"70-74"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	10670	Suppressed
+	"75-79 years"	"75-79"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	4231	Suppressed
+	"75-79 years"	"75-79"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	13	21483	Unreliable
+	"75-79 years"	"75-79"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	1101	Unreliable
+	"75-79 years"	"75-79"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	795	468981	169.5
+	"75-79 years"	"75-79"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	12	9208	Unreliable
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	52	33285	156.2
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	409	281552	145.3
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1554	551663	281.7
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	27	6653	405.8
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	8065	4512867	178.7
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	32	49620	64.5
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	15	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	9328	Suppressed
+	"75-79 years"	"75-79"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	3029	Suppressed
+	"75-79 years"	"75-79"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	15329	Suppressed
+	"75-79 years"	"75-79"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	918	Suppressed
+	"75-79 years"	"75-79"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	753	356987	210.9
+	"75-79 years"	"75-79"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	6735	Suppressed
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	51	27925	182.6
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	361	220628	163.6
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1298	368642	352.1
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	10	6055	Unreliable
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	7615	3853134	197.6
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	42	40976	102.5
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	24	Not Applicable	Not Applicable
+	"75-79 years"	"75-79"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	6299	Suppressed
+	"80-84 years"	"80-84"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	2618	Suppressed
+	"80-84 years"	"80-84"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	19	13489	Unreliable
+	"80-84 years"	"80-84"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	805	Suppressed
+	"80-84 years"	"80-84"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	1062	309457	343.2
+	"80-84 years"	"80-84"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	5621	Suppressed
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	62	20690	299.7
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	548	184996	296.2
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1621	352324	460.1
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	28	3995	700.9
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	10848	2903408	373.6
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	62	30684	202.1
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	14	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	4769	Suppressed
+	"80-84 years"	"80-84"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	1761	Suppressed
+	"80-84 years"	"80-84"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	17	8903	Unreliable
+	"80-84 years"	"80-84"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	511	Unreliable
+	"80-84 years"	"80-84"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	749	209637	357.3
+	"80-84 years"	"80-84"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	3873	Suppressed
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	34	16125	210.9
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	437	140068	312.0
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1119	204186	548.0
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	13	3256	Unreliable
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	8540	2208276	386.7
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	38	23794	159.7
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	17	Not Applicable	Not Applicable
+	"80-84 years"	"80-84"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	15	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	1308	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	62	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	708	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1711	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	11	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	13379	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	75	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	780	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	18	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	421	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	873	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	12	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	8465	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	35	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	16	Not Applicable	Not Applicable
+	"85-89 years"	"85-89"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	11	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	1265	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	31	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	655	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	1349	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	13425	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	42	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	12	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	594	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	10	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	341	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	528	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	6443	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	23	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"90-94 years"	"90-94"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	614	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	22	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	338	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	768	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	7489	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	24	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	12	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	234	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	132	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	185	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	2382	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"95-99 years"	"95-99"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	159	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	Suppressed	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	92	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	225	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	1773	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	Suppressed	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	34	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	32	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	47	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	387	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	Suppressed	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"100+ years"	"100+"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Stated"	"NS"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Female"	"F"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"White"	"2106-3"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Stated"	"NS"	"American Indian or Alaska Native"	"1002-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Stated"	"NS"	"Asian"	"A"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Stated"	"NS"	"Black or African American"	"2054-5"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Stated"	"NS"	"Native Hawaiian or Other Pacific Islander"	"NHOPI"	0	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Stated"	"NS"	"White"	"2106-3"	Suppressed	Not Applicable	Not Applicable
+	"Not Stated"	"NS"	"Male"	"M"	"Not Stated"	"NS"	"More than one race"	"M"	0	Not Applicable	Not Applicable
+"---"
+"Dataset: Underlying Cause of Death, 2018-2022, Single Race"
+"Query Parameters:"
+"ICD-10 Codes: I60-I69 (Cerebrovascular diseases)"
+"Year/Month: 2022"
+"Group By: Five-Year Age Groups; Gender; Hispanic Origin; Single Race 6"
+"Show Totals: Disabled"
+"Show Zero Values: True"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd-expanded.html for more information."
+"---"
+"Query Date: May 8, 2024 6:20:05 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics"
+"System, Mortality 2018-2022 on CDC WONDER Online Database, released in 2024. Data are from the Multiple Cause of Death Files,"
+"2018-2022, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative"
+"Program. Accessed at http://wonder.cdc.gov/ucd-icd10-expanded.html on May 8, 2024 6:20:05 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. Population and rates are labeled 'Not Applicable' when they include a subset of ages 85-100+ because populations are not"
+"available for those ages. More information: http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Ages 85-100."
+"2. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Assurance of Confidentiality."
+"3. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Unreliable."
+"4. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Not Stated."
+"5. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Not Stated."
+"6. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Racial Differences."
+"7. The population figures for years 2022 and later are single-race estimates of the July 1 resident population, from the Vintage"
+"2022 postcensal series released by the Census Bureau on June 22, 2023. The 2022 series is based on the Modified Blended Base"
+"produced by the US Census Bureau in lieu of the April 1, 2020 decennial population count. The Modified Blended Base consists of"
+"the blend of Vintage 2020 postcensal population estimates for April 1, 2020, 2020 Demographic Analysis Estimates, and 2020"
+"Census data from the internal Census Edited File (CEF). The population figures for years 2021 are single-race estimates of the"
+"July 1 resident population, based on the Blended Base produced by the US Census Bureau in lieu of the April 1, 2020 decennial"
+"population count, from the Vintage 2021 postcensal series released by the Census Bureau on June 30, 2022. The population figures"
+"for year 2020 are single-race estimates of the July 1 resident population, from the Vintage 2020 postcensal series based on"
+"April 2010 Census, released by the Census Bureau on July 27, 2021. The population figures for year 2019 are single-race"
+"estimates of the July 1 resident population, from the Vintage 2019 postcensal series based on April 2010 Census, released by the"
+"Census Bureau on June 25, 2020. The population figures for year 2018 are single-race estimates of the July 1 resident"
+"population, from the Vintage 2018 postcensal series based on April 2010 Census, released by the Census Bureau on June 20, 2019."
+"More information: http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Population Data."
+"8. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd-expanded.html#Age"
+"Group."
