@@ -49,13 +49,14 @@ if (!dir.exists(outputdir)){
 	dir.create(outputdir)
 }
 
-female.df$mrr %>% pivot_wider(names_from = Year, values_from = MRR) %>% write_csv(., paste0(outputdir, "female-MRR.csv"))
 
-female.df$lly %>% pivot_wider(names_from = Year, values_from = EYLL) %>% write_csv(., paste0(outputdir, "female-EYLL.csv"))
+female.df$mrr %>% pivot_wider(names_from = Year, values_from = MRR) %>% mutate_if(is.numeric, ~round(., 2)) %>% write_csv(., paste0(outputdir, "female-MRR.csv"))
 
-male.df$mrr %>% pivot_wider(names_from = Year, values_from = MRR) %>% write_csv(., paste0(outputdir, "male-MRR.csv"))
+female.df$lly %>% pivot_wider(names_from = Year, values_from = EYLL) %>% mutate_if(is.numeric, ~round(., 0)) %>% write_csv(., paste0(outputdir, "female-EYLL.csv"))
 
-male.df$lly %>% pivot_wider(names_from = Year, values_from = EYLL) %>% write_csv(., paste0(outputdir, "male-EYLL.csv"))
+male.df$mrr %>% pivot_wider(names_from = Year, values_from = MRR) %>% mutate_if(is.numeric, ~round(., 2)) %>% write_csv(., paste0(outputdir, "male-MRR.csv"))
+
+male.df$lly %>% pivot_wider(names_from = Year, values_from = EYLL) %>% mutate_if(is.numeric, ~round(., 0)) %>% write_csv(., paste0(outputdir, "male-EYLL.csv"))
 
 
 
