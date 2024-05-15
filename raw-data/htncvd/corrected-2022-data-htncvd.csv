@@ -18,7 +18,7 @@ Deaths,Population,Five-Year Age Groups,Gender,Hispanic Origin,Race
 0,99032,10-14 years,Female,Hispanic or Latino,American Indian or Alaska Native
 0,57118,10-14 years,Female,Hispanic or Latino,Asian or Pacific Islander
 0,181908,10-14 years,Female,Hispanic or Latino,Black or African American
-6,2314949,10-14 years,Female,Hispanic or Latino,White
+8,2314949,10-14 years,Female,Hispanic or Latino,White
 0,99429,10-14 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
 0,636162,10-14 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 0,1572745,10-14 years,Female,Not Hispanic or Latino,Black or African American
@@ -30,117 +30,117 @@ Deaths,Population,Five-Year Age Groups,Gender,Hispanic Origin,Race
 0,102694,10-14 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
 0,668741,10-14 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 0,1633451,10-14 years,Male,Not Hispanic or Latino,Black or African American
-6,5524660,10-14 years,Male,Not Hispanic or Latino,White
+3,5524660,10-14 years,Male,Not Hispanic or Latino,White
 0,93432,15-19 years,Female,Hispanic or Latino,American Indian or Alaska Native
 0,51052,15-19 years,Female,Hispanic or Latino,Asian or Pacific Islander
 0,163068,15-19 years,Female,Hispanic or Latino,Black or African American
-6,2351474,15-19 years,Female,Hispanic or Latino,White
+1,2351474,15-19 years,Female,Hispanic or Latino,White
 0,102417,15-19 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
 0,658199,15-19 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
-6,1578600,15-19 years,Female,Not Hispanic or Latino,Black or African American
-6,5555506,15-19 years,Female,Not Hispanic or Latino,White
+7,1578600,15-19 years,Female,Not Hispanic or Latino,Black or African American
+1,5555506,15-19 years,Female,Not Hispanic or Latino,White
 0,98108,15-19 years,Male,Hispanic or Latino,American Indian or Alaska Native
 0,53586,15-19 years,Male,Hispanic or Latino,Asian or Pacific Islander
 0,172070,15-19 years,Male,Hispanic or Latino,Black or African American
-6,2465487,15-19 years,Male,Hispanic or Latino,White
-1,105330,15-19 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
-1,675912,15-19 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
+2,2465487,15-19 years,Male,Hispanic or Latino,White
+0,105330,15-19 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
+0,675912,15-19 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 8,1628010,15-19 years,Male,Not Hispanic or Latino,Black or African American
-9,5883540,15-19 years,Male,Not Hispanic or Latino,White
+2,5883540,15-19 years,Male,Not Hispanic or Latino,White
 0,89356,20-24 years,Female,Hispanic or Latino,American Indian or Alaska Native
 0,46846,20-24 years,Female,Hispanic or Latino,Asian or Pacific Islander
 0,152684,20-24 years,Female,Hispanic or Latino,Black or African American
-6,2323592,20-24 years,Female,Hispanic or Latino,White
+5,2323592,20-24 years,Female,Hispanic or Latino,White
 0,107828,20-24 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
 1,729986,20-24 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
-8,1686424,20-24 years,Female,Not Hispanic or Latino,Black or African American
-9,5967075,20-24 years,Female,Not Hispanic or Latino,White
+10,1686424,20-24 years,Female,Not Hispanic or Latino,Black or African American
+6,5967075,20-24 years,Female,Not Hispanic or Latino,White
 1,93657,20-24 years,Male,Hispanic or Latino,American Indian or Alaska Native
 2,48719,20-24 years,Male,Hispanic or Latino,Asian or Pacific Islander
-1,162064,20-24 years,Male,Hispanic or Latino,Black or African American
-8,2431924,20-24 years,Male,Hispanic or Latino,White
+2,162064,20-24 years,Male,Hispanic or Latino,Black or African American
+13,2431924,20-24 years,Male,Hispanic or Latino,White
 1,110554,20-24 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
-7,743823,20-24 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
-19,1718441,20-24 years,Male,Not Hispanic or Latino,Black or African American
+6,743823,20-24 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
+20,1718441,20-24 years,Male,Not Hispanic or Latino,Black or African American
 26,6292806,20-24 years,Male,Not Hispanic or Latino,White
 0,81950,25-29 years,Female,Hispanic or Latino,American Indian or Alaska Native
 0,43045,25-29 years,Female,Hispanic or Latino,Asian or Pacific Islander
 0,136423,25-29 years,Female,Hispanic or Latino,Black or African American
-6,2113911,25-29 years,Female,Hispanic or Latino,White
+7,2113911,25-29 years,Female,Hispanic or Latino,White
 0,104257,25-29 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
-7,819016,25-29 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
+1,819016,25-29 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 28,1673395,25-29 years,Female,Not Hispanic or Latino,Black or African American
 25,5868424,25-29 years,Female,Not Hispanic or Latino,White
 1,86246,25-29 years,Male,Hispanic or Latino,American Indian or Alaska Native
 2,44334,25-29 years,Male,Hispanic or Latino,Asian or Pacific Islander
 7,145624,25-29 years,Male,Hispanic or Latino,Black or African American
-20,2238986,25-29 years,Male,Hispanic or Latino,White
-1,107648,25-29 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
-13,823460,25-29 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
-65,1704656,25-29 years,Male,Not Hispanic or Latino,Black or African American
-61,6201789,25-29 years,Male,Not Hispanic or Latino,White
-1,78131,30-34 years,Female,Hispanic or Latino,American Indian or Alaska Native
+21,2238986,25-29 years,Male,Hispanic or Latino,White
+0,107648,25-29 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
+10,823460,25-29 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
+64,1704656,25-29 years,Male,Not Hispanic or Latino,Black or African American
+60,6201789,25-29 years,Male,Not Hispanic or Latino,White
+0,78131,30-34 years,Female,Hispanic or Latino,American Indian or Alaska Native
 1,43556,30-34 years,Female,Hispanic or Latino,Asian or Pacific Islander
-2,144423,30-34 years,Female,Hispanic or Latino,Black or African American
-15,2039074,30-34 years,Female,Hispanic or Latino,White
-6,106186,30-34 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
-13,962723,30-34 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
-94,1766776,30-34 years,Female,Not Hispanic or Latino,Black or African American
-54,6330447,30-34 years,Female,Not Hispanic or Latino,White
+1,144423,30-34 years,Female,Hispanic or Latino,Black or African American
+13,2039074,30-34 years,Female,Hispanic or Latino,White
+4,106186,30-34 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
+5,962723,30-34 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
+92,1766776,30-34 years,Female,Not Hispanic or Latino,Black or African American
+51,6330447,30-34 years,Female,Not Hispanic or Latino,White
 0,89918,30-34 years,Male,Hispanic or Latino,American Indian or Alaska Native
 0,45081,30-34 years,Male,Hispanic or Latino,Asian or Pacific Islander
-6,147944,30-34 years,Male,Hispanic or Latino,Black or African American
+9,147944,30-34 years,Male,Hispanic or Latino,Black or African American
 55,2229004,30-34 years,Male,Hispanic or Latino,White
-8,108581,30-34 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
-14,931076,30-34 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
+5,108581,30-34 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
+9,931076,30-34 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 141,1739488,30-34 years,Male,Not Hispanic or Latino,Black or African American
 164,6545730,30-34 years,Male,Not Hispanic or Latino,White
 0,73337,35-39 years,Female,Hispanic or Latino,American Indian or Alaska Native
 0,39267,35-39 years,Female,Hispanic or Latino,Asian or Pacific Islander
-6,133148,35-39 years,Female,Hispanic or Latino,Black or African American
+5,133148,35-39 years,Female,Hispanic or Latino,Black or African American
 23,1933935,35-39 years,Female,Hispanic or Latino,White
-7,92684,35-39 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
-13,957036,35-39 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
+6,92684,35-39 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
+15,957036,35-39 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 152,1533513,35-39 years,Female,Not Hispanic or Latino,Black or African American
-145,6202729,35-39 years,Female,Not Hispanic or Latino,White
+146,6202729,35-39 years,Female,Not Hispanic or Latino,White
 6,87290,35-39 years,Male,Hispanic or Latino,American Indian or Alaska Native
-6,42774,35-39 years,Male,Hispanic or Latino,Asian or Pacific Islander
-6,130632,35-39 years,Male,Hispanic or Latino,Black or African American
+1,42774,35-39 years,Male,Hispanic or Latino,Asian or Pacific Islander
+4,130632,35-39 years,Male,Hispanic or Latino,Black or African American
 103,2167493,35-39 years,Male,Hispanic or Latino,White
-7,92205,35-39 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
-30,904319,35-39 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
-289,1453787,35-39 years,Male,Not Hispanic or Latino,Black or African American
+6,92205,35-39 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
+33,904319,35-39 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
+290,1453787,35-39 years,Male,Not Hispanic or Latino,Black or African American
 343,6423800,35-39 years,Male,Not Hispanic or Latino,White
 0,70819,40-44 years,Female,Hispanic or Latino,American Indian or Alaska Native
-1,37753,40-44 years,Female,Hispanic or Latino,Asian or Pacific Islander
-7,127651,40-44 years,Female,Hispanic or Latino,Black or African American
-53,1898158,40-44 years,Female,Hispanic or Latino,White
+0,37753,40-44 years,Female,Hispanic or Latino,Asian or Pacific Islander
+8,127651,40-44 years,Female,Hispanic or Latino,Black or African American
+51,1898158,40-44 years,Female,Hispanic or Latino,White
 6,85331,40-44 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
 13,895624,40-44 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 263,1472391,40-44 years,Female,Not Hispanic or Latino,Black or African American
-274,6021800,40-44 years,Female,Not Hispanic or Latino,White
-7,82738,40-44 years,Male,Hispanic or Latino,American Indian or Alaska Native
+275,6021800,40-44 years,Female,Not Hispanic or Latino,White
+3,82738,40-44 years,Male,Hispanic or Latino,American Indian or Alaska Native
 2,39783,40-44 years,Male,Hispanic or Latino,Asian or Pacific Islander
-7,120450,40-44 years,Male,Hispanic or Latino,Black or African American
+2,120450,40-44 years,Male,Hispanic or Latino,Black or African American
 153,2081671,40-44 years,Male,Hispanic or Latino,White
 17,83970,40-44 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
-41,814197,40-44 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
+36,814197,40-44 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 442,1354606,40-44 years,Male,Not Hispanic or Latino,Black or African American
 609,6240474,40-44 years,Male,Not Hispanic or Latino,White
 1,62231,45-49 years,Female,Hispanic or Latino,American Indian or Alaska Native
-8,32568,45-49 years,Female,Hispanic or Latino,Asian or Pacific Islander
-7,107994,45-49 years,Female,Hispanic or Latino,Black or African American
-67,1765209,45-49 years,Female,Hispanic or Latino,White
+9,32568,45-49 years,Female,Hispanic or Latino,Asian or Pacific Islander
+5,107994,45-49 years,Female,Hispanic or Latino,Black or African American
+68,1765209,45-49 years,Female,Hispanic or Latino,White
 16,77730,45-49 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
-21,828102,45-49 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
+16,828102,45-49 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 353,1334539,45-49 years,Female,Not Hispanic or Latino,Black or African American
 412,5570736,45-49 years,Female,Not Hispanic or Latino,White
-1,71332,45-49 years,Male,Hispanic or Latino,American Indian or Alaska Native
-8,32845,45-49 years,Male,Hispanic or Latino,Asian or Pacific Islander
-7,97015,45-49 years,Male,Hispanic or Latino,Black or African American
-232,1864193,45-49 years,Male,Hispanic or Latino,White
+0,71332,45-49 years,Male,Hispanic or Latino,American Indian or Alaska Native
+10,32845,45-49 years,Male,Hispanic or Latino,Asian or Pacific Islander
+3,97015,45-49 years,Male,Hispanic or Latino,Black or African American
+230,1864193,45-49 years,Male,Hispanic or Latino,White
 29,75546,45-49 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
-60,748746,45-49 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
+56,748746,45-49 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 582,1200224,45-49 years,Male,Not Hispanic or Latino,Black or African American
 831,5755089,45-49 years,Male,Not Hispanic or Latino,White
 0,108028,5-9 years,Female,Hispanic or Latino,American Indian or Alaska Native
@@ -159,64 +159,64 @@ Deaths,Population,Five-Year Age Groups,Gender,Hispanic Origin,Race
 0,702110,5-9 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 0,1561603,5-9 years,Male,Not Hispanic or Latino,Black or African American
 0,5253757,5-9 years,Male,Not Hispanic or Latino,White
-6,55758,50-54 years,Female,Hispanic or Latino,American Indian or Alaska Native
-8,28183,50-54 years,Female,Hispanic or Latino,Asian or Pacific Islander
-7,92121,50-54 years,Female,Hispanic or Latino,Black or African American
-96,1605281,50-54 years,Female,Hispanic or Latino,White
+8,55758,50-54 years,Female,Hispanic or Latino,American Indian or Alaska Native
+9,28183,50-54 years,Female,Hispanic or Latino,Asian or Pacific Islander
+5,92121,50-54 years,Female,Hispanic or Latino,Black or African American
+98,1605281,50-54 years,Female,Hispanic or Latino,White
 25,80502,50-54 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
-31,772156,50-54 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
+30,772156,50-54 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 483,1380503,50-54 years,Female,Not Hispanic or Latino,Black or African American
-719,6358402,50-54 years,Female,Not Hispanic or Latino,White
-7,63002,50-54 years,Male,Hispanic or Latino,American Indian or Alaska Native
-14,27995,50-54 years,Male,Hispanic or Latino,Asian or Pacific Islander
-7,83291,50-54 years,Male,Hispanic or Latino,Black or African American
-353,1684577,50-54 years,Male,Hispanic or Latino,White
+720,6358402,50-54 years,Female,Not Hispanic or Latino,White
+4,63002,50-54 years,Male,Hispanic or Latino,American Indian or Alaska Native
+19,27995,50-54 years,Male,Hispanic or Latino,Asian or Pacific Islander
+2,83291,50-54 years,Male,Hispanic or Latino,Black or African American
+354,1684577,50-54 years,Male,Hispanic or Latino,White
 35,77914,50-54 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
-78,697552,50-54 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
+81,697552,50-54 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 866,1242380,50-54 years,Male,Not Hispanic or Latino,Black or African American
 1654,6557929,50-54 years,Male,Not Hispanic or Latino,White
-7,47501,55-59 years,Female,Hispanic or Latino,American Indian or Alaska Native
-7,23827,55-59 years,Female,Hispanic or Latino,Asian or Pacific Islander
-7,80060,55-59 years,Female,Hispanic or Latino,Black or African American
-189,1396282,55-59 years,Female,Hispanic or Latino,White
+3,47501,55-59 years,Female,Hispanic or Latino,American Indian or Alaska Native
+4,23827,55-59 years,Female,Hispanic or Latino,Asian or Pacific Islander
+4,80060,55-59 years,Female,Hispanic or Latino,Black or African American
+187,1396282,55-59 years,Female,Hispanic or Latino,White
 28,84837,55-59 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
-42,672059,55-59 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
+43,672059,55-59 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 699,1384021,55-59 years,Female,Not Hispanic or Latino,Black or African American
 1177,6904503,55-59 years,Female,Not Hispanic or Latino,White
-7,51965,55-59 years,Male,Hispanic or Latino,American Indian or Alaska Native
-2,22833,55-59 years,Male,Hispanic or Latino,Asian or Pacific Islander
-7,71768,55-59 years,Male,Hispanic or Latino,Black or African American
-409,1426938,55-59 years,Male,Hispanic or Latino,White
+3,51965,55-59 years,Male,Hispanic or Latino,American Indian or Alaska Native
+0,22833,55-59 years,Male,Hispanic or Latino,Asian or Pacific Islander
+6,71768,55-59 years,Male,Hispanic or Latino,Black or African American
+406,1426938,55-59 years,Male,Hispanic or Latino,White
 50,78884,55-59 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
 121,597920,55-59 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 1247,1217698,55-59 years,Male,Not Hispanic or Latino,Black or African American
 2600,6905917,55-59 years,Male,Not Hispanic or Latino,White
 0,39595,60-64 years ,Female,Hispanic or Latino,American Indian or Alaska Native
 7,19542,60-64 years ,Female,Hispanic or Latino,Asian or Pacific Islander
-7,65241,60-64 years ,Female,Hispanic or Latino,Black or African American
+5,65241,60-64 years ,Female,Hispanic or Latino,Black or African American
 227,1162927,60-64 years ,Female,Hispanic or Latino,White
 41,86361,60-64 years ,Female,Not Hispanic or Latino,American Indian or Alaska Native
-76,613504,60-64 years ,Female,Not Hispanic or Latino,Asian or Pacific Islander
+72,613504,60-64 years ,Female,Not Hispanic or Latino,Asian or Pacific Islander
 962,1339506,60-64 years ,Female,Not Hispanic or Latino,Black or African American
 1959,7493768,60-64 years ,Female,Not Hispanic or Latino,White
-7,40909,60-64 years ,Male,Hispanic or Latino,American Indian or Alaska Native
-14,17992,60-64 years ,Male,Hispanic or Latino,Asian or Pacific Islander
+5,40909,60-64 years ,Male,Hispanic or Latino,American Indian or Alaska Native
+12,17992,60-64 years ,Male,Hispanic or Latino,Asian or Pacific Islander
 21,57523,60-64 years ,Male,Hispanic or Latino,Black or African American
-455,1133200,60-64 years ,Male,Hispanic or Latino,White
+456,1133200,60-64 years ,Male,Hispanic or Latino,White
 61,77017,60-64 years ,Male,Not Hispanic or Latino,American Indian or Alaska Native
-145,529022,60-64 years ,Male,Not Hispanic or Latino,Asian or Pacific Islander
+148,529022,60-64 years ,Male,Not Hispanic or Latino,Asian or Pacific Islander
 1537,1142395,60-64 years ,Male,Not Hispanic or Latino,Black or African American
 3974,7299922,60-64 years ,Male,Not Hispanic or Latino,White
 7,28714,65-69 years,Female,Hispanic or Latino,American Indian or Alaska Native
-13,14490,65-69 years,Female,Hispanic or Latino,Asian or Pacific Islander
-7,49752,65-69 years,Female,Hispanic or Latino,Black or African American
+15,14490,65-69 years,Female,Hispanic or Latino,Asian or Pacific Islander
+2,49752,65-69 years,Female,Hispanic or Latino,Black or African American
 292,912188,65-69 years,Female,Hispanic or Latino,White
 44,73234,65-69 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
 109,548688,65-69 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 1112,1131633,65-69 years,Female,Not Hispanic or Latino,Black or African American
 2628,6998820,65-69 years,Female,Not Hispanic or Latino,White
-7,28794,65-69 years,Male,Hispanic or Latino,American Indian or Alaska Native
-13,12548,65-69 years,Male,Hispanic or Latino,Asian or Pacific Islander
+10,28794,65-69 years,Male,Hispanic or Latino,American Indian or Alaska Native
+15,12548,65-69 years,Male,Hispanic or Latino,Asian or Pacific Islander
 13,42211,65-69 years,Male,Hispanic or Latino,Black or African American
 448,819776,65-69 years,Male,Hispanic or Latino,White
 64,62698,65-69 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
@@ -224,49 +224,49 @@ Deaths,Population,Five-Year Age Groups,Gender,Hispanic Origin,Race
 1700,897110,65-69 years,Male,Not Hispanic or Latino,Black or African American
 4500,6561101,65-69 years,Male,Not Hispanic or Latino,White
 1,19272,70-74 years,Female,Hispanic or Latino,American Indian or Alaska Native
-1,10130,70-74 years,Female,Hispanic or Latino,Asian or Pacific Islander
-11,35482,70-74 years,Female,Hispanic or Latino,Black or African American
-377,676458,70-74 years,Female,Hispanic or Latino,White
+2,10130,70-74 years,Female,Hispanic or Latino,Asian or Pacific Islander
+12,35482,70-74 years,Female,Hispanic or Latino,Black or African American
+379,676458,70-74 years,Female,Hispanic or Latino,White
 54,55327,70-74 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
 146,449011,70-74 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 1141,869073,70-74 years,Female,Not Hispanic or Latino,Black or African American
 3604,6005494,70-74 years,Female,Not Hispanic or Latino,White
-7,17453,70-74 years,Male,Hispanic or Latino,American Indian or Alaska Native
-14,8249,70-74 years,Male,Hispanic or Latino,Asian or Pacific Islander
-15,27998,70-74 years,Male,Hispanic or Latino,Black or African American
-497,565554,70-74 years,Male,Hispanic or Latino,White
+1,17453,70-74 years,Male,Hispanic or Latino,American Indian or Alaska Native
+11,8249,70-74 years,Male,Hispanic or Latino,Asian or Pacific Islander
+14,27998,70-74 years,Male,Hispanic or Latino,Black or African American
+495,565554,70-74 years,Male,Hispanic or Latino,White
 64,47110,70-74 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
 209,351586,70-74 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 1471,629514,70-74 years,Male,Not Hispanic or Latino,Black or African American
 4950,5389306,70-74 years,Male,Not Hispanic or Latino,White
-6,12036,75-79 years,Female,Hispanic or Latino,American Indian or Alaska Native
-8,6567,75-79 years,Female,Hispanic or Latino,Asian or Pacific Islander
-7,23692,75-79 years,Female,Hispanic or Latino,Black or African American
+2,12036,75-79 years,Female,Hispanic or Latino,American Indian or Alaska Native
+9,6567,75-79 years,Female,Hispanic or Latino,Asian or Pacific Islander
+4,23692,75-79 years,Female,Hispanic or Latino,Black or African American
 440,473379,75-79 years,Female,Hispanic or Latino,White
 53,36856,75-79 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
-223,297233,75-79 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
+222,297233,75-79 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 1110,560885,75-79 years,Female,Not Hispanic or Latino,Black or African American
 5007,4540665,75-79 years,Female,Not Hispanic or Latino,White
-7,10260,75-79 years,Male,Hispanic or Latino,American Indian or Alaska Native
-8,4905,75-79 years,Male,Hispanic or Latino,Asian or Pacific Islander
-7,16940,75-79 years,Male,Hispanic or Latino,Black or African American
-491,360221,75-79 years,Male,Hispanic or Latino,White
+8,10260,75-79 years,Male,Hispanic or Latino,American Indian or Alaska Native
+2,4905,75-79 years,Male,Hispanic or Latino,Asian or Pacific Islander
+2,16940,75-79 years,Male,Hispanic or Latino,Black or African American
+490,360221,75-79 years,Male,Hispanic or Latino,White
 57,30549,75-79 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
 207,234418,75-79 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 1105,375396,75-79 years,Male,Not Hispanic or Latino,Black or African American
 5277,3876996,75-79 years,Male,Not Hispanic or Latino,White
-7,7104,80-84 years,Female,Hispanic or Latino,American Indian or Alaska Native
-14,4182,80-84 years,Female,Hispanic or Latino,Asian or Pacific Islander
+9,7104,80-84 years,Female,Hispanic or Latino,American Indian or Alaska Native
+7,4182,80-84 years,Female,Hispanic or Latino,Asian or Pacific Islander
 11,14859,80-84 years,Female,Hispanic or Latino,Black or African American
 604,312143,80-84 years,Female,Hispanic or Latino,White
 50,22617,80-84 years,Female,Not Hispanic or Latino,American Indian or Alaska Native
-332,194689,80-84 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
+327,194689,80-84 years,Female,Not Hispanic or Latino,Asian or Pacific Islander
 1169,358127,80-84 years,Female,Not Hispanic or Latino,Black or African American
 6361,2920664,80-84 years,Female,Not Hispanic or Latino,White
-7,5255,80-84 years,Male,Hispanic or Latino,American Indian or Alaska Native
-14,2775,80-84 years,Male,Hispanic or Latino,Asian or Pacific Islander
-7,9923,80-84 years,Male,Hispanic or Latino,Black or African American
-501,211501,80-84 years,Male,Hispanic or Latino,White
+8,5255,80-84 years,Male,Hispanic or Latino,American Indian or Alaska Native
+16,2775,80-84 years,Male,Hispanic or Latino,Asian or Pacific Islander
+3,9923,80-84 years,Male,Hispanic or Latino,Black or African American
+499,211501,80-84 years,Male,Hispanic or Latino,White
 46,17382,80-84 years,Male,Not Hispanic or Latino,American Indian or Alaska Native
 246,147897,80-84 years,Male,Not Hispanic or Latino,Asian or Pacific Islander
 859,208099,80-84 years,Male,Not Hispanic or Latino,Black or African American
@@ -277,7 +277,7 @@ Deaths,Population,Five-Year Age Groups,Gender,Hispanic Origin,Race
 0,410541,< 1 year,Female,Hispanic or Latino,White
 0,15742,< 1 year,Female,Not Hispanic or Latino,American Indian or Alaska Native
 0,115811,< 1 year,Female,Not Hispanic or Latino,Asian or Pacific Islander
-6,299503,< 1 year,Female,Not Hispanic or Latino,Black or African American
+3,299503,< 1 year,Female,Not Hispanic or Latino,Black or African American
 0,879170,< 1 year,Female,Not Hispanic or Latino,White
 0,24564,< 1 year,Male,Hispanic or Latino,American Indian or Alaska Native
 0,13828,< 1 year,Male,Hispanic or Latino,Asian or Pacific Islander
@@ -285,5 +285,5 @@ Deaths,Population,Five-Year Age Groups,Gender,Hispanic Origin,Race
 0,425403,< 1 year,Male,Hispanic or Latino,White
 0,16244,< 1 year,Male,Not Hispanic or Latino,American Indian or Alaska Native
 0,123243,< 1 year,Male,Not Hispanic or Latino,Asian or Pacific Islander
-6,310449,< 1 year,Male,Not Hispanic or Latino,Black or African American
+4,310449,< 1 year,Male,Not Hispanic or Latino,Black or African American
 0,924898,< 1 year,Male,Not Hispanic or Latino,White

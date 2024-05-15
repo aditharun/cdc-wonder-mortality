@@ -103,8 +103,8 @@ death_converter <- function(race6, race4){
 	race4 <- race4 %>% select(`Five-Year Age Groups`, Year, Gender,  `Hispanic Origin`, Race, Deaths) 
 
 
-	race6 <- race6 %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = 1), Deaths)) %>% type.convert(as.is=TRUE)
-	race4 <- race4 %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = 1), Deaths)) %>% type.convert(as.is=TRUE)
+	race6 <- race6 %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% type.convert(as.is=TRUE)
+	race4 <- race4 %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% type.convert(as.is=TRUE)
 
 	#take out More than one race in race6
 	other <- race6 %>% filter(Race == "More than one race")
@@ -139,11 +139,11 @@ pop_converter <- function(race6, race4){
 	race4 <- race4 %>% select(`Five-Year Age Groups`, Year, Gender,  `Hispanic Origin`, Race, Deaths) 
 
 
-	race6 <- race6 %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = 1), Deaths)) %>% type.convert(as.is=TRUE)
-	race4 <- race4 %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = 1), Deaths)) %>% type.convert(as.is=TRUE)
+	race6 <- race6 %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% type.convert(as.is=TRUE)
+	race4 <- race4 %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% type.convert(as.is=TRUE)
 
-	race6 <- race6 %>% mutate(Deaths = ifelse(Deaths == "Unreliable", sample(c(11:19), size = 1), Deaths)) %>% type.convert(as.is=TRUE)
-	race4 <- race4 %>% mutate(Deaths = ifelse(Deaths == "Unreliable", sample(c(11:19), size = 1), Deaths)) %>% type.convert(as.is=TRUE)
+	race6 <- race6 %>% mutate(Deaths = ifelse(Deaths == "Unreliable", sample(c(11:19), size = sum(Deaths == "Unreliable"), replace = TRUE), Deaths)) %>% type.convert(as.is=TRUE)
+	race4 <- race4 %>% mutate(Deaths = ifelse(Deaths == "Unreliable", sample(c(11:19), size = sum(Deaths == "Unreliable"), replace = TRUE), Deaths)) %>% type.convert(as.is=TRUE)
 
 	#take out More than one race in race6
 	other <- race6 %>% filter(Race == "More than one race")
@@ -175,7 +175,7 @@ newdata <- do.call(rbind, newdata)
 
 newdata <- newdata %>% mutate(Race = ifelse(`Single Race 6` %in% c("Asian", "Native Hawaiian or Other Pacific Islander"), "Asian or Pacific Islander", `Single Race 6`)) 
 
-newdata <- newdata %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = 1), Deaths)) %>% mutate(Population = ifelse(Population == "Suppressed", sample(c(1:9), size = 1), Population)) %>% mutate(Population = ifelse(Population == "Unreliable", sample(c(11:19), size = 1), Population)) %>% filter(Population != "Not Applicable") %>% type.convert(as.is = TRUE) %>% select(-c(`Single Race 6`, `Single Race 6 Code`)) %>% group_by_at(vars(-Deaths, -Population, -`Crude Rate`)) %>% summarize(Deaths = sum(Deaths), Population = sum(Population), `Crude Rate` = Deaths / Population) %>% ungroup()
+newdata <- newdata %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% mutate(Population = ifelse(Population == "Suppressed", sample(c(1:9), size = sum(Population == "Suppressed"), replace = TRUE), Population)) %>% mutate(Population = ifelse(Population == "Unreliable", sample(c(11:19), size = sum(Population == "Unreliable"), replace = TRUE), Population)) %>% filter(Population != "Not Applicable") %>% type.convert(as.is = TRUE) %>% select(-c(`Single Race 6`, `Single Race 6 Code`)) %>% group_by_at(vars(-Deaths, -Population, -`Crude Rate`)) %>% summarize(Deaths = sum(Deaths), Population = sum(Population), `Crude Rate` = Deaths / Population) %>% ungroup()
 
 other <- newdata %>% filter(Race== "More than one race")
 
@@ -216,7 +216,7 @@ newdata <- do.call(rbind, newdata)
 
 newdata <- newdata %>% mutate(Race = ifelse(`Single Race 6` %in% c("Asian", "Native Hawaiian or Other Pacific Islander"), "Asian or Pacific Islander", `Single Race 6`)) 
 
-newdata <- newdata %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = 1), Deaths)) %>% mutate(Population = ifelse(Population == "Suppressed", sample(c(1:9), size = 1), Population)) %>% mutate(Population = ifelse(Population == "Unreliable", sample(c(11:19), size = 1), Population)) %>% filter(Population != "Not Applicable") %>% type.convert(as.is = TRUE) %>% select(-c(`Single Race 6`, `Single Race 6 Code`)) %>% group_by_at(vars(-Deaths, -Population, -`Crude Rate`)) %>% summarize(Deaths = sum(Deaths), Population = sum(Population), `Crude Rate` = Deaths / Population) %>% ungroup()
+newdata <- newdata %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% mutate(Population = ifelse(Population == "Suppressed", sample(c(1:9), size = sum(Population == "Suppressed"), replace = TRUE), Population)) %>% mutate(Population = ifelse(Population == "Unreliable", sample(c(11:19), size = sum(Population == "Unreliable"), replace = TRUE), Population)) %>% filter(Population != "Not Applicable") %>% type.convert(as.is = TRUE) %>% select(-c(`Single Race 6`, `Single Race 6 Code`)) %>% group_by_at(vars(-Deaths, -Population, -`Crude Rate`)) %>% summarize(Deaths = sum(Deaths), Population = sum(Population), `Crude Rate` = Deaths / Population) %>% ungroup()
 
 other <- newdata %>% filter(Race== "More than one race")
 
@@ -268,6 +268,8 @@ pop_master_df <- "../raw-data/population-1999-2020.txt" %>% readTextFile(.) %>% 
 
 master_pop <- rbind(pop_2021_2022, pop_master_df) %>% as_tibble()
 
+
+
 master_pop %>% write_csv(., file = master_pop_file)
 
 #STEP2: edit 2021/2022 to be in the shape of 1999-2020 form which must be in the form of below
@@ -279,7 +281,7 @@ new <- new %>% filter(Deaths > 0) %>% select(-Population)
 #combine with 1999-2020 data 
 df <- rbind(data_1999_2020, new) %>% as_tibble()
 
-df <- df %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(seq(1, 9, 1), replace = TRUE, size = 1), Deaths)) 
+df <- df %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths))
 
 df <- df %>% type.convert(as.is = TRUE)
 

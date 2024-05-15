@@ -51,9 +51,11 @@ if (project %in% c("cvd", "htncvd", "ihdcvd", "hfcvd", "cvcvd")){
 
 	fig_jacc <- plot_grid(readRDS(file.path(emby, "mortality_rate_ratio_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label,
 
-	readRDS(file.path(lylby, "excess_pll_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label, nrow = 1, labels = c("A", "B"), label_size = 25)
+		readRDS(file.path(emby, "excess_death_rate_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect(),
 
-	save_plot_custom(plt = fig_jacc, folder = figdir, width.in = 14, height.in = 5)
+	readRDS(file.path(lylby, "excess_pll_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label, nrow = 1, labels = c("A", "B", "C"), label_size = 25)
+
+	save_plot_custom(plt = fig_jacc, folder = figdir, width.in = 18, height.in = 5.2)
 }
 
 

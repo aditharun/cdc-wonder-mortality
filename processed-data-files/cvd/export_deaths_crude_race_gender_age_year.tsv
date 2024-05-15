@@ -20,8 +20,8 @@ Black or African American	Not Hispanic or Latino	20-24 years	F	2017	91	1677678	5
 Black or African American	Not Hispanic or Latino	20-24 years	F	2018	84	1643358	5.11148514200801
 Black or African American	Not Hispanic or Latino	20-24 years	F	2019	99	1615209	6.12923776427695
 Black or African American	Not Hispanic or Latino	20-24 years	F	2020	86	1610597	5.33963493040158
-Black or African American	Not Hispanic or Latino	20-24 years	F	2021	106	1607120	6.59564936034646
-Black or African American	Not Hispanic or Latino	20-24 years	F	2022	97	1686424	5.75181567624749
+Black or African American	Not Hispanic or Latino	20-24 years	F	2021	107	1607120	6.65787246751954
+Black or African American	Not Hispanic or Latino	20-24 years	F	2022	98	1686424	5.81111274507479
 Black or African American	Not Hispanic or Latino	20-24 years	M	2000	143	1288774	11.0958166443457
 Black or African American	Not Hispanic or Latino	20-24 years	M	2001	164	1354373	12.1089242033029
 Black or African American	Not Hispanic or Latino	20-24 years	M	2002	144	1397013	10.3077065138263
@@ -44,7 +44,7 @@ Black or African American	Not Hispanic or Latino	20-24 years	M	2018	154	1691428	
 Black or African American	Not Hispanic or Latino	20-24 years	M	2019	129	1660340	7.76949299541058
 Black or African American	Not Hispanic or Latino	20-24 years	M	2020	134	1652385	8.10949022170983
 Black or African American	Not Hispanic or Latino	20-24 years	M	2021	154	1642560	9.37560880576661
-Black or African American	Not Hispanic or Latino	20-24 years	M	2022	155	1718441	9.01980341483938
+Black or African American	Not Hispanic or Latino	20-24 years	M	2022	156	1718441	9.07799569493512
 Black or African American	Not Hispanic or Latino	25-29 years	F	2000	188	1345107	13.9765832755312
 Black or African American	Not Hispanic or Latino	25-29 years	F	2001	186	1304639	14.2568174031284
 Black or African American	Not Hispanic or Latino	25-29 years	F	2002	185	1293736	14.2996716486207
@@ -66,7 +66,7 @@ Black or African American	Not Hispanic or Latino	25-29 years	F	2017	192	1773228	
 Black or African American	Not Hispanic or Latino	25-29 years	F	2018	198	1811064	10.9327997243609
 Black or African American	Not Hispanic or Latino	25-29 years	F	2019	174	1817908	9.57144145908374
 Black or African American	Not Hispanic or Latino	25-29 years	F	2020	213	1789798	11.9007843343215
-Black or African American	Not Hispanic or Latino	25-29 years	F	2021	189	1717789	11.0025154428163
+Black or African American	Not Hispanic or Latino	25-29 years	F	2021	190	1717789	11.0607298102386
 Black or African American	Not Hispanic or Latino	25-29 years	F	2022	188	1673395	11.2346457351671
 Black or African American	Not Hispanic or Latino	25-29 years	M	2000	238	1217250	19.552269459848
 Black or African American	Not Hispanic or Latino	25-29 years	M	2001	258	1176367	21.9319311065339
@@ -618,8 +618,8 @@ White	Not Hispanic or Latino	20-24 years	F	2017	129	5937916	2.17247936818237
 White	Not Hispanic or Latino	20-24 years	F	2018	133	5862672	2.26859015820773
 White	Not Hispanic or Latino	20-24 years	F	2019	151	5794653	2.60585060054502
 White	Not Hispanic or Latino	20-24 years	F	2020	145	5765196	2.51509228827606
-White	Not Hispanic or Latino	20-24 years	F	2021	120	5730106	2.09420209678495
-White	Not Hispanic or Latino	20-24 years	F	2022	129	5967075	2.16186322444414
+White	Not Hispanic or Latino	20-24 years	F	2021	121	5730106	2.11165378092482
+White	Not Hispanic or Latino	20-24 years	F	2022	130	5967075	2.17862185409099
 White	Not Hispanic or Latino	20-24 years	M	2000	262	5974131	4.38557507359648
 White	Not Hispanic or Latino	20-24 years	M	2001	283	6182960	4.57709575995963
 White	Not Hispanic or Latino	20-24 years	M	2002	274	6297083	4.35122103361191
@@ -642,7 +642,7 @@ White	Not Hispanic or Latino	20-24 years	M	2018	247	6183480	3.99451441583057
 White	Not Hispanic or Latino	20-24 years	M	2019	231	6103245	3.78487181818852
 White	Not Hispanic or Latino	20-24 years	M	2020	220	6061187	3.6296520796999
 White	Not Hispanic or Latino	20-24 years	M	2021	223	6001147	3.71595629968738
-White	Not Hispanic or Latino	20-24 years	M	2022	200	6292806	3.1782324133304
+White	Not Hispanic or Latino	20-24 years	M	2022	201	6292806	3.19412357539705
 White	Not Hispanic or Latino	25-29 years	F	2000	277	6046122	4.58144906768338
 White	Not Hispanic or Latino	25-29 years	F	2001	284	5726230	4.95963312685659
 White	Not Hispanic or Latino	25-29 years	F	2002	252	5617832	4.48571619799239
@@ -664,7 +664,7 @@ White	Not Hispanic or Latino	25-29 years	F	2017	304	6424521	4.73187028262496
 White	Not Hispanic or Latino	25-29 years	F	2018	313	6398908	4.89145960529515
 White	Not Hispanic or Latino	25-29 years	F	2019	303	6329978	4.78674649422162
 White	Not Hispanic or Latino	25-29 years	F	2020	292	6213978	4.69908326035271
-White	Not Hispanic or Latino	25-29 years	F	2021	309	6003840	5.14670610809082
+White	Not Hispanic or Latino	25-29 years	F	2021	310	6003840	5.16336211491312
 White	Not Hispanic or Latino	25-29 years	F	2022	279	5868424	4.75425770189748
 White	Not Hispanic or Latino	25-29 years	M	2000	436	6138505	7.10270660364372
 White	Not Hispanic or Latino	25-29 years	M	2001	463	5816994	7.95943746890576

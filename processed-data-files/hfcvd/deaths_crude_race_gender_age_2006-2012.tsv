@@ -1,10 +1,10 @@
 Race	Hispanic Origin	Five-Year Age Groups	Gender	Deaths	Population	Crude Rate
-Black or African American	Not Hispanic or Latino	20-24 years	F	35	11050062	0.316740304262546
-Black or African American	Not Hispanic or Latino	20-24 years	M	35	10929409	0.320236894785436
-Black or African American	Not Hispanic or Latino	25-29 years	F	48	10158086	0.472529962829612
-Black or African American	Not Hispanic or Latino	25-29 years	M	49	9335122	0.524899406777973
-Black or African American	Not Hispanic or Latino	30-34 years	F	72	9566672	0.752612820843027
-Black or African American	Not Hispanic or Latino	30-34 years	M	111	8570746	1.29510313337952
+Black or African American	Not Hispanic or Latino	20-24 years	F	43	11050062	0.389138088093985
+Black or African American	Not Hispanic or Latino	20-24 years	M	30	10929409	0.274488766958945
+Black or African American	Not Hispanic or Latino	25-29 years	F	51	10158086	0.502063085506463
+Black or African American	Not Hispanic or Latino	25-29 years	M	47	9335122	0.503474941195198
+Black or African American	Not Hispanic or Latino	30-34 years	F	71	9566672	0.742159864997985
+Black or African American	Not Hispanic or Latino	30-34 years	M	109	8570746	1.2717679417871
 Black or African American	Not Hispanic or Latino	35-39 years	F	130	9701843	1.33995159476401
 Black or African American	Not Hispanic or Latino	35-39 years	M	193	8605616	2.24272149721763
 Black or African American	Not Hispanic or Latino	40-44 years	F	207	10057585	2.05814815385602
@@ -25,11 +25,11 @@ Black or African American	Not Hispanic or Latino	75-79 years	F	2449	2652820	92.3
 Black or African American	Not Hispanic or Latino	75-79 years	M	2118	1655142	127.964851354144
 Black or African American	Not Hispanic or Latino	80-84 years	F	3376	1924283	175.441969814211
 Black or African American	Not Hispanic or Latino	80-84 years	M	2196	1013701	216.631925982119
-White	Not Hispanic or Latino	20-24 years	F	40	43961502	0.0909887018873923
-White	Not Hispanic or Latino	20-24 years	M	48	45419515	0.105681445519619
-White	Not Hispanic or Latino	25-29 years	F	35	42996556	0.0814018685589609
-White	Not Hispanic or Latino	25-29 years	M	58	43487715	0.133370999143091
-White	Not Hispanic or Latino	30-34 years	F	47	40500557	0.11604778670081
+White	Not Hispanic or Latino	20-24 years	F	42	43961502	0.0955381369817619
+White	Not Hispanic or Latino	20-24 years	M	52	45419515	0.114488232646253
+White	Not Hispanic or Latino	25-29 years	F	31	42996556	0.0720987978665082
+White	Not Hispanic or Latino	25-29 years	M	60	43487715	0.137969999113543
+White	Not Hispanic or Latino	30-34 years	F	56	40500557	0.138269703303093
 White	Not Hispanic or Latino	30-34 years	M	117	41187939	0.284063740115765
 White	Not Hispanic or Latino	35-39 years	F	131	43382242	0.301966873911219
 White	Not Hispanic or Latino	35-39 years	M	196	43852775	0.446950050481412

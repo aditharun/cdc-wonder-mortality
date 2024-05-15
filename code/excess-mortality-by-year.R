@@ -84,6 +84,8 @@ ageadj_mortality_rate <- excess_deaths_year
 
 #Create Tables
 
+excess_deaths %>% group_by(Gender, Year) %>% summarize(excess_deaths_black = sum(excess_deaths_black)) %>% ungroup() %>% write_csv(., file = file.path(tabledir, "excess_deaths.csv"))
+
 hyp_excess <- excess_deaths %>% select(Gender, agegroup, Year, expected_deaths_black, hypothetical_excess, expected_rate_black)
 
 write_csv(hyp_excess, file = file.path(tabledir, "hypothetical_excess_gender_year_age.csv"))
@@ -134,8 +136,9 @@ indiv_ageadj_rate_fig <- indiv_df %>% ggplot(aes(x=Year, y=value, color=name)) +
 #Don't write this out for now
 #excess_death_rate_arima_fig <- ggplot() + geom_line(data=ageadj_mortality_rate, aes(x=Year, y=pred_diff_black, color=Gender), size=1) + geom_line(data=ageadj_mortality_rate %>% filter(Year>=2019) %>% mutate(diff_black=ifelse(Year==2019, pred_diff_black, diff_black)), aes(x=Year, y=diff_black, color=Gender), linetype="dashed", size=1) + geom_hline(yintercept=0, linetype="dotted") + year_label + panel_theme + geom_point(data = ageadj_mortality_rate %>% filter(Year %in% c(2015) & Gender == "Female" | Year %in% c(2007, 2011) & Gender == "Male"), aes(x=Year, y=pred_diff_black, color=Gender, shape=Gender), size=3.75) + scale_color_manual(values=c("maroon", "navy")) + sizing_theme  + ggtitle("Excess Age Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Excess Deaths per 100K Individuals") + xlab("Year") 
 
+#+ geom_point(size = 3) + geom_hline(yintercept=0, linetype="dotted")
 #NO PRED ARIMA, just empirical data
-excess_death_rate_fig <- ggplot(data=ageadj_mortality_rate, aes(x=Year, y=diff_black, color=Gender)) + geom_line(size=1) + geom_point(size = 3) + geom_hline(yintercept=0, linetype="dotted") + year_label + panel_theme  + scale_color_manual(values=c("maroon", "navy")) + sizing_theme  + ggtitle("Excess Age Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Age Adjusted Mortality Rate\nper 100,000 Individuals") + xlab("Year") 
+excess_death_rate_fig <- ggplot(data=ageadj_mortality_rate, aes(x=Year, y=diff_black, color=Gender)) + geom_line(size=1)   + year_label + panel_theme  + scale_color_manual(values=c("maroon", "navy")) + sizing_theme + ggtitle("Excess Age Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Mortality Rate\nper 100,000 Individuals") + xlab("Year") 
 
 #+ geom_hline(yintercept=1, linetype="dashed")
 

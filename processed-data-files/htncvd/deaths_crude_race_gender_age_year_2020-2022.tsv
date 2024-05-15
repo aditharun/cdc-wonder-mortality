@@ -1,30 +1,30 @@
 Race	Hispanic Origin	Five-Year Age Groups	Gender	Year	Deaths	Population	Crude Rate
 Black or African American	Not Hispanic or Latino	20-24 years	F	2020	5	1610597	0.310443891302418
-Black or African American	Not Hispanic or Latino	20-24 years	F	2021	11	1607120	0.684454178903878
-Black or African American	Not Hispanic or Latino	20-24 years	F	2022	8	1686424	0.47437655061835
+Black or African American	Not Hispanic or Latino	20-24 years	F	2021	13	1607120	0.808900393250037
+Black or African American	Not Hispanic or Latino	20-24 years	F	2022	10	1686424	0.592970688272937
 Black or African American	Not Hispanic or Latino	20-24 years	M	2020	18	1652385	1.08933450739386
 Black or African American	Not Hispanic or Latino	20-24 years	M	2021	23	1642560	1.40025326319891
-Black or African American	Not Hispanic or Latino	20-24 years	M	2022	19	1718441	1.10565332181902
+Black or African American	Not Hispanic or Latino	20-24 years	M	2022	20	1718441	1.16384560191476
 Black or African American	Not Hispanic or Latino	25-29 years	F	2020	40	1789798	2.23488907686789
-Black or African American	Not Hispanic or Latino	25-29 years	F	2021	29	1717789	1.68821665524695
+Black or African American	Not Hispanic or Latino	25-29 years	F	2021	30	1717789	1.74643102266926
 Black or African American	Not Hispanic or Latino	25-29 years	F	2022	28	1673395	1.67324510949298
 Black or African American	Not Hispanic or Latino	25-29 years	M	2020	72	1830579	3.93318179657911
-Black or African American	Not Hispanic or Latino	25-29 years	M	2021	76	1736416	4.37683135838417
-Black or African American	Not Hispanic or Latino	25-29 years	M	2022	65	1704656	3.81308604199322
+Black or African American	Not Hispanic or Latino	25-29 years	M	2021	77	1736416	4.43442124467869
+Black or African American	Not Hispanic or Latino	25-29 years	M	2022	64	1704656	3.75442317980871
 Black or African American	Not Hispanic or Latino	30-34 years	F	2020	91	1669692	5.45010696583561
-Black or African American	Not Hispanic or Latino	30-34 years	F	2021	100	1727635	5.78825967290545
-Black or African American	Not Hispanic or Latino	30-34 years	F	2022	94	1766776	5.32042545291537
+Black or African American	Not Hispanic or Latino	30-34 years	F	2021	101	1727635	5.8461422696345
+Black or African American	Not Hispanic or Latino	30-34 years	F	2022	92	1766776	5.20722491136398
 Black or African American	Not Hispanic or Latino	30-34 years	M	2020	160	1617245	9.89336804256622
-Black or African American	Not Hispanic or Latino	30-34 years	M	2021	140	1678798	8.33929990385979
+Black or African American	Not Hispanic or Latino	30-34 years	M	2021	141	1678798	8.3988663317445
 Black or African American	Not Hispanic or Latino	30-34 years	M	2022	141	1739488	8.1058334406446
 Black or African American	Not Hispanic or Latino	35-39 years	F	2020	138	1502992	9.18168559779427
-Black or African American	Not Hispanic or Latino	35-39 years	F	2021	158	1528319	10.3381558431191
+Black or African American	Not Hispanic or Latino	35-39 years	F	2021	159	1528319	10.4035872092148
 Black or African American	Not Hispanic or Latino	35-39 years	F	2022	152	1533513	9.91188206425378
 Black or African American	Not Hispanic or Latino	35-39 years	M	2020	276	1383849	19.9443725435362
-Black or African American	Not Hispanic or Latino	35-39 years	M	2021	275	1434313	19.1729420286925
-Black or African American	Not Hispanic or Latino	35-39 years	M	2022	289	1453787	19.8791157164014
+Black or African American	Not Hispanic or Latino	35-39 years	M	2021	276	1434313	19.2426618178877
+Black or African American	Not Hispanic or Latino	35-39 years	M	2022	290	1453787	19.9479015839322
 Black or African American	Not Hispanic or Latino	40-44 years	F	2020	251	1414368	17.7464422271997
-Black or African American	Not Hispanic or Latino	40-44 years	F	2021	278	1459174	19.0518745536859
+Black or African American	Not Hispanic or Latino	40-44 years	F	2021	279	1459174	19.1204064765408
 Black or African American	Not Hispanic or Latino	40-44 years	F	2022	263	1472391	17.8621032049231
 Black or African American	Not Hispanic or Latino	40-44 years	M	2020	438	1265505	34.6106890134768
 Black or African American	Not Hispanic or Latino	40-44 years	M	2021	487	1329536	36.6293203042264
@@ -77,33 +77,33 @@ Black or African American	Not Hispanic or Latino	80-84 years	F	2022	1169	358127	
 Black or African American	Not Hispanic or Latino	80-84 years	M	2020	905	207884	435.338939023686
 Black or African American	Not Hispanic or Latino	80-84 years	M	2021	913	204075	447.38453999755
 Black or African American	Not Hispanic or Latino	80-84 years	M	2022	859	208099	412.784299780393
-White	Not Hispanic or Latino	20-24 years	F	2020	5	5765196	0.0867273202853815
-White	Not Hispanic or Latino	20-24 years	F	2021	3	5730106	0.0523550524196237
-White	Not Hispanic or Latino	20-24 years	F	2022	9	5967075	0.150827666821684
+White	Not Hispanic or Latino	20-24 years	F	2020	9	5765196	0.156109176513687
+White	Not Hispanic or Latino	20-24 years	F	2021	9	5730106	0.157065157258871
+White	Not Hispanic or Latino	20-24 years	F	2022	6	5967075	0.100551777881123
 White	Not Hispanic or Latino	20-24 years	M	2020	17	6061187	0.280473115249538
 White	Not Hispanic or Latino	20-24 years	M	2021	23	6001147	0.3832600667839
 White	Not Hispanic or Latino	20-24 years	M	2022	26	6292806	0.413170213732952
 White	Not Hispanic or Latino	25-29 years	F	2020	13	6213978	0.209205761591045
-White	Not Hispanic or Latino	25-29 years	F	2021	28	6003840	0.466368191024411
+White	Not Hispanic or Latino	25-29 years	F	2021	29	6003840	0.483024197846711
 White	Not Hispanic or Latino	25-29 years	F	2022	25	5868424	0.426008754650312
 White	Not Hispanic or Latino	25-29 years	M	2020	52	6520510	0.797483632415256
-White	Not Hispanic or Latino	25-29 years	M	2021	64	6237780	1.02600604702314
-White	Not Hispanic or Latino	25-29 years	M	2022	61	6201789	0.983587155254718
+White	Not Hispanic or Latino	25-29 years	M	2021	66	6237780	1.05806873599261
+White	Not Hispanic or Latino	25-29 years	M	2022	60	6201789	0.967462775660378
 White	Not Hispanic or Latino	30-34 years	F	2020	49	6341955	0.772632413821921
-White	Not Hispanic or Latino	30-34 years	F	2021	66	6387735	1.03323008859948
-White	Not Hispanic or Latino	30-34 years	F	2022	54	6330447	0.853020331739607
+White	Not Hispanic or Latino	30-34 years	F	2021	68	6387735	1.06454009128431
+White	Not Hispanic or Latino	30-34 years	F	2022	51	6330447	0.805630313309629
 White	Not Hispanic or Latino	30-34 years	M	2020	161	6506642	2.4743946262911
-White	Not Hispanic or Latino	30-34 years	M	2021	150	6522206	2.29983536245252
+White	Not Hispanic or Latino	30-34 years	M	2021	151	6522206	2.3151675982022
 White	Not Hispanic or Latino	30-34 years	M	2022	164	6545730	2.5054501178631
 White	Not Hispanic or Latino	35-39 years	F	2020	131	6204534	2.11135920924924
-White	Not Hispanic or Latino	35-39 years	F	2021	132	6278072	2.1025563262097
-White	Not Hispanic or Latino	35-39 years	F	2022	145	6202729	2.3376807208569
+White	Not Hispanic or Latino	35-39 years	F	2021	134	6278072	2.13441324024318
+White	Not Hispanic or Latino	35-39 years	F	2022	146	6202729	2.35380265686281
 White	Not Hispanic or Latino	35-39 years	M	2020	329	6278993	5.23969368973655
-White	Not Hispanic or Latino	35-39 years	M	2021	318	6440962	4.93715069270708
+White	Not Hispanic or Latino	35-39 years	M	2021	320	6440962	4.96820195492537
 White	Not Hispanic or Latino	35-39 years	M	2022	343	6423800	5.33951866496466
 White	Not Hispanic or Latino	40-44 years	F	2020	238	5799848	4.10355581732487
-White	Not Hispanic or Latino	40-44 years	F	2021	230	5985407	3.84267937000775
-White	Not Hispanic or Latino	40-44 years	F	2022	274	6021800	4.5501345112757
+White	Not Hispanic or Latino	40-44 years	F	2021	233	5985407	3.89280127483394
+White	Not Hispanic or Latino	40-44 years	F	2022	275	6021800	4.56674084160882
 White	Not Hispanic or Latino	40-44 years	M	2020	535	5855872	9.13612865854991
 White	Not Hispanic or Latino	40-44 years	M	2021	597	6136616	9.7284887957793
 White	Not Hispanic or Latino	40-44 years	M	2022	609	6240474	9.7588740855262
@@ -115,7 +115,7 @@ White	Not Hispanic or Latino	45-49 years	M	2021	958	5833025	16.4237252540491
 White	Not Hispanic or Latino	45-49 years	M	2022	831	5755089	14.439394421181
 White	Not Hispanic or Latino	50-54 years	F	2020	700	6501091	10.7674234986097
 White	Not Hispanic or Latino	50-54 years	F	2021	719	6519637	11.0282213564958
-White	Not Hispanic or Latino	50-54 years	F	2022	719	6358402	11.3078726384397
+White	Not Hispanic or Latino	50-54 years	F	2022	720	6358402	11.3235998604681
 White	Not Hispanic or Latino	50-54 years	M	2020	1500	6446345	23.2689997199964
 White	Not Hispanic or Latino	50-54 years	M	2021	1705	6642883	25.6665667602455
 White	Not Hispanic or Latino	50-54 years	M	2022	1654	6557929	25.22137705364
