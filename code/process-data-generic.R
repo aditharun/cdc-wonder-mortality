@@ -1,5 +1,7 @@
 library(tidyverse)
 
+system("Rscript standard-pop-2000-parse.R")
+
 system("Rscript race-correction-generic.R -p cvd -t folder")
 system("Rscript process-cdc-data-generic.R -a args-file-cvd.R -p cvd")
 system("Rscript run-figures-generic.R -p cvd -y 2000")

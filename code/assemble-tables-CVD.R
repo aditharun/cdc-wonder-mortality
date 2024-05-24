@@ -58,21 +58,36 @@ if (!dir.exists(outputdir)){
 }
 
 
-female.df$mrr %>% pivot_wider(names_from = Year, values_from = MRR) %>% mutate_if(is.numeric, ~round(., 2)) %>% write_csv(., paste0(outputdir, "female-MRR.csv"))
+re_orient_table <- function(x){
+	x <- x %>% t() 
+	colnames(x) <- x[1,]
+	x <- x[-1,]
+	year <- rownames(x)
+	x <- x %>% as_tibble()
+	x$Year <- year
+	x <- x %>% relocate(Year) %>% type.convert(as.is = TRUE)
 
-female.df$lly %>% pivot_wider(names_from = Year, values_from = EYLL) %>% mutate_if(is.numeric, ~round(., 0)) %>% write_csv(., paste0(outputdir, "female-EYLL.csv"))
+	x
 
-male.df$mrr %>% pivot_wider(names_from = Year, values_from = MRR) %>% mutate_if(is.numeric, ~round(., 2)) %>% write_csv(., paste0(outputdir, "male-MRR.csv"))
+}
 
-male.df$lly %>% pivot_wider(names_from = Year, values_from = EYLL) %>% mutate_if(is.numeric, ~round(., 0)) %>% write_csv(., paste0(outputdir, "male-EYLL.csv"))
 
-male.df$aamr %>% pivot_wider(names_from = Year, values_from = Excess_AAMR) %>% mutate_if(is.numeric, ~round(., 2)) %>% write_csv(., paste0(outputdir, "male-excess-AAMR.csv"))
 
-female.df$aamr %>% pivot_wider(names_from = Year, values_from = Excess_AAMR) %>% mutate_if(is.numeric, ~round(., 2)) %>% write_csv(., paste0(outputdir, "female-excess-AAMR.csv"))
+female.df$mrr %>% pivot_wider(names_from = Year, values_from = MRR) %>% mutate_if(is.numeric, ~round(., 2)) %>% re_orient_table(.) %>% write_csv(., paste0(outputdir, "female-MRR.csv"))
 
-male.df$deaths %>% pivot_wider(names_from = Year, values_from = Excess_Deaths) %>% mutate_if(is.numeric, ~round(., 0)) %>% write_csv(., paste0(outputdir, "male-excess-deaths.csv"))
+female.df$lly %>% pivot_wider(names_from = Year, values_from = EYLL) %>% mutate_if(is.numeric, ~round(., 0)) %>% re_orient_table(.) %>% write_csv(., paste0(outputdir, "female-EYLL.csv"))
 
-female.df$deaths %>% pivot_wider(names_from = Year, values_from = Excess_Deaths) %>% mutate_if(is.numeric, ~round(., 0)) %>% write_csv(., paste0(outputdir, "female-excess-deaths.csv"))
+male.df$mrr %>% pivot_wider(names_from = Year, values_from = MRR) %>% mutate_if(is.numeric, ~round(., 2)) %>% re_orient_table(.) %>% write_csv(., paste0(outputdir, "male-MRR.csv"))
+
+male.df$lly %>% pivot_wider(names_from = Year, values_from = EYLL) %>% mutate_if(is.numeric, ~round(., 0)) %>% re_orient_table(.) %>% write_csv(., paste0(outputdir, "male-EYLL.csv"))
+
+male.df$aamr %>% pivot_wider(names_from = Year, values_from = Excess_AAMR) %>% mutate_if(is.numeric, ~round(., 2)) %>% re_orient_table(.) %>% write_csv(., paste0(outputdir, "male-excess-AAMR.csv"))
+
+female.df$aamr %>% pivot_wider(names_from = Year, values_from = Excess_AAMR) %>% mutate_if(is.numeric, ~round(., 2)) %>% re_orient_table(.) %>% write_csv(., paste0(outputdir, "female-excess-AAMR.csv"))
+
+male.df$deaths %>% pivot_wider(names_from = Year, values_from = Excess_Deaths) %>% mutate_if(is.numeric, ~round(., 0)) %>% re_orient_table(.) %>% write_csv(., paste0(outputdir, "male-excess-deaths.csv"))
+
+female.df$deaths %>% pivot_wider(names_from = Year, values_from = Excess_Deaths) %>% mutate_if(is.numeric, ~round(., 0)) %>% re_orient_table(.) %>% write_csv(., paste0(outputdir, "female-excess-deaths.csv"))
 
 
 
