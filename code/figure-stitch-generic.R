@@ -49,13 +49,15 @@ save_plot_custom(plt = fig1, folder = figdir, width.in = 14, height.in = 10)
 
 if (project %in% c("cvd", "htncvd", "ihdcvd", "hfcvd", "cvcvd")){
 
-	fig_jacc <- plot_grid(readRDS(file.path(emby, "mortality_rate_ratio_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label,
+	#fig_jacc <- plot_grid(readRDS(file.path(emby, "mortality_rate_ratio_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label,
 
-		readRDS(file.path(emby, "excess_death_rate_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect(),
+		#readRDS(file.path(emby, "excess_death_rate_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect(),
 
-	readRDS(file.path(lylby, "excess_pll_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label, nrow = 1, labels = c("A", "B", "C"), label_size = 25)
+	#readRDS(file.path(lylby, "excess_pll_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label, nrow = 1, labels = c("A", "B", "C"), label_size = 25)
 
-	save_plot_custom(plt = fig_jacc, folder = figdir, width.in = 18, height.in = 5.2)
+	fig_jacc <- plot_grid(readRDS(file.path(emby, "excess_death_rate_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect(), readRDS(file.path(lylby, "excess_pll_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label, nrow = 1, labels = c("A", "B"), label_size = 25)
+
+	save_plot_custom(plt = fig_jacc, folder = figdir, width.in = 12, height.in = 5.2)
 }
 
 
