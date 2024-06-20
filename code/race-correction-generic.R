@@ -177,6 +177,9 @@ newdata <- newdata %>% mutate(Race = ifelse(`Single Race 6` %in% c("Asian", "Nat
 
 newdata <- newdata %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% mutate(Population = ifelse(Population == "Suppressed", sample(c(1:9), size = sum(Population == "Suppressed"), replace = TRUE), Population)) %>% mutate(Population = ifelse(Population == "Unreliable", sample(c(11:19), size = sum(Population == "Unreliable"), replace = TRUE), Population)) %>% filter(Population != "Not Applicable") %>% type.convert(as.is = TRUE) %>% select(-c(`Single Race 6`, `Single Race 6 Code`)) %>% group_by_at(vars(-Deaths, -Population, -`Crude Rate`)) %>% summarize(Deaths = sum(Deaths), Population = sum(Population), `Crude Rate` = Deaths / Population) %>% ungroup()
 
+#in 2021 it is 0.6% of all deaths
+#in 2022 it is 0.6% of all deaths
+
 other <- newdata %>% filter(Race== "More than one race")
 
 
@@ -287,28 +290,3 @@ df <- df %>% type.convert(as.is = TRUE)
 
 
 df %>% write_csv(., file = output_file)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#

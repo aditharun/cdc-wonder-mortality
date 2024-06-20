@@ -57,7 +57,42 @@ if (project %in% c("cvd", "htncvd", "ihdcvd", "hfcvd", "cvcvd")){
 
 	fig_jacc <- plot_grid(readRDS(file.path(emby, "excess_death_rate_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect(), readRDS(file.path(lylby, "excess_pll_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label, nrow = 1, labels = c("A", "B"), label_size = 25)
 
+	#fig 1
+	if (project == "cvd"){
+		titletext <- "Overall Cardiovascular Disease"
+	} 
+
+	#fig 3
+	if (project == "htncvd"){
+		titletext <- "Hypertension"
+	}
+
+	#fig 2
+	if (project == "ihdcvd"){
+		titletext <- "Ischemic Heart Disease"
+	}
+
+	#fig 5
+	if (project == "hfcvd"){
+		titletext <- "Heart Failure"
+	}
+
+	#fig 4
+	if (project == "cvcvd"){
+		titletext <- "Cerebrovascular Disease"
+	}
+
+
+
+	#title <- ggdraw() + draw_label(titletext, fontface='bold', bg.color = "white")
+
+	title <- ggplot() + theme_void() + theme(plot.background = element_rect(fill = "white")) + ggtitle(titletext) + theme(plot.title = element_text(size = 20, hjust = 0.5, face = "bold")) + theme(panel.border = element_blank())
+
+	fig_jacc <- plot_grid(title, fig_jacc, ncol=1, rel_heights=c(0.08, 1)) # rel_heights values control title margins
+
 	save_plot_custom(plt = fig_jacc, folder = figdir, width.in = 12, height.in = 5.2)
+
+	save_plot_custom_tiff(plt = fig_jacc, folder = figdir, width.in = 12, height.in = 5.2)
 }
 
 

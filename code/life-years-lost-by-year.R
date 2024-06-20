@@ -180,6 +180,21 @@ save_rds(indiv_ypll_fig, outputdir)
 
 
 
+cvcvdanalysis <- "data_combined %>% filter(Gender == "Female") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 1) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=population, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() 
+
+
+
+a <- data_combined %>% filter(Gender == "Male") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% group_by(age_cat, Gender, Year) %>% mutate(excess_rate = yrs_lost[Race == 1] - yrs_lost[Race == 3]) %>% mutate(lly = excess_rate * population[Race == 1]) %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 3) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=yrs_lost, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() + theme_bw() + xlab("Age") + ylab("White Life Years Lost per 100,000") + labs(color = "Year")
+
+b <- data_combined %>% filter(Gender == "Male") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% group_by(age_cat, Gender, Year) %>% mutate(excess_rate = yrs_lost[Race == 1] - yrs_lost[Race == 3]) %>% mutate(lly = excess_rate * population[Race == 1]) %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 1) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=yrs_lost, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() + theme_bw() + xlab("Age") + ylab("Black Life Years Lost per 100,000") + labs(color = "Year")
+
+c <- data_combined %>% filter(Gender == "Male") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% group_by(age_cat, Gender, Year) %>% mutate(excess_rate = yrs_lost[Race == 1] - yrs_lost[Race == 3]) %>% mutate(lly = excess_rate * population[Race == 1]) %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 3) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=population, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() + theme_bw() + xlab("Age") + ylab("Black Population") + labs(color = "Year")
+
+
+d <- data_combined %>% filter(Gender == "Male") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% group_by(age_cat, Gender, Year) %>% mutate(excess_rate = yrs_lost[Race == 1] - yrs_lost[Race == 3]) %>% mutate(lly = excess_rate * population[Race == 1]) %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 1) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=lly, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() + theme_bw() + xlab("Age") + ylab("Excess Life Years Lost") + labs(color = "Year")
+
+cowplot::plot_grid(a,b,c,d, labels = c("A", "B", "C", "D"), nrow = 2)
+"
 
 
 

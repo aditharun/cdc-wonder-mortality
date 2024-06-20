@@ -179,6 +179,21 @@ save_plot_custom <- function(plt, folder, height.in=8, width.in=10){
 
 }
 
+save_plot_custom_tiff <- function(plt, folder, height.in=8, width.in=10){
+
+	if (!dir.exists(folder)){
+		dir.create(folder, recursive=TRUE)
+	}
+
+
+	file <- paste0(deparse(substitute(plt)), ".tiff")
+
+	
+
+	ggsave(filename=file.path(folder, file), plot=plt, height=height.in, width=width.in, units="in", dpi = 300)
+
+}
+
 
 
 save_rds <- function(plt, folder){
