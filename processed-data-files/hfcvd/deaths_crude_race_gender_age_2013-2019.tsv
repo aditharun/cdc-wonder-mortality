@@ -1,7 +1,7 @@
 Race	Hispanic Origin	Five-Year Age Groups	Gender	Deaths	Population	Crude Rate
-Black or African American	Not Hispanic or Latino	20-24 years	F	42	11969123	0.350902902409809
-Black or African American	Not Hispanic or Latino	20-24 years	M	37	12294588	0.300945424116693
-Black or African American	Not Hispanic or Latino	25-29 years	F	70	11831236	0.59165416022468
+Black or African American	Not Hispanic or Latino	20-24 years	F	31	11969123	0.258999761302478
+Black or African American	Not Hispanic or Latino	20-24 years	M	43	12294588	0.349747384784264
+Black or African American	Not Hispanic or Latino	25-29 years	F	67	11831236	0.566297553357908
 Black or African American	Not Hispanic or Latino	25-29 years	M	94	11677662	0.804955649512719
 Black or African American	Not Hispanic or Latino	30-34 years	F	112	10613254	1.05528427002689
 Black or African American	Not Hispanic or Latino	30-34 years	M	164	9919714	1.65327347139242
@@ -25,10 +25,10 @@ Black or African American	Not Hispanic or Latino	75-79 years	F	3437	3167907	108.
 Black or African American	Not Hispanic or Latino	75-79 years	M	3221	2083749	154.577158765283
 Black or African American	Not Hispanic or Latino	80-84 years	F	4367	2195297	198.925247927729
 Black or African American	Not Hispanic or Latino	80-84 years	M	3255	1252239	259.934405492881
-White	Not Hispanic or Latino	20-24 years	F	32	42508943	0.0752782773262558
-White	Not Hispanic or Latino	20-24 years	M	34	44740216	0.0759942687804636
-White	Not Hispanic or Latino	25-29 years	F	62	44357865	0.139772281646107
-White	Not Hispanic or Latino	25-29 years	M	84	45869026	0.18313011486226
+White	Not Hispanic or Latino	20-24 years	F	38	42508943	0.0893929543249288
+White	Not Hispanic or Latino	20-24 years	M	37	44740216	0.0826996454375634
+White	Not Hispanic or Latino	25-29 years	F	53	44357865	0.119482756891027
+White	Not Hispanic or Latino	25-29 years	M	83	45869026	0.180949994447233
 White	Not Hispanic or Latino	30-34 years	F	92	43518467	0.2114045055861
 White	Not Hispanic or Latino	30-34 years	M	171	44373752	0.385362950601969
 White	Not Hispanic or Latino	35-39 years	F	147	41580520	0.353530932273093

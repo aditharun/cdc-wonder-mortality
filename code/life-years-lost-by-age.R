@@ -19,6 +19,7 @@ inputfile <- file.path(file.path(datadir, project), "export_deaths_crude_race_ge
 
 lifeexp_file <- "../data/file_life_expectancy_1999_to_2020.dta"
 lifeexp_file2 <- "../data/file_life_expectancy_2021.xlsx" 
+lifeexp_file3 <- "../data/file_life_expectancy_2022.xlsx" 
 
 
 #agefiles input
@@ -45,7 +46,7 @@ life_exp <- read_dta(lifeexp_file) %>% mutate(Gender=factor(gender)) %>% mutate(
 
 life_exp <- read_dta(lifeexp_file) %>% mutate(Gender=factor(gender)) %>% mutate(Gender=ifelse(Gender=="1", "Female", "Male")) %>% select(-gender) %>% mutate(Gender = as.character(Gender))
 
-life_exp <- rbind(lifeexp_file2 %>% read_excel(), lifeexp_file2 %>% read_excel() %>% mutate(year = 2022), life_exp) %>% as_tibble()
+life_exp <- rbind(lifeexp_file2 %>% read_excel(), lifeexp_file3 %>% read_excel(), lifeexp_file3 %>% read_excel() %>% mutate(year = 2023), life_exp) %>% as_tibble()
 
 #remove age > 85
 life_exp <- life_exp %>% filter(age_cat < 85)

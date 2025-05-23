@@ -19,6 +19,7 @@ inputfile <- file.path(file.path(datadir, project), "export_deaths_race_gender_a
 
 lifeexp_file <- "../data/file_life_expectancy_1999_to_2020.dta"
 lifeexp_file2 <- "../data/file_life_expectancy_2021.xlsx" 
+lifeexp_file3 <- "../data/file_life_expectancy_2022.xlsx" 
 
 
 outputdir <- file.path("../results", project, "life-years-lost-by-year")
@@ -56,7 +57,7 @@ data_by_age_gender_race <- data %>% group_by(age_cat, Gender, Race, Year) %>% su
 #combine with life expectancy table
 life_exp <- read_dta(lifeexp_file) %>% mutate(Gender=factor(gender)) %>% mutate(Gender=ifelse(Gender=="1", "Female", "Male")) %>% select(-gender) %>% mutate(Gender = as.character(Gender))
 
-life_exp <- rbind(lifeexp_file2 %>% read_excel(), lifeexp_file2 %>% read_excel() %>% mutate(year = 2022), life_exp) %>% as_tibble()
+life_exp <- rbind(lifeexp_file2 %>% read_excel(), lifeexp_file3 %>% read_excel(), lifeexp_file3 %>% read_excel() %>% mutate(year = 2023), life_exp) %>% as_tibble()
 
 life_exp <- life_exp %>% filter(age_cat < 85)
 
@@ -94,7 +95,10 @@ excess_pll %>% group_by(Year) %>% summarize(exc_ypll_number = sum(exc_ypll_numbe
 
 #GRAPHICAL COMPONENT
 
-sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=14), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5)) 
+
+
+
+sizing_theme <- theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=12), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5)) 
 
 year_label <- scale_x_continuous(breaks=years, labels= function(x) ifelse(x %% 2 == 1, x, ""))
 
@@ -116,6 +120,7 @@ mortality_rate_ratio_fig <- excess_pll %>% ggplot(aes(x=Year, y=ratio_excess_yrs
 
 excess_pll_fig <- excess_pll %>% ggplot(aes(x=Year, y=exc_ypll_number, color=Gender)) + geom_line(size=1.25)+ sizing_theme + year_label + panel_theme  + theme(plot.title = element_text(hjust = 0.5)) + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + scale_color_manual(values=c("maroon", "navy")) + ylab("Years of Potential Life Lost") + ggtitle("Excess Years of Potential Life Lost") + theme(axis.text = element_text(size=12), axis.title=element_text(size=16), legend.text=element_text(size=14), legend.title=element_text(size=16), plot.title=element_text(size=18, hjust=0.5)) 
 
+excess_pll_fig_label_correct <- excess_pll %>% mutate(exc_ypll_number = round(exc_ypll_number/1000)) %>% ggplot(aes(x=Year, y=exc_ypll_number, color=Gender)) + geom_line(size=1) + year_label + panel_theme + sizing_theme + theme(plot.title = element_text(hjust = 0.5)) + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + scale_color_manual(values=c("maroon", "navy")) + ylab("Years of Potential Life Lost\n(Thousands)") + ggtitle("Excess Years of Potential Life Lost") 
 
 cum_sex <- excess_pll %>% group_by(Gender) %>% arrange(Year) %>% summarize(pll = cumsum(exc_ypll_number), Year=Year) %>% ungroup() %>% mutate(pll=pll/1000000)
 
@@ -177,30 +182,9 @@ save_rds(indiv_ypll_fig, outputdir)
 
 
 
+save_plot(excess_pll_fig_label_correct, plotdir)
 
-
-
-cvcvdanalysis <- "data_combined %>% filter(Gender == "Female") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 1) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=population, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() 
-
-
-
-a <- data_combined %>% filter(Gender == "Male") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% group_by(age_cat, Gender, Year) %>% mutate(excess_rate = yrs_lost[Race == 1] - yrs_lost[Race == 3]) %>% mutate(lly = excess_rate * population[Race == 1]) %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 3) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=yrs_lost, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() + theme_bw() + xlab("Age") + ylab("White Life Years Lost per 100,000") + labs(color = "Year")
-
-b <- data_combined %>% filter(Gender == "Male") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% group_by(age_cat, Gender, Year) %>% mutate(excess_rate = yrs_lost[Race == 1] - yrs_lost[Race == 3]) %>% mutate(lly = excess_rate * population[Race == 1]) %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 1) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=yrs_lost, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() + theme_bw() + xlab("Age") + ylab("Black Life Years Lost per 100,000") + labs(color = "Year")
-
-c <- data_combined %>% filter(Gender == "Male") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% group_by(age_cat, Gender, Year) %>% mutate(excess_rate = yrs_lost[Race == 1] - yrs_lost[Race == 3]) %>% mutate(lly = excess_rate * population[Race == 1]) %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 3) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=population, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() + theme_bw() + xlab("Age") + ylab("Black Population") + labs(color = "Year")
-
-
-d <- data_combined %>% filter(Gender == "Male") %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% group_by(age_cat, Gender, Year) %>% mutate(excess_rate = yrs_lost[Race == 1] - yrs_lost[Race == 3]) %>% mutate(lly = excess_rate * population[Race == 1]) %>% filter(Year >= 2012) %>% filter(Year < 2020) %>% filter(Race == 1) %>% mutate(age_cat = factor(age_cat, levels = data_combined$age_cat %>% unique())) %>% ggplot(aes(x=age_cat, y=lly, color = factor(Year), group = factor(Year))) + geom_point() + geom_line() + theme_bw() + xlab("Age") + ylab("Excess Life Years Lost") + labs(color = "Year")
-
-cowplot::plot_grid(a,b,c,d, labels = c("A", "B", "C", "D"), nrow = 2)
-"
-
-
-
-
-
-
+save_rds(excess_pll_fig_label_correct, outputdir)
 
 
 

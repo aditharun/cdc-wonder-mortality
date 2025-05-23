@@ -9,7 +9,7 @@ source("preprocess-function.R")
 project <- args[1]
 first_year <- args[2]
 
-years <- seq(first_year, 2022, 1)
+years <- seq(first_year, 2023, 1)
 
 datadir <- "../processed-data-files"
 
@@ -138,7 +138,7 @@ indiv_ageadj_rate_fig <- indiv_df %>% ggplot(aes(x=Year, y=value, color=name)) +
 
 #+ geom_point(size = 3) + geom_hline(yintercept=0, linetype="dotted")
 #NO PRED ARIMA, just empirical data
-excess_death_rate_fig <- ggplot(data=ageadj_mortality_rate, aes(x=Year, y=diff_black, color=Gender)) + geom_line(size=1)   + year_label + panel_theme  + scale_color_manual(values=c("maroon", "navy")) + sizing_theme + ggtitle("Excess Age Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Mortality Rate\nper 100,000 Individuals") + xlab("Year") 
+excess_death_rate_fig <- ggplot(data=ageadj_mortality_rate, aes(x=Year, y=diff_black, color=Gender)) + geom_line(size=1)  + year_label + panel_theme  + scale_color_manual(values=c("maroon", "navy")) + sizing_theme + ggtitle("Excess Age-Adjusted Mortality Rate") + scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + ylab("Mortality Rate\nper 100,000 Individuals") + xlab("Year") 
 
 #+ geom_hline(yintercept=1, linetype="dashed")
 

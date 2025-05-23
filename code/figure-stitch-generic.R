@@ -9,9 +9,9 @@ project <- args[1]
 
 first_year <- args[2]
 
-years <- seq(first_year, 2022, 1)
+years <- seq(first_year, 2023, 1)
 
-year_label <- scale_x_continuous(breaks=years, labels= function(x) ifelse(x %% 2 == 0, x, ""))
+year_label <- scale_x_continuous(breaks=years, labels= function(x) ifelse(x %% 2 == 1, x, ""))
 
 
 figdir <- file.path("../../cdc-wonder-output/figs", project)
@@ -29,7 +29,7 @@ lylby <- file.path("../results", project, "life-years-lost-by-year")
 colorpal <- ggsci::pal_jama("default")(7)
 
 colorcorrect <- function(bpal = colorpal[c(4,6)]){
-	scale_color_manual(values = bpal[1:2])
+	scale_color_manual(values = bpal[1:2], name = "Sex")
 }
 
 
@@ -55,38 +55,53 @@ if (project %in% c("cvd", "htncvd", "ihdcvd", "hfcvd", "cvcvd")){
 
 	#readRDS(file.path(lylby, "excess_pll_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label, nrow = 1, labels = c("A", "B", "C"), label_size = 25)
 
-	fig_jacc <- plot_grid(readRDS(file.path(emby, "excess_death_rate_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect(), readRDS(file.path(lylby, "excess_pll_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + colorcorrect() + year_label, nrow = 1, labels = c("A", "B"), label_size = 25)
+	legend_spec <- list(                         
+  guides(color = guide_legend(title.position = "top",        
+                              nrow = 1,                       
+                              byrow = TRUE)),
+  theme(legend.position = "bottom"))
+
+	fig_jacc <- plot_grid(readRDS(file.path(emby, "excess_death_rate_fig.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1))  + year_label + theme(panel.grid.major = element_blank()) + legend_spec + colorcorrect() + geom_point(), readRDS(file.path(lylby, "excess_pll_fig_label_correct.rds")) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + year_label + theme(panel.grid.major = element_blank()) + legend_spec + colorcorrect() + geom_point(), nrow = 1, labels = c("A", "B"), label_size = 22) 
 
 	#fig 1
 	if (project == "cvd"){
+		#30 characters
 		titletext <- "Overall Cardiovascular Disease"
 	} 
 
 	#fig 3
 	if (project == "htncvd"){
 		titletext <- "Hypertension"
+		
+		#12 characters
+
 	}
 
 	#fig 2
 	if (project == "ihdcvd"){
 		titletext <- "Ischemic Heart Disease"
+		#22 characters
 	}
 
 	#fig 5
 	if (project == "hfcvd"){
 		titletext <- "Heart Failure"
+		#13 characters
 	}
 
 	#fig 4
 	if (project == "cvcvd"){
 		titletext <- "Cerebrovascular Disease"
+		#23 characters
+
 	}
 
-
+#figure order
+#1 = ovearll, 2 = ihd, 3 = htn, 4 = cerebrovascular, 5 = heart failure
 
 	#title <- ggdraw() + draw_label(titletext, fontface='bold', bg.color = "white")
 
-	title <- ggplot() + theme_void() + theme(plot.background = element_rect(fill = "white")) + ggtitle(titletext) + theme(plot.title = element_text(size = 20, hjust = 0.5, face = "bold")) + theme(panel.border = element_blank())
+	title <- ggplot() + theme_void() + theme(plot.background = element_rect(fill = "white", color = NA)) + ggtitle(titletext) + theme(plot.title = element_text(size = 20, hjust = 0.5, vjust = 0.5, face = "bold")) + theme(panel.border = element_blank(), panel.background = element_blank())
 
 	fig_jacc <- plot_grid(title, fig_jacc, ncol=1, rel_heights=c(0.08, 1)) # rel_heights values control title margins
 

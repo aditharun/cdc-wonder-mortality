@@ -58,8 +58,13 @@ readTextFile <- function(filepath){
 
 data_folder_2021 <- file.path("../raw-data", input_name, "2021")
 corrected_data_2021_file <- file.path("../raw-data", input_name, paste0("corrected-2021-data-", input_name, ".csv"))
+
 data_folder_2022 <- file.path("../raw-data", input_name, "2022")
 corrected_data_2022_file <- file.path("../raw-data", input_name, paste0("corrected-2022-data-", input_name, ".csv"))
+
+data_folder_2023 <- file.path("../raw-data", input_name, "2023")
+corrected_data_2023_file <- file.path("../raw-data", input_name, paste0("corrected-2023-data-", input_name, ".csv"))
+
 master_pop_file <- file.path("../raw-data", input_name, "master-population.csv")
 
 if (runtype == "folder"){
@@ -177,8 +182,10 @@ newdata <- newdata %>% mutate(Race = ifelse(`Single Race 6` %in% c("Asian", "Nat
 
 newdata <- newdata %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% mutate(Population = ifelse(Population == "Suppressed", sample(c(1:9), size = sum(Population == "Suppressed"), replace = TRUE), Population)) %>% mutate(Population = ifelse(Population == "Unreliable", sample(c(11:19), size = sum(Population == "Unreliable"), replace = TRUE), Population)) %>% filter(Population != "Not Applicable") %>% type.convert(as.is = TRUE) %>% select(-c(`Single Race 6`, `Single Race 6 Code`)) %>% group_by_at(vars(-Deaths, -Population, -`Crude Rate`)) %>% summarize(Deaths = sum(Deaths), Population = sum(Population), `Crude Rate` = Deaths / Population) %>% ungroup()
 
-#in 2021 it is 0.6% of all deaths
-#in 2022 it is 0.6% of all deaths
+
+affected_fraction_2021 <- newdata %>% group_by(Race) %>% summarize(n = sum(Deaths)) %>% mutate(frac = n / sum(n)) %>% mutate(pct = round(frac*100,2)) %>% filter(Race == "More than one race") %>% pull(pct)
+
+
 
 other <- newdata %>% filter(Race== "More than one race")
 
@@ -221,6 +228,10 @@ newdata <- newdata %>% mutate(Race = ifelse(`Single Race 6` %in% c("Asian", "Nat
 
 newdata <- newdata %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% mutate(Population = ifelse(Population == "Suppressed", sample(c(1:9), size = sum(Population == "Suppressed"), replace = TRUE), Population)) %>% mutate(Population = ifelse(Population == "Unreliable", sample(c(11:19), size = sum(Population == "Unreliable"), replace = TRUE), Population)) %>% filter(Population != "Not Applicable") %>% type.convert(as.is = TRUE) %>% select(-c(`Single Race 6`, `Single Race 6 Code`)) %>% group_by_at(vars(-Deaths, -Population, -`Crude Rate`)) %>% summarize(Deaths = sum(Deaths), Population = sum(Population), `Crude Rate` = Deaths / Population) %>% ungroup()
 
+
+affected_fraction_2022 <- newdata %>% group_by(Race) %>% summarize(n = sum(Deaths)) %>% mutate(frac = n / sum(n)) %>% mutate(pct = round(frac*100,2)) %>% filter(Race == "More than one race") %>% pull(pct)
+
+
 other <- newdata %>% filter(Race== "More than one race")
 
 
@@ -255,27 +266,86 @@ corrected_data <- rbind(distr_counts %>% mutate(`Crude Rate`=0), data) %>% group
 write_csv(x = corrected_data, file = corrected_data_2022_file)
 
 
+#2023
+
+newdata <- lapply(list.files(data_folder_2023, full.names = TRUE), function(x) readTextFile(x))
+
+newdata <- do.call(rbind, newdata)
+
+colnames(newdata)[which(colnames(newdata)=="Sex")] <- "Gender"
+colnames(newdata)[(which(colnames(newdata)=="Gender") + 1)] <- "Gender Code"
+
+newdata <- newdata %>% mutate(Race = ifelse(`Single Race 6` %in% c("Asian", "Native Hawaiian or Other Pacific Islander"), "Asian or Pacific Islander", `Single Race 6`)) 
+
+newdata <- newdata %>% mutate(Deaths = ifelse(Deaths == "Suppressed", sample(c(1:9), size = sum(Deaths == "Suppressed"), replace = TRUE), Deaths)) %>% mutate(Population = ifelse(Population == "Suppressed", sample(c(1:9), size = sum(Population == "Suppressed"), replace = TRUE), Population)) %>% mutate(Population = ifelse(Population == "Unreliable", sample(c(11:19), size = sum(Population == "Unreliable"), replace = TRUE), Population)) %>% filter(Population != "Not Applicable") %>% type.convert(as.is = TRUE) %>% select(-c(`Single Race 6`, `Single Race 6 Code`)) %>% group_by_at(vars(-Deaths, -Population, -`Crude Rate`)) %>% summarize(Deaths = sum(Deaths), Population = sum(Population), `Crude Rate` = Deaths / Population) %>% ungroup()
+
+
+affected_fraction_2023 <- newdata %>% group_by(Race) %>% summarize(n = sum(Deaths)) %>% mutate(frac = n / sum(n)) %>% mutate(pct = round(frac*100,2)) %>% filter(Race == "More than one race") %>% pull(pct)
+
+
+other <- newdata %>% filter(Race== "More than one race")
+
+
+
+
+list_fin <- list()
+
+for (x in 1:nrow(other)){
+
+	row <- other[x,]
+	deaths <- row$Deaths
+	pop <- row$Population
+
+	a <- death_conversion_table %>% ungroup() %>% filter(`Five-Year Age Groups` == row$`Five-Year Age Groups`, Gender == row$Gender, `Hispanic Origin`==row$`Hispanic Origin`) %>% select(Race, mean_frac) %>% mutate(Deaths = round(mean_frac*deaths)) %>% select(-mean_frac)
+
+	b <- pop_conversion_table %>% ungroup() %>% filter(`Five-Year Age Groups` == row$`Five-Year Age Groups`, Gender == row$Gender, `Hispanic Origin`==row$`Hispanic Origin`) %>% select(Race, mean_frac) %>% mutate(Population = round(mean_frac*pop)) %>% select(-mean_frac)
+
+
+	fin <- cbind(left_join(a,b), row %>% select(-c(Deaths, Race, Population, `Crude Rate`)) %>% dplyr::slice(rep(row_number(), each = nrow(a)))) %>% as_tibble()
+
+	list_fin[[x]] <- fin
+
+}
+
+distr_counts <- do.call(rbind, list_fin) %>% as_tibble()
+
+
+data <- newdata %>% filter(Race != "More than one race" )
+
+corrected_data <- rbind(distr_counts %>% mutate(`Crude Rate`=0), data) %>% group_by(`Five-Year Age Groups`, Gender, `Hispanic Origin`,  Race) %>% summarize(Deaths = sum(Deaths), Population = sum(Population))  %>% ungroup() %>% relocate(Deaths, Population)
+
+
+
+write_csv(x = corrected_data, file = corrected_data_2023_file)
+
+
+#
+
 
 new_2021 <- corrected_data_2021_file %>% read_csv() %>% mutate(Year = 2021)
 new_2022 <- corrected_data_2022_file %>% read_csv() %>% mutate(Year = 2022)
-new <- rbind(new_2021, new_2022) %>% as_tibble()
+
+new_2023 <- corrected_data_2023_file %>% read_csv() %>% mutate(Year = 2023)
+
+new <- rbind(new_2021, new_2022, new_2023) %>% as_tibble()
 
 
 
-#STEP1: need to save population data for 2021 and 2022
-pop_2021_2022 <- new %>% select(Population, `Five-Year Age Groups`, Gender, `Hispanic Origin`, Race, Year) %>% distinct()
+#STEP1: need to save population data for 2021 and 2022 and 2023
 
-pop_2021_2022 <- pop_2021_2022 %>% distinct() %>% as_tibble()
+pop_2021_2022_2023 <- new %>% select(Population, `Five-Year Age Groups`, Gender, `Hispanic Origin`, Race, Year) %>% distinct()
+
+pop_2021_2022_2023 <- pop_2021_2022_2023 %>% distinct() %>% as_tibble()
 
 pop_master_df <- "../raw-data/population-1999-2020.txt" %>% readTextFile(.) %>% select(Race, `Hispanic Origin`, `Five-Year Age Groups`, Year, Gender, Population) %>% distinct()
 
-master_pop <- rbind(pop_2021_2022, pop_master_df) %>% as_tibble()
+master_pop <- rbind(pop_2021_2022_2023, pop_master_df) %>% as_tibble()
 
 
 
 master_pop %>% write_csv(., file = master_pop_file)
 
-#STEP2: edit 2021/2022 to be in the shape of 1999-2020 form which must be in the form of below
+#STEP2: edit 2021/2022/2023 to be in the shape of 1999-2020 form which must be in the form of below
 
 new <- new %>% filter(Deaths > 0) %>% select(-Population)
 
@@ -290,3 +360,11 @@ df <- df %>% type.convert(as.is = TRUE)
 
 
 df %>% write_csv(., file = output_file)
+
+
+#write out affected fractions for each study subsample
+
+
+paste0(c("% of death certificates affected by race correction each year for", input_name, "--", "2021:", affected_fraction_2021, "2022:", affected_fraction_2022, "2023:", affected_fraction_2023), collapse = " ") %>% writeLines(., paste0("../raw-data/", input_name, "/affected-counts.txt"))
+
+

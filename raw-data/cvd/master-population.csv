@@ -575,6 +575,366 @@ Population,Five-Year Age Groups,Gender,Hispanic Origin,Race,Year
 123243,< 1 year,Male,Not Hispanic or Latino,Asian or Pacific Islander,2022
 310449,< 1 year,Male,Not Hispanic or Latino,Black or African American,2022
 924898,< 1 year,Male,Not Hispanic or Latino,White,2022
+97522,1-4 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+54066,1-4 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+167760,1-4 years,Female,Hispanic or Latino,Black or African American,2023
+0,1-4 years,Female,Hispanic or Latino,Not Available,2023
+1643688,1-4 years,Female,Hispanic or Latino,White,2023
+63732,1-4 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+478313,1-4 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1164685,1-4 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,1-4 years,Female,Not Hispanic or Latino,Not Available,2023
+3597849,1-4 years,Female,Not Hispanic or Latino,White,2023
+101327,1-4 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+56764,1-4 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+175448,1-4 years,Male,Hispanic or Latino,Black or African American,2023
+0,1-4 years,Male,Hispanic or Latino,Not Available,2023
+1703173,1-4 years,Male,Hispanic or Latino,White,2023
+65803,1-4 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+505235,1-4 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1202770,1-4 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,1-4 years,Male,Not Hispanic or Latino,Not Available,2023
+3784373,1-4 years,Male,Not Hispanic or Latino,White,2023
+104455,10-14 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+59156,10-14 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+187395,10-14 years,Female,Hispanic or Latino,Black or African American,2023
+0,10-14 years,Female,Hispanic or Latino,Not Available,2023
+2312772,10-14 years,Female,Hispanic or Latino,White,2023
+98767,10-14 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+652077,10-14 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1566872,10-14 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,10-14 years,Female,Not Hispanic or Latino,Not Available,2023
+5185151,10-14 years,Female,Not Hispanic or Latino,White,2023
+107991,10-14 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+62039,10-14 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+196074,10-14 years,Male,Hispanic or Latino,Black or African American,2023
+0,10-14 years,Male,Hispanic or Latino,Not Available,2023
+2409944,10-14 years,Male,Hispanic or Latino,White,2023
+102240,10-14 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+687287,10-14 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1626600,10-14 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,10-14 years,Male,Not Hispanic or Latino,Not Available,2023
+5475744,10-14 years,Male,Not Hispanic or Latino,White,2023
+100374,15-19 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+54362,15-19 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+173960,15-19 years,Female,Hispanic or Latino,Black or African American,2023
+0,15-19 years,Female,Hispanic or Latino,Not Available,2023
+2449997,15-19 years,Female,Hispanic or Latino,White,2023
+105291,15-19 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+672580,15-19 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1622521,15-19 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,15-19 years,Female,Not Hispanic or Latino,Not Available,2023
+5599760,15-19 years,Female,Not Hispanic or Latino,White,2023
+105653,15-19 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+56744,15-19 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+182510,15-19 years,Male,Hispanic or Latino,Black or African American,2023
+0,15-19 years,Male,Hispanic or Latino,Not Available,2023
+2568598,15-19 years,Male,Hispanic or Latino,White,2023
+107928,15-19 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+693110,15-19 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1674027,15-19 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,15-19 years,Male,Not Hispanic or Latino,Not Available,2023
+5908065,15-19 years,Male,Not Hispanic or Latino,White,2023
+90428,20-24 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+46656,20-24 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+150846,20-24 years,Female,Hispanic or Latino,Black or African American,2023
+0,20-24 years,Female,Hispanic or Latino,Not Available,2023
+2273616,20-24 years,Female,Hispanic or Latino,White,2023
+102808,20-24 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+717976,20-24 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1603843,20-24 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,20-24 years,Female,Not Hispanic or Latino,Not Available,2023
+5698188,20-24 years,Female,Not Hispanic or Latino,White,2023
+95619,20-24 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+48399,20-24 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+160299,20-24 years,Male,Hispanic or Latino,Black or African American,2023
+0,20-24 years,Male,Hispanic or Latino,Not Available,2023
+2371663,20-24 years,Male,Hispanic or Latino,White,2023
+105324,20-24 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+729852,20-24 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1626325,20-24 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,20-24 years,Male,Not Hispanic or Latino,Not Available,2023
+5989329,20-24 years,Male,Not Hispanic or Latino,White,2023
+85925,25-29 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+44056,25-29 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+139696,25-29 years,Female,Hispanic or Latino,Black or African American,2023
+0,25-29 years,Female,Hispanic or Latino,Not Available,2023
+2161730,25-29 years,Female,Hispanic or Latino,White,2023
+103987,25-29 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+828033,25-29 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1650922,25-29 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,25-29 years,Female,Not Hispanic or Latino,Not Available,2023
+5828111,25-29 years,Female,Not Hispanic or Latino,White,2023
+89403,25-29 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+44959,25-29 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+146497,25-29 years,Male,Hispanic or Latino,Black or African American,2023
+0,25-29 years,Male,Hispanic or Latino,Not Available,2023
+2248078,25-29 years,Male,Hispanic or Latino,White,2023
+105628,25-29 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+815836,25-29 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1654189,25-29 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,25-29 years,Male,Not Hispanic or Latino,Not Available,2023
+6071308,25-29 years,Male,Not Hispanic or Latino,White,2023
+82727,30-34 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+44792,30-34 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+147470,30-34 years,Female,Hispanic or Latino,Black or African American,2023
+0,30-34 years,Female,Hispanic or Latino,Not Available,2023
+2123325,30-34 years,Female,Hispanic or Latino,White,2023
+109372,30-34 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+977339,30-34 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1813191,30-34 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,30-34 years,Female,Not Hispanic or Latino,Not Available,2023
+6342651,30-34 years,Female,Not Hispanic or Latino,White,2023
+92456,30-34 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+45300,30-34 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+151219,30-34 years,Male,Hispanic or Latino,Black or African American,2023
+0,30-34 years,Male,Hispanic or Latino,Not Available,2023
+2269265,30-34 years,Male,Hispanic or Latino,White,2023
+110560,30-34 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+936710,30-34 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1780286,30-34 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,30-34 years,Male,Not Hispanic or Latino,Not Available,2023
+6497492,30-34 years,Male,Not Hispanic or Latino,White,2023
+75929,35-39 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+40455,35-39 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+136453,35-39 years,Female,Hispanic or Latino,Black or African American,2023
+0,35-39 years,Female,Hispanic or Latino,Not Available,2023
+1977563,35-39 years,Female,Hispanic or Latino,White,2023
+95039,35-39 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+983504,35-39 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1574482,35-39 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,35-39 years,Female,Not Hispanic or Latino,Not Available,2023
+6259139,35-39 years,Female,Not Hispanic or Latino,White,2023
+89179,35-39 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+43664,35-39 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+134794,35-39 years,Male,Hispanic or Latino,Black or African American,2023
+0,35-39 years,Male,Hispanic or Latino,Not Available,2023
+2193355,35-39 years,Male,Hispanic or Latino,White,2023
+94199,35-39 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+924206,35-39 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1486365,35-39 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,35-39 years,Male,Not Hispanic or Latino,Not Available,2023
+6398318,35-39 years,Male,Not Hispanic or Latino,White,2023
+73564,40-44 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+38894,40-44 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+132407,40-44 years,Female,Hispanic or Latino,Black or African American,2023
+0,40-44 years,Female,Hispanic or Latino,Not Available,2023
+1959498,40-44 years,Female,Hispanic or Latino,White,2023
+88159,40-44 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+934064,40-44 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1504847,40-44 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,40-44 years,Female,Not Hispanic or Latino,Not Available,2023
+6154460,40-44 years,Female,Not Hispanic or Latino,White,2023
+85930,40-44 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+41181,40-44 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+124592,40-44 years,Male,Hispanic or Latino,Black or African American,2023
+0,40-44 years,Male,Hispanic or Latino,Not Available,2023
+2132792,40-44 years,Male,Hispanic or Latino,White,2023
+85971,40-44 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+847303,40-44 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1376345,40-44 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,40-44 years,Male,Not Hispanic or Latino,Not Available,2023
+6304041,40-44 years,Male,Not Hispanic or Latino,White,2023
+64598,45-49 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+33947,45-49 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+113582,45-49 years,Female,Hispanic or Latino,Black or African American,2023
+0,45-49 years,Female,Hispanic or Latino,Not Available,2023
+1818012,45-49 years,Female,Hispanic or Latino,White,2023
+79034,45-49 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+843985,45-49 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1351608,45-49 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,45-49 years,Female,Not Hispanic or Latino,Not Available,2023
+5625890,45-49 years,Female,Not Hispanic or Latino,White,2023
+73371,45-49 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+34219,45-49 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+101963,45-49 years,Male,Hispanic or Latino,Black or African American,2023
+0,45-49 years,Male,Hispanic or Latino,Not Available,2023
+1907671,45-49 years,Male,Hispanic or Latino,White,2023
+75892,45-49 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+751905,45-49 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1203359,45-49 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,45-49 years,Male,Not Hispanic or Latino,Not Available,2023
+5737975,45-49 years,Male,Not Hispanic or Latino,White,2023
+115299,5-9 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+65962,5-9 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+199098,5-9 years,Female,Hispanic or Latino,Black or African American,2023
+0,5-9 years,Female,Hispanic or Latino,Not Available,2023
+2193548,5-9 years,Female,Hispanic or Latino,White,2023
+92269,5-9 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+670895,5-9 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1530365,5-9 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,5-9 years,Female,Not Hispanic or Latino,Not Available,2023
+4980601,5-9 years,Female,Not Hispanic or Latino,White,2023
+119180,5-9 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+68897,5-9 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+207758,5-9 years,Male,Hispanic or Latino,Black or African American,2023
+0,5-9 years,Male,Hispanic or Latino,Not Available,2023
+2277178,5-9 years,Male,Hispanic or Latino,White,2023
+95434,5-9 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+711932,5-9 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1577568,5-9 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,5-9 years,Male,Not Hispanic or Latino,Not Available,2023
+5246774,5-9 years,Male,Not Hispanic or Latino,White,2023
+58303,50-54 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+29334,50-54 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+96059,50-54 years,Female,Hispanic or Latino,Black or African American,2023
+0,50-54 years,Female,Hispanic or Latino,Not Available,2023
+1671333,50-54 years,Female,Hispanic or Latino,White,2023
+80879,50-54 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+801620,50-54 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1386233,50-54 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,50-54 years,Female,Not Hispanic or Latino,Not Available,2023
+6252256,50-54 years,Female,Not Hispanic or Latino,White,2023
+64440,50-54 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+28768,50-54 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+85204,50-54 years,Male,Hispanic or Latino,Black or African American,2023
+0,50-54 years,Male,Hispanic or Latino,Not Available,2023
+1725103,50-54 years,Male,Hispanic or Latino,White,2023
+77309,50-54 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+716769,50-54 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1231765,50-54 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,50-54 years,Male,Not Hispanic or Latino,Not Available,2023
+6371396,50-54 years,Male,Not Hispanic or Latino,White,2023
+48852,55-59 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+24446,55-59 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+83083,55-59 years,Female,Hispanic or Latino,Black or African American,2023
+0,55-59 years,Female,Hispanic or Latino,Not Available,2023
+1449757,55-59 years,Female,Hispanic or Latino,White,2023
+83388,55-59 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+687413,55-59 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1371843,55-59 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,55-59 years,Female,Not Hispanic or Latino,Not Available,2023
+6691084,55-59 years,Female,Not Hispanic or Latino,White,2023
+53711,55-59 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+23629,55-59 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+74269,55-59 years,Male,Hispanic or Latino,Black or African American,2023
+0,55-59 years,Male,Hispanic or Latino,Not Available,2023
+1476579,55-59 years,Male,Hispanic or Latino,White,2023
+76804,55-59 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+605006,55-59 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1197968,55-59 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,55-59 years,Male,Not Hispanic or Latino,Not Available,2023
+6658425,55-59 years,Male,Not Hispanic or Latino,White,2023
+41893,60-64 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+20587,60-64 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+68732,60-64 years,Female,Hispanic or Latino,Black or African American,2023
+0,60-64 years,Female,Hispanic or Latino,Not Available,2023
+1229723,60-64 years,Female,Hispanic or Latino,White,2023
+87418,60-64 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+636288,60-64 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1360597,60-64 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,60-64 years,Female,Not Hispanic or Latino,Not Available,2023
+7465462,60-64 years,Female,Not Hispanic or Latino,White,2023
+43205,60-64 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+18866,60-64 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+60412,60-64 years,Male,Hispanic or Latino,Black or African American,2023
+0,60-64 years,Male,Hispanic or Latino,Not Available,2023
+1197252,60-64 years,Male,Hispanic or Latino,White,2023
+77964,60-64 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+548424,60-64 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1155759,60-64 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,60-64 years,Male,Not Hispanic or Latino,Not Available,2023
+7235573,60-64 years,Male,Not Hispanic or Latino,White,2023
+30832,65-69 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+15297,65-69 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+53155,65-69 years,Female,Hispanic or Latino,Black or African American,2023
+0,65-69 years,Female,Hispanic or Latino,Not Available,2023
+967333,65-69 years,Female,Hispanic or Latino,White,2023
+76425,65-69 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+571833,65-69 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+1176281,65-69 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,65-69 years,Female,Not Hispanic or Latino,Not Available,2023
+7134311,65-69 years,Female,Not Hispanic or Latino,White,2023
+30822,65-69 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+13353,65-69 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+45247,65-69 years,Male,Hispanic or Latino,Black or African American,2023
+0,65-69 years,Male,Hispanic or Latino,Not Available,2023
+875606,65-69 years,Male,Hispanic or Latino,White,2023
+65420,65-69 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+469695,65-69 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+939931,65-69 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,65-69 years,Male,Not Hispanic or Latino,Not Available,2023
+6685186,65-69 years,Male,Not Hispanic or Latino,White,2023
+20454,70-74 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+10635,70-74 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+37795,70-74 years,Female,Hispanic or Latino,Black or African American,2023
+0,70-74 years,Female,Hispanic or Latino,Not Available,2023
+717302,70-74 years,Female,Hispanic or Latino,White,2023
+58136,70-74 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+470759,70-74 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+902613,70-74 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,70-74 years,Female,Not Hispanic or Latino,Not Available,2023
+6107042,70-74 years,Female,Not Hispanic or Latino,White,2023
+18814,70-74 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+8733,70-74 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+29905,70-74 years,Male,Hispanic or Latino,Black or African American,2023
+0,70-74 years,Male,Hispanic or Latino,Not Available,2023
+601659,70-74 years,Male,Hispanic or Latino,White,2023
+49155,70-74 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+367789,70-74 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+657759,70-74 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,70-74 years,Male,Not Hispanic or Latino,Not Available,2023
+5476006,70-74 years,Male,Not Hispanic or Latino,White,2023
+12836,75-79 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+7047,75-79 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+25092,75-79 years,Female,Hispanic or Latino,Black or African American,2023
+0,75-79 years,Female,Hispanic or Latino,Not Available,2023
+506124,75-79 years,Female,Hispanic or Latino,White,2023
+39870,75-79 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+324532,75-79 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+596810,75-79 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,75-79 years,Female,Not Hispanic or Latino,Not Available,2023
+4709083,75-79 years,Female,Not Hispanic or Latino,White,2023
+11249,75-79 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+5296,75-79 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+18423,75-79 years,Male,Hispanic or Latino,Black or African American,2023
+0,75-79 years,Male,Hispanic or Latino,Not Available,2023
+392101,75-79 years,Male,Hispanic or Latino,White,2023
+33186,75-79 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+254831,75-79 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+405183,75-79 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,75-79 years,Male,Not Hispanic or Latino,Not Available,2023
+4045753,75-79 years,Male,Not Hispanic or Latino,White,2023
+7441,80-84 years,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+4223,80-84 years,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+15452,80-84 years,Female,Hispanic or Latino,Black or African American,2023
+0,80-84 years,Female,Hispanic or Latino,Not Available,2023
+323826,80-84 years,Female,Hispanic or Latino,White,2023
+23976,80-84 years,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+202308,80-84 years,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+369351,80-84 years,Female,Not Hispanic or Latino,Black or African American,2023
+0,80-84 years,Female,Not Hispanic or Latino,Not Available,2023
+3037628,80-84 years,Female,Not Hispanic or Latino,White,2023
+5535,80-84 years,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+2801,80-84 years,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+10383,80-84 years,Male,Hispanic or Latino,Black or African American,2023
+0,80-84 years,Male,Hispanic or Latino,Not Available,2023
+223433,80-84 years,Male,Hispanic or Latino,White,2023
+18852,80-84 years,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+155536,80-84 years,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+220465,80-84 years,Male,Not Hispanic or Latino,Black or African American,2023
+0,80-84 years,Male,Not Hispanic or Latino,Not Available,2023
+2359471,80-84 years,Male,Not Hispanic or Latino,White,2023
+24044,< 1 year,Female,Hispanic or Latino,American Indian or Alaska Native,2023
+13551,< 1 year,Female,Hispanic or Latino,Asian or Pacific Islander,2023
+43537,< 1 year,Female,Hispanic or Latino,Black or African American,2023
+0,< 1 year,Female,Hispanic or Latino,Not Available,2023
+411642,< 1 year,Female,Hispanic or Latino,White,2023
+15145,< 1 year,Female,Not Hispanic or Latino,American Indian or Alaska Native,2023
+111067,< 1 year,Female,Not Hispanic or Latino,Asian or Pacific Islander,2023
+288222,< 1 year,Female,Not Hispanic or Latino,Black or African American,2023
+0,< 1 year,Female,Not Hispanic or Latino,Not Available,2023
+876937,< 1 year,Female,Not Hispanic or Latino,White,2023
+24873,< 1 year,Male,Hispanic or Latino,American Indian or Alaska Native,2023
+14423,< 1 year,Male,Hispanic or Latino,Asian or Pacific Islander,2023
+45408,< 1 year,Male,Hispanic or Latino,Black or African American,2023
+0,< 1 year,Male,Hispanic or Latino,Not Available,2023
+426292,< 1 year,Male,Hispanic or Latino,White,2023
+15716,< 1 year,Male,Not Hispanic or Latino,American Indian or Alaska Native,2023
+117155,< 1 year,Male,Not Hispanic or Latino,Asian or Pacific Islander,2023
+298034,< 1 year,Male,Not Hispanic or Latino,Black or African American,2023
+0,< 1 year,Male,Not Hispanic or Latino,Not Available,2023
+922607,< 1 year,Male,Not Hispanic or Latino,White,2023
 6120,< 1 year,Female,Hispanic or Latino,American Indian or Alaska Native,1999
 6446,< 1 year,Male,Hispanic or Latino,American Indian or Alaska Native,1999
 7448,< 1 year,Female,Hispanic or Latino,American Indian or Alaska Native,2000
